@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+VERSION=$1
+
+if [ -z "$VERSION" ]; then
+  echo "Error: The version number is required."
+  echo "Usage: $0 <version-number>"
+  exit 1
+fi
+
+printf "module RailsIcons\n  VERSION = \"$VERSION\"\nend\n" > ./lib/rails_icons/version.rb
+bundle
+git add Gemfile.lock lib/rails_icons/version.rb
+git commit -m "Bump version for $VERSION"
+git push
+git tag v$VERSION
+git push --tags
+gem build rails_icons.gemspec
+gem push "rails_icons-$VERSION.gem"
