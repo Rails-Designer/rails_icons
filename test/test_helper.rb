@@ -1,6 +1,10 @@
-# frozen_string_literal: true
+# Configure Rails Environment
+ENV["RAILS_ENV"] = "test"
 
-$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
-require "rails_icons"
+require File.expand_path("../dummy/config/environment.rb", __FILE__)
+require "rails/test_help"
 
-require "minitest/autorun"
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+
+class ActiveSupport::TestCase
+end

@@ -1,39 +1,110 @@
-# RailsIcons
+# Rails Icons
 
-TODO: Delete this and the text below, and describe your gem
+Embed any library's icon in your Rails app. There are many icon gem's for Rails already, but none are library-agnostic. This means you need to pull in other gems or add your logic to display that one-specific icon.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails_icons`. To experiment with that code, run `bin/console` for an interactive prompt.
+Supported libraries:
 
-## Installation
+- [Heroicons](https://heroicons.com/)
+- …[more coming](https://github.com/rails-designer/rails_icons/issues)
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
 
-Install the gem and add to the application's Gemfile by executing:
+## Sponsored By [Rails Designer](https://railsdesigner.com/)
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+<a href="https://railsdesigner.com/" target="_blank">
+  <img src="https://github.com/rails-designer/rails_icons/blob/main/docs/rails_designer_logo.jpg?raw=true" alt="Rails Designer logo" />
+</a>
 
-If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+## Install
+
+Add this line to your Gemfile:
+
+```ruby
+gem "rails_icons"
+```
+
+And run:
+
+```bash
+bundle
+```
+
+
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# The default library is Heroicons, with "outline" as the default set
+icon "check"
 
-## Development
+# Use another set (options are: outline, solid, mini, micro)
+icon "check", set: "solid"
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+# Add CSS to the icon
+icon "check", class: "text-green-500"
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+# Add data attributes
+icon "check", data: { controller: "swap" }
 
-## Contributing
+# Tweak the stroke-width
+icon "check", stroke_width: 2
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/eelcoj/rails_icons. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/eelcoj/rails_icons/blob/main/CODE_OF_CONDUCT.md).
+
+## Initializer
+
+```ruby
+RailsIcons.configure do |config|
+  # Set the default set for the library
+  config.default_library = "heroicons" # https://heroicons.com/
+  config.default_set = "outline" # other sets for Heroicons are: solid, mini, micro
+
+  config.libraries.heroicons.solid.default.css = "w-6 h-6"
+  config.libraries.heroicons.solid.default.data = {}
+
+  config.libraries.heroicons.outline.default.css = "w-6 h-6"
+  config.libraries.heroicons.outline.default.stroke_width = "1.5"
+  config.libraries.heroicons.outline.default.data = {}
+
+  config.libraries.heroicons.mini.default.css = "w-5 h-5"
+  config.libraries.heroicons.mini.default.data = {}
+
+  config.libraries.heroicons.micro.default.css = "w-4 h-4"
+  config.libraries.heroicons.micro.default.data = {}
+end
+```
+
+
+## Add a custom icon library
+
+```ruby
+RailsIcons.configure do |config|
+  # …
+  config.libraries.merge!(
+    {
+      custom: {
+        simple_icons: {
+          solid: {
+            path: "app/assets/svg/simple_icons/solid", # optional: the default lookup path is: `app/assets/svg/#{library_name}/#{set}`
+            default: {
+              css: "w-6 h-6"
+            }
+          }
+        }
+      }
+    }
+  )
+  # …
+end
+```
+
+You can now use any svg-icon in the `app/assets/svg/simple_icons/solid` folder as a first-party icon:
+
+```ruby
+icon "reddit", library: "simple_icons", set: "solid"
+```
+
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the RailsIcons project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/eelcoj/rails_icons/blob/main/CODE_OF_CONDUCT.md).
+Rails Icons is released under the [MIT License](https://opensource.org/licenses/MIT).

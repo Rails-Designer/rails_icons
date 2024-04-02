@@ -1,13 +1,7 @@
-# frozen_string_literal: true
-
 require "test_helper"
 
-class TestRailsIcons < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::RailsIcons::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert false
+class RailsIconsTest < ActiveSupport::TestCase
+  test "it has a version number" do
+    assert RailsIcons::VERSION
   end
 end
