@@ -11,9 +11,8 @@ Supported libraries:
 ## Sponsored By [Rails Designer](https://railsdesigner.com/)
 
 <a href="https://railsdesigner.com/" target="_blank">
-  <img src="https://github.com/rails-designer/rails_icons/blob/main/docs/rails_designer_logo.jpg?raw=true" alt="Rails Designer logo" />
+  <img src="https://raw.githubusercontent.com/Rails-Designer/rails_icons/main/docs/rails_designer_icon.jpg" alt="Rails Designer logo" />
 </a>
-
 
 ## Install
 
