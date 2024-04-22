@@ -29,7 +29,6 @@ bundle
 ```
 
 
-
 ## Usage
 
 ```ruby
@@ -72,6 +71,8 @@ RailsIcons.configure do |config|
   config.libraries.heroicons.micro.default.data = {}
 end
 ```
+
+Or run `rails generate rails_icons:initializer`.
 
 
 ## Add a custom icon library

@@ -5,6 +5,3 @@ require File.expand_path("../dummy/config/environment.rb", __FILE__)
 require "rails/test_help"
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
-
-class ActiveSupport::TestCase
-end
