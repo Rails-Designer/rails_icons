@@ -28,9 +28,15 @@ class IconTest < ActiveSupport::TestCase
     assert_match(/stroke-width="3"/, icon("academic-cap", stroke_width: 3), "SVG should contain 'stroke-width=\"3\"'")
   end
 
+  test "using lucide library, it returns a SVG" do
+    assert_nothing_raised do
+      icon("graduation-cap", library: "lucide")
+    end
+  end
+
   private
 
   def icon(name, library: "heroicons", set: "outline", **args)
-    RailsIcons::Icon.new(name: name, library: "heroicons", set: "outline", args: args).svg
+    RailsIcons::Icon.new(name: name, library:, set:, args:).svg
   end
 end

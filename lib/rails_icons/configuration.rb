@@ -33,6 +33,7 @@ module RailsIcons
       @config.libraries = ActiveSupport::OrderedOptions.new
 
       heroicons_config
+      lucide_config
     end
 
     def heroicons_config
@@ -58,6 +59,16 @@ module RailsIcons
       @config.libraries.heroicons.micro.default = ActiveSupport::OrderedOptions.new
       @config.libraries.heroicons.micro.default.css = "w-4 h-4"
       @config.libraries.heroicons.micro.default.data = {}
+    end
+
+    def lucide_config
+      @config.libraries.lucide = ActiveSupport::OrderedOptions.new
+
+      @config.libraries.lucide.outline = ActiveSupport::OrderedOptions.new
+      @config.libraries.lucide.outline.default = ActiveSupport::OrderedOptions.new
+      @config.libraries.lucide.outline.default.stroke_width = 2
+      @config.libraries.lucide.outline.default.css = "w-6 h-6"
+      @config.libraries.lucide.outline.default.data = {}
     end
   end
 end
