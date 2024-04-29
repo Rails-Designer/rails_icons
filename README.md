@@ -1,6 +1,6 @@
 # Rails Icons
 
-Embed any library's icon in your Rails app. There are many icon gem's for Rails already, but none are library-agnostic. This means you need to pull in other gems or add your logic to display that one-specific icon.
+Embed any library's icon in your Rails app. There are many icon gems for Rails already, but none are library-agnostic. This means you need to pull in other gems or add your logic to display that one specific icon.
 
 Supported libraries:
 
