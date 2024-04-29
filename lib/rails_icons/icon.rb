@@ -4,7 +4,7 @@ class RailsIcons::Icon
   def initialize(name:, library:, set:, args:)
     @name = name
     @library = library.to_s
-    @set = set
+    @set = set || default_set
     @args = args
   end
 
@@ -70,6 +70,10 @@ class RailsIcons::Icon
     return @set if @set.present?
 
     RailsIcons.configuration.default_set
+  end
+
+  def default_set
+    RailsIcons.configuration.libraries.dig(@library.to_sym, :default_set)
   end
 
   def default_css

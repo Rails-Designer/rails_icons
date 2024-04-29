@@ -34,9 +34,15 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
+  test "using custom, animated svg, it returns a SVG" do
+    assert_nothing_raised do
+      icon("trailing-spinner", library: "animated")
+    end
+  end
+
   private
 
-  def icon(name, library: "heroicons", set: "outline", **args)
+  def icon(name, library: "heroicons", set: nil, **args)
     RailsIcons::Icon.new(name: name, library:, set:, args:).svg
   end
 end

@@ -34,6 +34,7 @@ module RailsIcons
 
       heroicons_config
       lucide_config
+      animated_config
     end
 
     def heroicons_config
@@ -63,12 +64,23 @@ module RailsIcons
 
     def lucide_config
       @config.libraries.lucide = ActiveSupport::OrderedOptions.new
+      @config.libraries.lucide.default_set = "outline"
 
       @config.libraries.lucide.outline = ActiveSupport::OrderedOptions.new
       @config.libraries.lucide.outline.default = ActiveSupport::OrderedOptions.new
       @config.libraries.lucide.outline.default.stroke_width = 2
       @config.libraries.lucide.outline.default.css = "w-6 h-6"
       @config.libraries.lucide.outline.default.data = {}
+    end
+
+    def animated_config
+      @config.libraries.animated = ActiveSupport::OrderedOptions.new
+      @config.libraries.animated.default_set = "base"
+
+      @config.libraries.animated.base = ActiveSupport::OrderedOptions.new
+      @config.libraries.animated.base.default = ActiveSupport::OrderedOptions.new
+      @config.libraries.animated.base.default.css = "w-6 h-6"
+      @config.libraries.animated.base.default.data = {}
     end
   end
 end
