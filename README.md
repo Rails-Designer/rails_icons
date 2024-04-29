@@ -5,7 +5,8 @@ Embed any library's icon in your Rails app. There are many icon gems for Rails a
 Supported libraries:
 
 - [Heroicons](https://heroicons.com/)
-- …[more coming](https://github.com/rails-designer/rails_icons/issues)
+- [Lucide Icons](https://lucide.dev/)
+- [more coming…](https://github.com/rails-designer/rails_icons/issues)
 
 
 ## Sponsored By [Rails Designer](https://railsdesigner.com/)
