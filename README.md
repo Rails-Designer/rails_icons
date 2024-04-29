@@ -6,6 +6,7 @@ Supported libraries:
 
 - [Heroicons](https://heroicons.com/)
 - [Lucide Icons](https://lucide.dev/)
+- [Animated](#animated-svg)
 - [more coming…](https://github.com/rails-designer/rails_icons/issues)
 
 
@@ -104,6 +105,17 @@ You can now use any svg-icon in the `app/assets/svg/simple_icons/solid` folder a
 ```ruby
 icon "reddit", library: "simple_icons", set: "solid"
 ```
+
+
+## Animated SVG
+
+Rails Icons includes a selection of custom, animated SVG icons, ideal for [loading states](https://railsdesigner.com/components/empty-states/#loading-state) or [disabled buttons](https://railsdesigner.com/components/buttons/#secondary-button-with-busy-spinner).
+
+Available:
+
+- `tailing-spinner`
+- `fading-dots`
+- `bouncing-dots`
 
 
 ## License
