@@ -30,7 +30,6 @@ module RailsIcons
     private
 
     def set_default_config
-      @config.helper_name = "icon"
       @config.default_library = "heroicons"
       @config.default_set = "outline"
     end
