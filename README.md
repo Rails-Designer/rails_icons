@@ -34,6 +34,13 @@ rails generate rails_icons:sync heroicons
 ```
 
 
+## Supported Libraries
+
+- [Heroicons](https://github.com/tailwindlabs/heroicons)
+- [Lucide](https://github.com/lucide-icons/lucide)
+- [Tabler](https://github.com/tabler/tabler-icons)
+
+
 ## Usage
 
 ```ruby
@@ -41,7 +48,7 @@ rails generate rails_icons:sync heroicons
 icon "check"
 
 # Use another set (options are: outline, solid, mini, micro)
-icon "check", set: "solid"
+icon "check", variant: "solid"
 
 # Add CSS to the icon
 icon "check", class: "text-green-500"
@@ -60,7 +67,7 @@ icon "check", stroke_width: 2
 RailsIcons.configure do |config|
   # Set the default set for the library
   config.default_library = "heroicons"
-  config.default_set = "outline"
+  config.default_variant = "outline"
 
   config.libraries.heroicons.solid.default.css = "size-6"
   config.libraries.heroicons.solid.default.data = {}

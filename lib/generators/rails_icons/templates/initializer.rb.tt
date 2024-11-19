@@ -1,5 +1,7 @@
 RailsIcons.configure do |config|
-  # Set the default set for the library
+  # Set the default library, see all first-party supported libraries:
+  # https://github.com/Rails-Designer/rails_icons?tab=readme-ov-file#supported-libraries
+  #
   config.default_library = "heroicons" # https://heroicons.com/
   config.default_variant = "outline" # other variant for Heroicons are: solid, mini, micro
 
