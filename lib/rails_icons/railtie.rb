@@ -9,5 +9,11 @@ module RailsIcons
         include RailsIcons::Helpers::IconHelper
       end
     end
+
+    initializer "rails_icons.assets" do |app|
+      gem_root = Pathname.new(Gem.loaded_specs["rails_icons"].gem_dir)
+
+      app.config.assets.paths << gem_root.join("app", "assets", "svg")
+    end
   end
 end

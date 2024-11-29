@@ -5,19 +5,19 @@ module RailsIcons
     class Tabler
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
-          setup_tabler_filled_config(options)
-          setup_tabler_outline_config(options)
+          setup_filled_config(options)
+          setup_outline_config(options)
         end
       end
 
       private
 
-      def setup_tabler_filled_config(options)
+      def setup_filled_config(options)
         options.filled = ActiveSupport::OrderedOptions.new
         options.filled.default = default_filled_options
       end
 
-      def setup_tabler_outline_config(options)
+      def setup_outline_config(options)
         options.outline = ActiveSupport::OrderedOptions.new
         options.outline.default = default_outline_options
       end

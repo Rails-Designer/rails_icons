@@ -3,7 +3,7 @@ require "rails_icons/icon/attributes"
 class RailsIcons::Icon
   def initialize(name:, library:, variant:, args:)
     @name = name
-    @library = library.to_s
+    @library = library.to_s.inquiry
     @variant = variant.to_s
     @args = args
   end
@@ -25,6 +25,8 @@ class RailsIcons::Icon
   end
 
   def file_path
+    return RailsIcons::Engine.root.join("app", "assets", "svg", "rails_icons", "icons", "animated", "base", "#{@name}.svg") if @library.animated?
+
     custom_library.dig("path") ||
       Rails.root.join("app", "assets", "svg", "icons", @library, variant, "#{@name}.svg")
   end
@@ -48,6 +50,7 @@ class RailsIcons::Icon
   end
 
   def variant
+    return "base" if @library.animated?
     return @variant if @variant.present?
 
     RailsIcons.configuration.default_variant

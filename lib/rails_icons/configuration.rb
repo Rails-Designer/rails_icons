@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative "configuration/animated"
 require_relative "configuration/heroicons"
 require_relative "configuration/lucide"
 require_relative "configuration/tabler"
@@ -35,9 +36,10 @@ module RailsIcons
     def set_libraries_config
       @config.libraries = ActiveSupport::OrderedOptions.new
 
+      @config.libraries.animated = Configuration::Animated.new.config
       @config.libraries.heroicons = Configuration::Heroicons.new.config
       @config.libraries.lucide = Configuration::Lucide.new.config
-      @config.libraries.lucide = Configuration::Tabler.new.config
+      @config.libraries.tabler = Configuration::Tabler.new.config
     end
   end
 end
