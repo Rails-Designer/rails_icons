@@ -22,21 +22,15 @@ class IconTest < ActiveSupport::TestCase
     assert_match(/stroke-width="3"/, icon("academic-cap", stroke_width: 3), "SVG should contain 'stroke-width=\"3\"'")
   end
 
-  test "setting set, it returns a SVG" do
-    assert_nothing_raised do
-      icon("academic-cap", set: "mini")
-    end
-  end
-
-  test "setting set as symbol, it returns a SVG" do
-    assert_nothing_raised do
-      icon("academic-cap", set: :mini)
-    end
-  end
-
   test "setting variant, it returns a SVG" do
     assert_nothing_raised do
-      icon("academic-cap", variant: "outline")
+      icon("academic-cap", variant: "mini")
+    end
+  end
+
+  test "setting variant as symbol, it returns a SVG" do
+    assert_nothing_raised do
+      icon("academic-cap", variant: :mini)
     end
   end
 
@@ -60,7 +54,7 @@ class IconTest < ActiveSupport::TestCase
 
   private
 
-  def icon(name, library: "heroicons", set: "outline", **args)
-    RailsIcons::Icon.new(name: name, library:, set:, args:).svg
+  def icon(name, library: "heroicons", variant: "outline", **args)
+    RailsIcons::Icon.new(name: name, library:, variant:, args:).svg
   end
 end

@@ -1,104 +1,64 @@
 # frozen_string_literal: true
 
 require "fileutils"
+require_relative "sync/engine"
 
-require_relative "helpers/icon_sync_engine"
 module RailsIcons
   class SyncGenerator < Rails::Generators::Base
-    SETS = {
-      heroicons: {
-        name: "heroicons",
-        url: "https://github.com/tailwindlabs/heroicons.git",
-        variants: {
-          outline: "optimized/24/outline",
-          solid: "optimized/24/solid",
-          mini: "optimized/20/solid",
-          micro: "optimized/16/solid"
-        }
-      },
-      tabler: {
-        name: "tabler",
-        url: "https://github.com/tabler/tabler-icons.git",
-        variants: {
-          filled: "icons/filled",
-          outline: "icons/outline"
-        }
-      },
-      lucide: {
-        name: "lucide",
-        url: "https://github.com/lucide-icons/lucide.git",
-        variants: {
-          outline: "icons"
-        }
-      }
-      # Template:
-      # set_name: {
-      #   name: "set_name"
-      #   url: "Publicly Acessible URL to Repository",
-      #   variants: {
-      #     variant_name: "relative/path/to/icon/variant/folder"
-      #   }
-      # }
-    }.freeze
+    class_option :libraries, type: :array, default: ["heroicons"], desc: "Choose libraries (#{RailsIcons::Libraries.all.keys.join("/")})"
+    class_option :destination, type: :string, default: "app/assets/svg/icons/", desc: "Custom destination folder for icons (default: `app/assets/svg/icons/`)"
 
-    argument :libraries, type: :array, default: [], banner: "heroicons lucide tabler"
-
-    class_option :destination, type: :string, default: nil,
-      desc: "Custom destination folder for icons (default: `app/assets/svg/icons/`)"
-
-    desc "Sync a specified icon set(s) from their respective git repos."
+    desc "Sync an icon library(s) from their respective git repos."
     source_root File.expand_path("templates", __dir__)
 
     def sync_icons
+      raise "[Rails Icons] Not a valid library" if libraries.empty?
+
       clean_temp_directory
 
-      libraries.each { |set_name| sync_icon_set(set_name) }
+      libraries.each { |library| sync(library) }
 
       clean_temp_directory
     end
 
     private
 
-    def icons_directory
-      options[:destination] || Rails.root.join("app/assets/svg/icons")
+    def clean_temp_directory
+      FileUtils.rm_rf(temp_directory) if Dir.exist?(temp_directory)
     end
 
-    def temp_icons_directory
+    def libraries
+      Array(options[:libraries])
+        .flat_map { |library| library.split(",") }
+        .map(&:to_sym) & RailsIcons::Libraries.all.keys
+    end
+
+    def sync(name)
+      library = RailsIcons::Libraries.all.fetch(name.to_sym)
+      library_path = File.join(temp_directory, library[:name])
+
+      Sync::Engine.new(temp_directory, library).sync
+
+      raise_library_not_found(name) unless Dir.exist?(library_path)
+      copy_library(library[:name], library_path)
+    end
+
+    def temp_directory
       Rails.root.join("tmp/icons")
     end
 
-    def clean_temp_directory
-      FileUtils.rm_rf(temp_icons_directory) if Dir.exist?(temp_icons_directory)
-    end
+    def copy_library(library, source)
+      destination = File.join(options[:destination], library)
 
-    def sync_icon_set(set_name)
-      set = SETS[set_name.to_sym]
-
-      IconSyncEngine.new(temp_icons_directory, set).sync
-
-      icon_set_path = File.join(temp_icons_directory, set[:name])
-
-      if Dir.exist?(icon_set_path)
-        copy_icon_set(set[:name], icon_set_path)
-      else
-        log_icon_set_not_found(set_name)
-      end
-    end
-
-    def copy_icon_set(set_name, source)
-      destination = File.join(icons_directory, set_name)
-
-      # Create icon set directory if it doesn't exist.
       FileUtils.mkdir_p(destination)
 
-      # Move icon set from the temp_icons_directory to icons_directory
       FileUtils.cp_r(Dir.glob("#{source}/*"), destination)
 
-      say "Synced `#{set_name}` icons successfully.", :green
+      say "[Rails Icons] Synced '#{library}' library successfully #{%w[😃 🎉 ✨].sample}", :green
     end
 
-    def log_icon_set_not_found(set)
-      say "Icon set `#{set}` not found.", :red
+    def raise_library_not_found(library)
+      say "[Rails Icons] Could not find '#{library}' library 🤷", :red
       exit 1
     end
   end

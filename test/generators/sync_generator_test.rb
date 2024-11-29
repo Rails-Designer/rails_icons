@@ -1,6 +1,4 @@
 require "test_helper"
-# require 'minitest/autorun'
-# require 'minitest/mock'
 require "generators/rails_icons/sync_generator"
 
 class SyncGeneratorTest < Rails::Generators::TestCase

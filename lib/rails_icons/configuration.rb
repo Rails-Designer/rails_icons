@@ -1,12 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "icon_configs/heroicons_config"
-require_relative "icon_configs/lucide_config"
-require_relative "icon_configs/tabler_config"
+require_relative "configuration/heroicons"
+require_relative "configuration/lucide"
+require_relative "configuration/tabler"
 
 module RailsIcons
-  # Configuration defines the available configuration options available for each of the icons sets
-  # as well as sets the defaults to heroicons
   class Configuration
     def initialize
       @config = ActiveSupport::OrderedOptions.new
@@ -37,9 +35,9 @@ module RailsIcons
     def set_libraries_config
       @config.libraries = ActiveSupport::OrderedOptions.new
 
-      @config.libraries.heroicons = HeroiconsConfig.new.config
-      @config.libraries.lucide = LucideConfig.new.config
-      @config.libraries.tabler = TablerConfig.new.config
+      @config.libraries.heroicons = Configuration::Heroicons.new.config
+      @config.libraries.lucide = Configuration::Lucide.new.config
+      @config.libraries.lucide = Configuration::Tabler.new.config
     end
   end
 end
