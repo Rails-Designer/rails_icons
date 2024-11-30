@@ -17,7 +17,7 @@ module RailsIcons
       return if default_configuration_exists?
 
       default_configuration = <<~RB.indent(2)
-        config.default_library = "#{libraries.first.to_s}"
+        config.default_library = "#{libraries.first}"
         # config.default_variant = "outline"
       RB
 
@@ -30,7 +30,7 @@ module RailsIcons
 
     private
 
-    INITIALIZER = "config/initializers/rails_icons.rb".freeze
+    INITIALIZER = "config/initializers/rails_icons.rb"
 
     def library_configuration
       configs = {
@@ -102,7 +102,7 @@ module RailsIcons
     end
 
     def libraries
-      (Array(options[:libraries]))
+      Array(options[:libraries])
         .flat_map { _1.split(",") }
         .map(&:to_sym) & (RailsIcons::Libraries.all.keys + [:custom])
     end
