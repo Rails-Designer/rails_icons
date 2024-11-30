@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Rails Designer Developers"]
   spec.email = ["devs@railsdesigner.com"]
 
-  spec.summary = "Add icons from multiple icons in your Rails app"
-  spec.description = "Add SVG icons from multiple libraries, or your own custom icon set with this one gem."
+  spec.summary = "Add any icon library to a Rails app"
+  spec.description = "Add any icon library to a Rails app, from Heroicons, to Lucide to Tabler (and others). Rails Icons is library-agnostic, so you can add any library while using the same interface."
   spec.homepage = "https://railsdesigner.com/rails-icons/"
   spec.license = "MIT"
 
