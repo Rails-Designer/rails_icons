@@ -34,6 +34,7 @@ module RailsIcons
 
     def library_configuration
       configs = {
+        feather: feather_config,
         heroicons: heroicons_config,
         lucide: lucide_config,
         tabler: tabler_config,
@@ -41,6 +42,15 @@ module RailsIcons
       }
 
       libraries.map { configs[_1.to_sym] }.join("\n")
+    end
+
+    def feather_config
+      <<~RB.indent(2)
+        # Override Feather defaults
+        # config.libraries.feather.outline.default.css = "size-6"
+        # config.libraries.feather.outline.default.stroke_width = "2"
+        # config.libraries.feather.outline.default.data = {}
+      RB
     end
 
     def heroicons_config

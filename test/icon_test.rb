@@ -34,6 +34,12 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
+  test "using feather library, it returns a SVG" do
+    assert_nothing_raised do
+      icon("activity", library: "feather")
+    end
+  end
+
   test "using lucide library, it returns a SVG" do
     assert_nothing_raised do
       icon("graduation-cap", library: "lucide")

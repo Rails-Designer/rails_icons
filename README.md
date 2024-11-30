@@ -87,6 +87,7 @@ icon "check", stroke_width: 2
 
 ## First-party libraries
 
+- [Feather](https://github.com/feathericons/feather)
 - [Heroicons](https://github.com/tailwindlabs/heroicons)
 - [Lucide](https://github.com/lucide-icons/lucide)
 - [Tabler](https://github.com/tabler/tabler-icons)
