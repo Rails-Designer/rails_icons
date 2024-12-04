@@ -30,8 +30,7 @@ module RailsIcons
     private
 
     def set_default_config
-      @config.default_library = "heroicons"
-      @config.default_variant = "outline"
+      @config.default_library = nil
     end
 
     def set_libraries_config

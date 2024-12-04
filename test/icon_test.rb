@@ -1,6 +1,8 @@
 require "test_helper"
 require "rails_icons/icon"
 
+include IconHelper
+
 class IconTest < ActiveSupport::TestCase
   test "it returns an icon SVG" do
     assert_match(/\A<svg[^>]*class="".*<\/svg>\z/m, icon("academic-cap"), "Expected SVG to start with <svg and contain 'class=\"\"'")
@@ -11,7 +13,7 @@ class IconTest < ActiveSupport::TestCase
   end
 
   test "it returns a SVG with custom class" do
-    assert_match(/class="w-4 h-4"/, icon("academic-cap", class: "w-4 h-4"), "SVG should contain 'class=\"w-h h-4\"'")
+    assert_match(/class="size-4"/, icon("academic-cap", class: "size-4"), "SVG should contain 'class=\"size-4\"'")
   end
 
   test "it returns a SVG with custom data attributes" do
@@ -34,15 +36,15 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
-  test "using feather library, it returns a SVG" do
+  test "without variant, using default configuration, it returns a SVG" do
     assert_nothing_raised do
-      icon("activity", library: "feather")
+      icon("academic-cap")
     end
   end
 
-  test "without variant, using default configuration, it returns a SVG" do
+  test "using feather library, it returns a SVG" do
     assert_nothing_raised do
-      icon_with_no_variant("academic-cap")
+      icon("activity", library: "feather")
     end
   end
 
@@ -54,7 +56,7 @@ class IconTest < ActiveSupport::TestCase
 
   test "using lucide library, without passing variant, it returns a SVG" do
     assert_nothing_raised do
-      icon_with_no_variant("graduation-cap", library: "lucide")
+      icon("graduation-cap", library: "lucide")
     end
   end
 
@@ -66,7 +68,7 @@ class IconTest < ActiveSupport::TestCase
 
   test "using tabler library, without passing variant, it returns a SVG" do
     assert_nothing_raised do
-      icon_with_no_variant("thumbs-up", library: "tabler")
+      icon("thumbs-up", library: "tabler")
     end
   end
 
@@ -74,15 +76,5 @@ class IconTest < ActiveSupport::TestCase
     assert_raises(RailsIcons::NotFound) do
       icon("non-existing-icon")
     end
-  end
-
-  private
-
-  def icon(name, library: "heroicons", variant: "outline", **args)
-    RailsIcons::Icon.new(name: name, library:, variant:, args:).svg
-  end
-
-  def icon_with_no_variant(name, library: "heroicons", **args)
-    RailsIcons::Icon.new(name: name, library:, args:).svg
   end
 end

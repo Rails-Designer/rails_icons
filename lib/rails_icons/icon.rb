@@ -1,11 +1,11 @@
 require "rails_icons/icon/attributes"
 
 class RailsIcons::Icon
-  def initialize(name:, library:, args:, variant: nil)
+  def initialize(name:, library:, arguments:, variant: nil)
     @name = name
     @library = library.to_s.inquiry
-    @variant = variant.to_s
-    @args = args
+    @variant = (variant || set_variant).to_s
+    @arguments = arguments
   end
 
   def svg
@@ -20,10 +20,15 @@ class RailsIcons::Icon
 
   private
 
+  def set_variant
+    RailsIcons.configuration.default_variant.presence ||
+      RailsIcons.configuration.libraries.dig(@library.to_sym, :default_variant)
+  end
+
   def error_message
     attributes = [
       @library,
-      variant,
+      @variant,
       @name
     ].compact_blank
 
@@ -31,68 +36,53 @@ class RailsIcons::Icon
   end
 
   def file_path
-    return RailsIcons::Engine.root.join("app", "assets", "svg", "rails_icons", "icons", "animated", "base", "#{@name}.svg") if @library.animated?
-    return custom_library.dig("path") if custom_library?
+    return RailsIcons::Engine.root.join("app", "assets", "svg", "rails_icons", "icons", "animated", "#{@name}.svg") if @library.animated?
+    return Rails.root.join(custom_library.dig(:path), "#{@name}.svg") if custom_library?
 
-    path_parts = [
+    parts = [
       "app",
       "assets",
       "svg",
       "icons",
       @library,
-      variant,
+      @variant,
       "#{@name}.svg"
-    ].compact_blank
+    ].compact_blank!
 
-    Rails.root.join(*path_parts)
-  end
-
-  def custom_library?
-    custom_library.present?
+    Rails.root.join(*parts)
   end
 
   def attach_attributes(to:)
     RailsIcons::Icon::Attributes
-      .new(default_attributes: default_attributes, args: @args)
+      .new(default_attributes: default_attributes, arguments: @arguments)
       .attach(to: to)
   end
 
   def default_attributes
     {
-      "stroke-width": default_stroke_width,
-      class: default_css,
-      data: default_data
+      "stroke-width": default(:stroke_width),
+      data: default(:data),
+      class: default(:css)
     }
   end
 
-  def variant
-    @variant.presence || ([:heroicons, :lucide, :tabler].include?(@library.to_sym) ? RailsIcons.configuration.default_variant : nil)
-  end
+  def default(key) = library_attributes.dig(:default, key)
 
-  def default_css
-    library_set_attributes.dig(:default, :css)
-  end
-
-  def default_data
-    library_set_attributes.dig(:default, :data)
-  end
-
-  def default_stroke_width
-    library_set_attributes.dig(:default, :stroke_width)
-  end
-
-  def library_set_attributes
-    return custom_library || {} if custom_library?
-
-    RailsIcons.configuration.libraries.dig(@library, variant) || {}
+  def library_attributes
+    custom_library? ? custom_library : RailsIcons.configuration.libraries.dig(@library, @variant) || {}
   end
 
   def custom_library
     RailsIcons
       .configuration
       .libraries
-      .dig("custom")
-      &.with_indifferent_access
-      &.dig(*variant ? [@library, variant] : [@library]) || {}
+      &.dig("custom")
+      &.dig(@library.to_sym)&.with_defaults(
+        {
+          path: "app/assets/svg/icons/#{@library}"
+        }
+      ) || {}
   end
+
+  def custom_library? = custom_library.present?
 end

@@ -5,6 +5,8 @@ module RailsIcons
     class Lucide
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
+          options.default_variant = :outline
+
           setup_outline_config(options)
         end
       end

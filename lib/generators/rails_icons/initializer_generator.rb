@@ -18,7 +18,7 @@ module RailsIcons
 
       default_configuration = <<~RB.indent(2)
         config.default_library = "#{libraries.first}"
-        # config.default_variant = "outline"
+        # config.default_variant = "" # Set a default variant if multiple exist
       RB
 
       insert_into_file INITIALIZER, default_configuration, after: "RailsIcons.configure do |config|\n"
@@ -47,9 +47,9 @@ module RailsIcons
     def feather_config
       <<~RB.indent(2)
         # Override Feather defaults
-        # config.libraries.feather.outline.default.css = "size-6"
-        # config.libraries.feather.outline.default.stroke_width = "2"
-        # config.libraries.feather.outline.default.data = {}
+        # config.libraries.feather.default.css = "size-6"
+        # config.libraries.feather.default.stroke_width = "2"
+        # config.libraries.feather.default.data = {}
       RB
     end
 
@@ -98,11 +98,9 @@ module RailsIcons
           {
             custom: {
               LIBRARY_NAME: {
-                solid: {
-                  path: "app/assets/svg/icons/LIBRARY_NAME/#{RailsIcons.configuration.default_variant}/", # optional: the default lookup path is: `app/assets/svg/icons/LIBRARY_NAME/#{RailsIcons.configuration.default_variant}/`
-                  default: {
-                    css: "size-6"
-                  }
+                path: "app/assets/svg/icons/LIBRARY_NAME/", # optional: the default lookup path is: `app/assets/svg/icons/LIBRARY_NAME/`
+                default: {
+                  css: "size-6"
                 }
               }
             }

@@ -3,8 +3,8 @@
 module RailsIcons
   class Icon
     class Attributes
-      def initialize(default_attributes: {}, args: {})
-        @merged_attributes = default_attributes.merge(args)
+      def initialize(default_attributes: {}, arguments: {})
+        @merged_attributes = default_attributes.merge(arguments)
       end
 
       def attach(to:)

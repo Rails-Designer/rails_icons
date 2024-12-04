@@ -5,6 +5,8 @@ module RailsIcons
     class Heroicons
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
+          options.default_variant = :outline
+
           setup_outline_config(options)
           setup_solid_config(options)
           setup_mini_config(options)

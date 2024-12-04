@@ -2,6 +2,8 @@ require "test_helper"
 require "rails_icons/icon"
 
 class AnimatedIconTest < ActiveSupport::TestCase
+  include IconHelper
+
   test "faded-spinner icon" do
     assert_nothing_raised do
       icon("faded-spinner", library: :animated)
@@ -24,11 +26,5 @@ class AnimatedIconTest < ActiveSupport::TestCase
     assert_nothing_raised do
       icon("bouncing-dots", library: :animated)
     end
-  end
-
-  private
-
-  def icon(name, library: "animated", variant: "base", **args)
-    RailsIcons::Icon.new(name: name, library:, variant:, args:).svg
   end
 end

@@ -18,7 +18,7 @@ module RailsIcons
       rescue => error
         say "[Rails Icons] Failed to sync icons: #{error.message}", :red
 
-        clean_up
+        post_error_clean_up
 
         raise
       end
@@ -59,7 +59,7 @@ module RailsIcons
         say "[Rails Icons] Non-SVG files removed successfully"
       end
 
-      def clean_up
+      def post_error_clean_up
         if yes?("Do you want to remove the temp files? ('#{@temp_directory}')")
           say "[Rails Icons] Cleaning up…"
 

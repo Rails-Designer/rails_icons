@@ -5,18 +5,15 @@ module RailsIcons
     class Feather
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
-          setup_outline_config(options)
+          options.default_variant = nil
+
+          options.default = default_options
         end
       end
 
       private
 
-      def setup_outline_config(options)
-        options.outline = ActiveSupport::OrderedOptions.new
-        options.outline.default = default_outline_options
-      end
-
-      def default_outline_options
+      def default_options
         ActiveSupport::OrderedOptions.new.tap do |options|
           options.stroke_width = "2"
           options.css = "size-6"

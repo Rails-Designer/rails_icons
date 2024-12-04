@@ -8,7 +8,7 @@ module RailsIcons
           name: "feather",
           url: "https://github.com/feathericons/feather.git",
           variants: {
-            outline: "icons"
+            ".": "icons" # Feather has no variants, store in the top directory
           }
         },
 
