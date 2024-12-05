@@ -42,7 +42,7 @@ rails generate rails_icons:install --libraries=heroicons
 
 Or multiple at once:
 ```bash
-rails generate rails_icons:install --libraries=heroicons,lucide
+rails generate rails_icons:install --libraries=heroicons lucide
 ```
 
 
@@ -118,7 +118,7 @@ rails generate rails_icons:sync --libraries=heroicons
 
 Or multiple at once:
 ```bash
-rails generate rails_icons:sync --libraries=heroicons,lucide
+rails generate rails_icons:sync --libraries=heroicons lucide
 ```
 
 

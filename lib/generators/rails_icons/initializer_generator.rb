@@ -18,12 +18,14 @@ module RailsIcons
       return unless File.exist?(INITIALIZER)
       return if default_configuration_exists?
 
-      default_configuration = <<~RB.indent(2)
-        config.default_library = "#{libraries.first}"
-        # config.default_variant = "" # Set a default variant if multiple exist
-      RB
+      if options[:libraries].present?
+        default_configuration = <<~RB.indent(2)
+          config.default_library = "#{options[:libraries].first}"
+          # config.default_variant = "" # Set a default variant if multiple exist
+        RB
 
-      insert_into_file INITIALIZER, default_configuration, after: "RailsIcons.configure do |config|\n"
+        insert_into_file INITIALIZER, default_configuration, after: "RailsIcons.configure do |config|\n"
+      end
     end
 
     def insert_libraries_configuration
@@ -71,7 +73,7 @@ module RailsIcons
         tabler: tabler_config
       }
 
-      libraries.map { configs[_1.to_sym] }.join("\n")
+      options[:libraries].map { configs[_1.to_sym] }.join("\n")
     end
 
     def feather_config
@@ -131,12 +133,6 @@ module RailsIcons
           }
         }
       RB
-    end
-
-    def libraries
-      Array(options[:libraries])
-        .flat_map { _1.split(",") }
-        .map(&:to_sym) & RailsIcons::Libraries.all.keys
     end
 
     def default_configuration_exists?

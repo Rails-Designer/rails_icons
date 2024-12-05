@@ -14,7 +14,7 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     run_generator
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      assert_match "# Override Heroicon defaults", file
+      refute_match "Heroicons", file
       refute_match "Tabler", file
     end
   end

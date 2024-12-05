@@ -12,11 +12,11 @@ module RailsIcons
     source_root File.expand_path("templates", __dir__)
 
     def sync_icons
-      raise "[Rails Icons] Not a valid library" if libraries.empty?
+      raise "[Rails Icons] Not a valid library" if options[:libraries].empty?
 
       clean_temp_directory
 
-      libraries.each { |library| sync(library) }
+      options[:libraries].each { |library| sync(library) }
 
       clean_temp_directory
     end
@@ -25,12 +25,6 @@ module RailsIcons
 
     def clean_temp_directory
       FileUtils.rm_rf(temp_directory) if Dir.exist?(temp_directory)
-    end
-
-    def libraries
-      Array(options[:libraries])
-        .flat_map { |library| library.split(",") }
-        .map(&:to_sym) & RailsIcons::Libraries.all.keys
     end
 
     def sync(name)

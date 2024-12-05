@@ -9,22 +9,17 @@ module RailsIcons
     class_option :skip_sync, type: :boolean, default: false
 
     def initializer_generator
-      generator("rails_icons:initializer")
+      generate("rails_icons:initializer", *attributes)
     end
 
     def sync_generator
-      return if options[:skip_sync]
+      return if options[:skip_sync] || options[:libraries].blank?
 
-      generator("rails_icons:sync")
+      generate("rails_icons:sync", *attributes)
     end
 
     private
 
-    def generator(name)
-      params = [name]
-      params += ["--libraries", Array(options[:libraries]).compact.join(",")] if options[:libraries].present?
-
-      generate(*params)
-    end
+    def attributes = ["--libraries=#{options[:libraries].join(" ")}", "--destination=#{options[:destination]}"].join(" ")
   end
 end
