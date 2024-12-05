@@ -7,6 +7,14 @@ require_relative "configuration/lucide"
 require_relative "configuration/tabler"
 
 module RailsIcons
+  def self.configuration
+    @configuration ||= Configuration.new
+  end
+
+  def self.configure
+    yield(configuration)
+  end
+
   class Configuration
     def initialize
       @config = ActiveSupport::OrderedOptions.new
