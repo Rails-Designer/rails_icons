@@ -46,25 +46,6 @@ rails generate rails_icons:install --libraries=heroicons,lucide
 ```
 
 
-## Sync icons
-
-If a library gets updated, sync the icons to your app by running:
-
-```bash
-rails generate rails_icons:sync --libraries=LIBRARY_NAME
-```
-
-**Example**:
-```bash
-rails generate rails_icons:sync --libraries=heroicons
-```
-
-Or multiple at once:
-```bash
-rails generate rails_icons:sync --libraries=heroicons,lucide
-```
-
-
 ## Usage
 
 ```ruby
@@ -112,14 +93,32 @@ Use like this: `icon "faded-spinner", library: "animated"`. The same attributes 
 
 Need to use an icon from another library?
 
-1. add the (SVG) icon to **app/assets/svg/icons/LIBRARY_NAME/DEFAULT_VARIANT**;
-2. run `rails generate rails_icons:initializer --library=custom`;
-3. update the initializer with the library name and, optionally, default variant.
+1. run `rails generate rails_icons:initializer --custom=simple_icons`;
+2. add the (SVG) icons to the created directory **app/assets/svg/icons/simple_icons**;
 
 Every custom icon can now be used with the same interface as first-party icon libraries.
 
 ```ruby
 icon "apple", library: "simple_icons", class: "text-black"
+```
+
+
+## Sync icons
+
+If a library gets updated, sync the icons to your app by running:
+
+```bash
+rails generate rails_icons:sync --libraries=LIBRARY_NAME
+```
+
+**Example**:
+```bash
+rails generate rails_icons:sync --libraries=heroicons
+```
+
+Or multiple at once:
+```bash
+rails generate rails_icons:sync --libraries=heroicons,lucide
 ```
 
 
