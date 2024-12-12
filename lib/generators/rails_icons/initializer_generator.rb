@@ -61,15 +61,14 @@ module RailsIcons
       insert_into_file INITIALIZER, "\n#{custom_configuration}", after: "custom: {"
     end
 
-    def create_custom_directory
-      FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
-    end
+    def create_custom_directory = FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
 
     def library_configuration
       configs = {
         feather: feather_config,
         heroicons: heroicons_config,
         lucide: lucide_config,
+        phosphor: phosphor_config,
         tabler: tabler_config
       }
 
@@ -109,6 +108,14 @@ module RailsIcons
         # config.libraries.lucide.outline.default.css = "size-6"
         # config.libraries.lucide.outline.default.stroke_width = "1.5"
         # config.libraries.lucide.outline.default.data = {}
+      RB
+    end
+
+    def phosphor_config
+      <<~RB.indent(2)
+        # Override Phosphor defaults
+        # config.libraries.phosphor.bold.default.css = "size-6"
+        # config.libraries.phosphor.bold.default.data = {}
       RB
     end
 

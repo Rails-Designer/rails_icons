@@ -31,6 +31,14 @@ module RailsIcons
           }
         },
 
+        phosphor: {
+          name: "phosphor",
+          url: "https://github.com/phosphor-icons/core.git",
+          variants: {
+            bold: "raw/bold"
+          }
+        },
+
         tabler: {
           name: "tabler",
           url: "https://github.com/tabler/tabler-icons.git",

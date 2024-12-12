@@ -4,6 +4,7 @@ require_relative "configuration/animated"
 require_relative "configuration/feather"
 require_relative "configuration/heroicons"
 require_relative "configuration/lucide"
+require_relative "configuration/phosphor"
 require_relative "configuration/tabler"
 
 module RailsIcons
@@ -48,6 +49,7 @@ module RailsIcons
       @config.libraries.feather = Configuration::Feather.new.config
       @config.libraries.heroicons = Configuration::Heroicons.new.config
       @config.libraries.lucide = Configuration::Lucide.new.config
+      @config.libraries.phosphor = Configuration::Phosphor.new.config
       @config.libraries.tabler = Configuration::Tabler.new.config
     end
   end
