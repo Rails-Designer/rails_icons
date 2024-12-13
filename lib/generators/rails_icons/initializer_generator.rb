@@ -116,6 +116,21 @@ module RailsIcons
         # Override Phosphor defaults
         # config.libraries.phosphor.bold.default.css = "size-6"
         # config.libraries.phosphor.bold.default.data = {}
+
+        # config.libraries.phosphor.duotone.default.css = "size-6"
+        # config.libraries.phosphor.duotone.default.data = {}
+
+        # config.libraries.phosphor.fill.default.css = "size-6"
+        # config.libraries.phosphor.fill.default.data = {}
+
+        # config.libraries.phosphor.light.default.css = "size-6"
+        # config.libraries.phosphor.light.default.data = {}
+
+        # config.libraries.phosphor.regular.default.css = "size-6"
+        # config.libraries.phosphor.regular.default.data = {}
+
+        # config.libraries.phosphor.thin.default.css = "size-6"
+        # config.libraries.phosphor.thin.default.data = {}
       RB
     end
 

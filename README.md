@@ -69,6 +69,7 @@ icon "check", stroke_width: 2
 - [Feather](https://github.com/feathericons/feather)
 - [Heroicons](https://github.com/tailwindlabs/heroicons)
 - [Lucide](https://github.com/lucide-icons/lucide)
+- [Phosphor](https://github.com/phosphor-icons/core)
 - [Tabler](https://github.com/tabler/tabler-icons)
 
 

@@ -36,37 +36,35 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
-  test "without variant, using default configuration, it returns a SVG" do
+  test "default library (heroicons)" do
     assert_nothing_raised do
       icon("academic-cap")
     end
   end
 
-  test "using feather library, it returns a SVG" do
+  test "feather" do
     assert_nothing_raised do
       icon("activity", library: "feather")
     end
   end
 
-  test "using lucide library, it returns a SVG" do
+  test "lucide" do
     assert_nothing_raised do
       icon("graduation-cap", library: "lucide")
     end
   end
 
-  test "using lucide library, without passing variant, it returns a SVG" do
+  test "phosphor" do
     assert_nothing_raised do
-      icon("graduation-cap", library: "lucide")
+      icon("acorn", library: "phosphor")
+    end
+
+    assert_nothing_raised do
+      icon("acorn", library: "phosphor", variant: :duotone)
     end
   end
 
-  test "using tabler library, it returns a SVG" do
-    assert_nothing_raised do
-      icon("thumbs-up", library: "tabler")
-    end
-  end
-
-  test "using tabler library, without passing variant, it returns a SVG" do
+  test "tabler" do
     assert_nothing_raised do
       icon("thumbs-up", library: "tabler")
     end

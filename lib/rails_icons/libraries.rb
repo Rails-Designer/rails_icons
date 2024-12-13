@@ -35,7 +35,12 @@ module RailsIcons
           name: "phosphor",
           url: "https://github.com/phosphor-icons/core.git",
           variants: {
-            bold: "raw/bold"
+            bold: "raw/bold",
+            duotone: "raw/duotone",
+            fill: "raw/fill",
+            light: "raw/light",
+            regular: "raw/regular",
+            thin: "raw/thin"
           }
         },
 

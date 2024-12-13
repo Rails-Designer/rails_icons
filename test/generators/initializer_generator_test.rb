@@ -37,6 +37,15 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     end
   end
 
+  test "generator creates the initializer with Phosphor library" do
+    run_generator %w[--libraries=phosphor]
+
+    assert_file "config/initializers/rails_icons.rb" do |file|
+      assert_match "# Override Phosphor defaults", file
+      refute_match "Tabler", file
+    end
+  end
+
   test "generator creates the initializer with tabler library" do
     run_generator %w[--libraries=tabler]
 
