@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require "fileutils"
-require_relative "sync/engine"
+require "rails_icons/sync/engine"
 
 module RailsIcons
   class SyncGenerator < Rails::Generators::Base
@@ -14,46 +13,7 @@ module RailsIcons
     def sync_icons
       raise "[Rails Icons] Not a valid library" if options[:libraries].empty?
 
-      clean_temp_directory
-
-      options[:libraries].each { |library| sync(library) }
-
-      clean_temp_directory
-    end
-
-    private
-
-    def clean_temp_directory
-      FileUtils.rm_rf(temp_directory) if Dir.exist?(temp_directory)
-    end
-
-    def sync(name)
-      library = RailsIcons::Libraries.all.fetch(name.to_sym)
-      library_path = File.join(temp_directory, library[:name])
-
-      Sync::Engine.new(temp_directory, library).sync
-
-      raise_library_not_found(name) unless Dir.exist?(library_path)
-      copy_library(library[:name], library_path)
-    end
-
-    def temp_directory
-      Rails.root.join("tmp/icons")
-    end
-
-    def copy_library(library, source)
-      destination = File.join(options[:destination], library)
-
-      FileUtils.mkdir_p(destination)
-
-      FileUtils.cp_r(Dir.glob("#{source}/*"), destination)
-
-      say "[Rails Icons] Synced '#{library}' library successfully #{%w[😃 🎉 ✨].sample}", :green
-    end
-
-    def raise_library_not_found(library)
-      say "[Rails Icons] Could not find '#{library}' library 🤷", :red
-      exit 1
+      options[:libraries].each { Sync::Engine.new(_1).sync }
     end
   end
 end
