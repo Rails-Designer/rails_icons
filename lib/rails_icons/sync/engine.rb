@@ -21,7 +21,7 @@ module RailsIcons
 
         move_library
 
-        clean_temp_directory
+        purge_temp_directory
       rescue => error
         say "[Rails Icons] Failed to sync icons: #{error.message}", :red
 
@@ -44,7 +44,7 @@ module RailsIcons
 
       def remove_non_svg_files
         Pathname.glob("#{@temp_directory}/**/*")
-          .select { |p| p.file? && p.extname != ".svg" }
+          .select { _1.file? && _1.extname != ".svg" }
           .each(&:delete)
 
         say "[Rails Icons] Non-SVG files removed successfully"
@@ -59,9 +59,7 @@ module RailsIcons
         say "[Rails Icons] Synced '#{@library[:name]}' library successfully #{%w[😃 🎉 ✨].sample}", :green
       end
 
-      def clean_temp_directory
-        FileUtils.rm_rf(TEMP_DIRECTORY) if Dir.exist?(TEMP_DIRECTORY)
-      end
+      def purge_temp_directory = FileUtils.rm_rf(TEMP_DIRECTORY)
 
       def post_error_clean_up
         if yes?("Do you want to remove the temp files? ('#{@temp_directory}') [y/n]")
