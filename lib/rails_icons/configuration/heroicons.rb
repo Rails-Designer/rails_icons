@@ -2,7 +2,9 @@
 
 module RailsIcons
   class Configuration
-    class Heroicons
+    module Heroicons
+      extend self
+
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
           options.default_variant = :outline
@@ -12,6 +14,24 @@ module RailsIcons
           setup_mini_config(options)
           setup_micro_config(options)
         end
+      end
+
+      def initializer_config
+        <<~RB.indent(2)
+          # Override Heroicon defaults
+          # config.libraries.heroicons.outline.default.css = "size-6"
+          # config.libraries.heroicons.outline.default.stroke_width = "1.5"
+          # config.libraries.heroicons.outline.default.data = {}
+
+          # config.libraries.heroicons.solid.default.css = "size-6"
+          # config.libraries.heroicons.solid.default.data = {}
+
+          # config.libraries.heroicons.mini.default.css = "size-5"
+          # config.libraries.heroicons.mini.default.data = {}
+
+          # config.libraries.heroicons.micro.default.css = "size-4"
+          # config.libraries.heroicons.micro.default.data = {}
+        RB
       end
 
       private

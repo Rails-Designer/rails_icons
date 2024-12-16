@@ -2,13 +2,24 @@
 
 module RailsIcons
   class Configuration
-    class Lucide
+    module Lucide
+      extend self
+
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
           options.default_variant = :outline
 
           setup_outline_config(options)
         end
+      end
+
+      def initializer_config
+        <<~RB.indent(2)
+          # Override Lucide defaults
+          # config.libraries.lucide.outline.default.css = "size-6"
+          # config.libraries.lucide.outline.default.stroke_width = "1.5"
+          # config.libraries.lucide.outline.default.data = {}
+        RB
       end
 
       private

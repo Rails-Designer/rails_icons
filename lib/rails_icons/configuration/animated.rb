@@ -2,7 +2,9 @@
 
 module RailsIcons
   class Configuration
-    class Animated
+    module Animated
+      extend self
+
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
           options.default = default_options

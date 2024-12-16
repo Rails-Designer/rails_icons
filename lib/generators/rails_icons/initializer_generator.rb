@@ -65,85 +65,14 @@ module RailsIcons
 
     def library_configuration
       configs = {
-        feather: feather_config,
-        heroicons: heroicons_config,
-        lucide: lucide_config,
-        phosphor: phosphor_config,
-        tabler: tabler_config
+        feather: RailsIcons::Configuration::Feather.initializer_config,
+        heroicons: RailsIcons::Configuration::Heroicons.initializer_config,
+        lucide: RailsIcons::Configuration::Lucide.initializer_config,
+        phosphor: RailsIcons::Configuration::Phosphor.initializer_config,
+        tabler: RailsIcons::Configuration::Tabler.initializer_config
       }
 
       options[:libraries].map { configs[_1.to_sym] }.join("\n")
-    end
-
-    def feather_config
-      <<~RB.indent(2)
-        # Override Feather defaults
-        # config.libraries.feather.default.css = "size-6"
-        # config.libraries.feather.default.stroke_width = "2"
-        # config.libraries.feather.default.data = {}
-      RB
-    end
-
-    def heroicons_config
-      <<~RB.indent(2)
-        # Override Heroicon defaults
-        # config.libraries.heroicons.outline.default.css = "size-6"
-        # config.libraries.heroicons.outline.default.stroke_width = "1.5"
-        # config.libraries.heroicons.outline.default.data = {}
-
-        # config.libraries.heroicons.solid.default.css = "size-6"
-        # config.libraries.heroicons.solid.default.data = {}
-
-        # config.libraries.heroicons.mini.default.css = "size-5"
-        # config.libraries.heroicons.mini.default.data = {}
-
-        # config.libraries.heroicons.micro.default.css = "size-4"
-        # config.libraries.heroicons.micro.default.data = {}
-      RB
-    end
-
-    def lucide_config
-      <<~RB.indent(2)
-        # Override Lucide defaults
-        # config.libraries.lucide.outline.default.css = "size-6"
-        # config.libraries.lucide.outline.default.stroke_width = "1.5"
-        # config.libraries.lucide.outline.default.data = {}
-      RB
-    end
-
-    def phosphor_config
-      <<~RB.indent(2)
-        # Override Phosphor defaults
-        # config.libraries.phosphor.bold.default.css = "size-6"
-        # config.libraries.phosphor.bold.default.data = {}
-
-        # config.libraries.phosphor.duotone.default.css = "size-6"
-        # config.libraries.phosphor.duotone.default.data = {}
-
-        # config.libraries.phosphor.fill.default.css = "size-6"
-        # config.libraries.phosphor.fill.default.data = {}
-
-        # config.libraries.phosphor.light.default.css = "size-6"
-        # config.libraries.phosphor.light.default.data = {}
-
-        # config.libraries.phosphor.regular.default.css = "size-6"
-        # config.libraries.phosphor.regular.default.data = {}
-
-        # config.libraries.phosphor.thin.default.css = "size-6"
-        # config.libraries.phosphor.thin.default.data = {}
-      RB
-    end
-
-    def tabler_config
-      <<~RB.indent(2)
-        # Override Tabler defaults
-        # config.libraries.tabler.solid.default.css = "size-6"
-        # config.libraries.tabler.solid.default.data = {}
-
-        # config.libraries.tabler.outline.default.css = "size-6"
-        # config.libraries.tabler.outline.default.stroke_width = "2"
-        # config.libraries.tabler.outline.default.data = {}
-      RB
     end
 
     def custom_configuration

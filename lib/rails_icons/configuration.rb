@@ -45,12 +45,12 @@ module RailsIcons
     def set_libraries_config
       @config.libraries = ActiveSupport::OrderedOptions.new
 
-      @config.libraries.animated = Configuration::Animated.new.config
-      @config.libraries.feather = Configuration::Feather.new.config
-      @config.libraries.heroicons = Configuration::Heroicons.new.config
-      @config.libraries.lucide = Configuration::Lucide.new.config
-      @config.libraries.phosphor = Configuration::Phosphor.new.config
-      @config.libraries.tabler = Configuration::Tabler.new.config
+      @config.libraries.animated = Configuration::Animated.config
+      @config.libraries.feather = Configuration::Feather.config
+      @config.libraries.heroicons = Configuration::Heroicons.config
+      @config.libraries.lucide = Configuration::Lucide.config
+      @config.libraries.phosphor = Configuration::Phosphor.config
+      @config.libraries.tabler = Configuration::Tabler.config
     end
   end
 end

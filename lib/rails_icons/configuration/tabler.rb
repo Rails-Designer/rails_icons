@@ -2,7 +2,9 @@
 
 module RailsIcons
   class Configuration
-    class Tabler
+    module Tabler
+      extend self
+
       def config
         ActiveSupport::OrderedOptions.new.tap do |options|
           options.default_variant = :outline
@@ -10,6 +12,18 @@ module RailsIcons
           setup_outline_config(options)
           setup_filled_config(options)
         end
+      end
+
+      def initializer_config
+        <<~RB.indent(2)
+          # Override Tabler defaults
+          # config.libraries.tabler.solid.default.css = "size-6"
+          # config.libraries.tabler.solid.default.data = {}
+
+          # config.libraries.tabler.outline.default.css = "size-6"
+          # config.libraries.tabler.outline.default.stroke_width = "2"
+          # config.libraries.tabler.outline.default.data = {}
+        RB
       end
 
       private
