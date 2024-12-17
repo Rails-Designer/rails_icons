@@ -9,9 +9,9 @@ module RailsIcons
       def initialize(name)
         super
 
-        raise "[Rails Icons] Not a valid library" if RailsIcons::Libraries.all.keys.exclude?(name.to_sym)
+        raise "[Rails Icons] Not a valid library" if RailsIcons.libraries.keys.exclude?(name.to_sym)
 
-        @temp_directory, @name, @library = File.join(TEMP_DIRECTORY, name), name, RailsIcons::Libraries.all.fetch(name.to_sym).source
+        @temp_directory, @name, @library = File.join(TEMP_DIRECTORY, name), name, RailsIcons.libraries.fetch(name.to_sym).source
       end
 
       def sync

@@ -4,7 +4,7 @@ module RailsIcons
   class InstallGenerator < Rails::Generators::Base
     source_root File.expand_path("templates", __dir__)
 
-    class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons::Libraries.all.keys.join("/")})"
+    class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
     class_option :destination, type: :string, default: "app/assets/svg/icons/", desc: "Specify destination folder for icons"
     class_option :skip_sync, type: :boolean, default: false
 
