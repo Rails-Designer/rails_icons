@@ -40,10 +40,7 @@ class RailsIcons::Icon
     return Rails.root.join(custom_library.dig(:path), "#{@name}.svg") if custom_library?
 
     parts = [
-      "app",
-      "assets",
-      "svg",
-      "icons",
+      RailsIcons.configuration.destination_path,
       @library,
       @variant,
       "#{@name}.svg"
@@ -79,7 +76,7 @@ class RailsIcons::Icon
       &.dig("custom")
       &.dig(@library.to_sym)&.with_defaults(
         {
-          path: "app/assets/svg/icons/#{@library}"
+          path: [RailsIcons.configuration.destination_path, @library].join("/")
         }
       ) || {}
   end

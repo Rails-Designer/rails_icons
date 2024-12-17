@@ -40,6 +40,7 @@ module RailsIcons
 
     def set_default_config
       @config.default_library = nil
+      @config.destination_path = "app/assets/svg/icons"
     end
 
     def set_libraries_config
