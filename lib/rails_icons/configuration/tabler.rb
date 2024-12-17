@@ -26,6 +26,16 @@ module RailsIcons
         RB
       end
 
+      def source
+        {
+          url: "https://github.com/tabler/tabler-icons.git",
+          variants: {
+            filled: "icons/filled",
+            outline: "icons/outline"
+          }
+        }
+      end
+
       private
 
       def setup_outline_config(options)

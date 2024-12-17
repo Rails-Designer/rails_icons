@@ -22,6 +22,15 @@ module RailsIcons
         RB
       end
 
+      def source
+        {
+          url: "https://github.com/lucide-icons/lucide.git",
+          variants: {
+            outline: "icons"
+          }
+        }
+      end
+
       private
 
       def setup_outline_config(options)

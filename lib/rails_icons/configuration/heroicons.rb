@@ -34,6 +34,18 @@ module RailsIcons
         RB
       end
 
+      def source
+        {
+          url: "https://github.com/tailwindlabs/heroicons.git",
+          variants: {
+            outline: "optimized/24/outline",
+            solid: "optimized/24/solid",
+            mini: "optimized/20/solid",
+            micro: "optimized/16/solid"
+          }
+        }
+      end
+
       private
 
       def setup_outline_config(options)

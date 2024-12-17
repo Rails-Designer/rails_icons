@@ -22,6 +22,15 @@ module RailsIcons
         RB
       end
 
+      def source
+        {
+          url: "https://github.com/feathericons/feather.git",
+          variants: {
+            ".": "icons" # Feather has no variants, store in the top directory
+          }
+        }
+      end
+
       private
 
       def default_options
