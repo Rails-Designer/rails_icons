@@ -4,8 +4,10 @@ module RailsIcons
   class InitializerGenerator < Rails::Generators::Base
     source_root File.expand_path("templates", __dir__)
 
+    desc "Create the Rails Icons initializer."
+
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
-    class_option :destination, type: :string, default: "app/assets/svg/icons/", desc: "Specify destination folder for icons"
+    class_option :destination, type: :string, default: RailsIcons.configuration.destination_path, desc: "Specify destination folder for icons"
     class_option :custom, type: :string, desc: "Name of the custom library"
 
     def copy_initializer
@@ -26,6 +28,16 @@ module RailsIcons
 
         insert_into_file INITIALIZER, default_configuration, after: "RailsIcons.configure do |config|\n"
       end
+    end
+
+    def insert_custom_destination_path
+      return if options[:destination] && options[:destination] == RailsIcons.configuration.destination_path
+
+      insert_into_file INITIALIZER, <<~RB.indent(2), after: "RailsIcons.configure do |config|\n"
+        # Default destination path
+        config.destination_path = "#{options[:destination]}"
+
+      RB
     end
 
     def insert_libraries_configuration
