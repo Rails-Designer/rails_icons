@@ -93,7 +93,6 @@ Need to use an icon from another library?
 2. add the (SVG) icons to the created directory **app/assets/svg/icons/simple_icons**;
 
 Every custom icon can now be used with the same interface as first-party icon libraries.
-
 ```ruby
 icon "apple", library: "simple_icons", class: "text-black"
 ```
@@ -101,13 +100,12 @@ icon "apple", library: "simple_icons", class: "text-black"
 
 ## Sync icons
 
-If a library gets updated, sync the icons to your app by running
-
+To sync all installed libraries, run
 ```bash
-rails generate rails_icons:sync --libraries=LIBRARY_NAME
+rails generate rails_icons:sync
 ```
 
-**Example**
+To sync only a specific library, run
 ```bash
 rails generate rails_icons:sync --libraries=heroicons
 

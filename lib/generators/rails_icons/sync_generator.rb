@@ -11,9 +11,21 @@ module RailsIcons
     source_root File.expand_path("templates", __dir__)
 
     def sync_icons
-      raise "[Rails Icons] Not a valid library" if options[:libraries].empty?
+      raise "[Rails Icons] Not a valid library" if libraries.empty?
 
-      options[:libraries].each { Sync::Engine.new(_1).sync }
+      libraries.each { Sync::Engine.new(_1).sync }
+    end
+
+    private
+
+    def libraries
+      options[:libraries].presence || synced_libraries
+    end
+
+    def synced_libraries
+      RailsIcons.libraries.keys.map(&:to_s).select do |library|
+        Dir.exist?(File.join(RailsIcons.configuration.destination_path, library.to_s))
+      end
     end
   end
 end
