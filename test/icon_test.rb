@@ -48,6 +48,12 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
+  test "boxicons" do
+    assert_nothing_raised do
+      icon("abacus", library: "boxicons")
+    end
+  end
+
   test "lucide" do
     assert_nothing_raised do
       icon("graduation-cap", library: "lucide")
