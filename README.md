@@ -16,7 +16,11 @@ The icons are sourced directly from their respective GitHub repositories, ensuri
 **Sponsored By [Rails Designer](https://railsdesigner.com/)**
 
 <a href="https://railsdesigner.com/" target="_blank">
-  <img src="https://raw.githubusercontent.com/Rails-Designer/rails_icons/main/docs/rails_designer_icon.jpg" alt="Rails Designer logo"  width="240" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/logo-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/logo-light.svg">
+    <img alt="Rails Designer" src="https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/logo-light.svg" width="240" style="max-width: 100%;">
+  </picture>
 </a>
 
 
@@ -66,11 +70,11 @@ icon "check", stroke_width: 2
 
 ## First-party libraries
 
-- [Feather](https://github.com/feathericons/feather)
-- [Heroicons](https://github.com/tailwindlabs/heroicons)
-- [Lucide](https://github.com/lucide-icons/lucide)
-- [Phosphor](https://github.com/phosphor-icons/core)
-- [Tabler](https://github.com/tabler/tabler-icons)
+- [Feather](https://github.com/feathericons/feather) (280+ icons)
+- [Heroicons](https://github.com/tailwindlabs/heroicons) (300+ icons)
+- [Lucide](https://github.com/lucide-icons/lucide) (1500+ icons)
+- [Phosphor](https://github.com/phosphor-icons/core) (9000+ icons)
+- [Tabler](https://github.com/tabler/tabler-icons) (5700+ icons)
 
 
 ## Animated icons
