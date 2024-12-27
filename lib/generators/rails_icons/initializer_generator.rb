@@ -23,7 +23,7 @@ module RailsIcons
       if options[:libraries].present?
         default_configuration = <<~RB.indent(2)
           config.default_library = "#{options[:libraries].first}"
-          # config.default_variant = "" # Set a default variant if multiple exist
+          # config.default_variant = "" # Set a default variant for all libraries
         RB
 
         insert_into_file INITIALIZER, default_configuration, after: "RailsIcons.configure do |config|\n"

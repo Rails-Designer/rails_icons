@@ -55,6 +55,14 @@ module RailsIcons
         }
       end
 
+      def transformations
+        {
+          filenames: {
+            delete_suffix: ["-bold", "-duotone", "-fill", "-light", "-thin"]
+          }
+        }
+      end
+
       private
 
       def setup_bold_config(options)

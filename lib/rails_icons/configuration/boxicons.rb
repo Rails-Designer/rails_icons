@@ -40,6 +40,14 @@ module RailsIcons
         }
       end
 
+      def transformations
+        {
+          filenames: {
+            delete_prefix: ["bxl-", "bx-", "bxs-"]
+          }
+        }
+      end
+
       def setup_regular_config(options)
         options.regular = ActiveSupport::OrderedOptions.new
         options.regular.default = default_options

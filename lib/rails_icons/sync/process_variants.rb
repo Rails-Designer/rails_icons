@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 require "fileutils"
+require "rails_icons/sync/transformations"
 
 module RailsIcons
   module Sync
     class ProcessVariants < Rails::Generators::Base
-      def initialize(temp_directory, library)
-        @temp_directory, @library = temp_directory, library
+      def initialize(temp_directory, name, library)
+        @temp_directory, @name, @library = temp_directory, name, library
       end
 
       def process
@@ -21,6 +22,8 @@ module RailsIcons
           raise "[Rails Icons] Failed to find the icons directory: '#{source}'" unless Dir.exist?(source)
 
           move_icons(source, destination)
+
+          apply_transformations_to(destination)
         end
 
         remove_files_and_folders(original_variants)
@@ -33,8 +36,17 @@ module RailsIcons
       def move_icons(source, destination)
         FileUtils.mkdir_p(destination)
 
-        Dir.children(source).each do |item|
+        Dir.each_child(source).each do |item|
           FileUtils.mv(File.join(source, item), destination)
+        end
+      end
+
+      def apply_transformations_to(destination)
+        Dir.each_child(destination) do |filename|
+          File.rename(
+            File.join(destination, filename),
+            File.join(destination, Sync::Transformations.transform(filename, transformations.fetch(:filenames, {})))
+          )
         end
       end
 
@@ -42,6 +54,10 @@ module RailsIcons
         paths.each do |path|
           FileUtils.rm_rf(File.join(@temp_directory, path))
         end
+      end
+
+      def transformations
+        RailsIcons.libraries.dig(@name.to_sym)&.try(:transformations) || {}
       end
     end
   end

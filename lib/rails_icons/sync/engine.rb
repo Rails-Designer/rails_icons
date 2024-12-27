@@ -40,7 +40,7 @@ module RailsIcons
         say "'#{@name}' repository cloned successfully."
       end
 
-      def process_variants = Sync::ProcessVariants.new(@temp_directory, @library).process
+      def process_variants = Sync::ProcessVariants.new(@temp_directory, @name, @library).process
 
       def remove_non_svg_files
         Pathname.glob("#{@temp_directory}/**/*")
