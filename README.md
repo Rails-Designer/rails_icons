@@ -70,6 +70,7 @@ icon "check", stroke_width: 2
 
 ## First-party libraries
 
+- [Boxicons](https://github.com/atisawd/boxicons) (1600+ icons)
 - [Feather](https://github.com/feathericons/feather) (280+ icons)
 - [Heroicons](https://github.com/tailwindlabs/heroicons) (300+ icons)
 - [Lucide](https://github.com/lucide-icons/lucide) (1500+ icons)

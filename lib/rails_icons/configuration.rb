@@ -1,12 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "configuration/animated"
-require_relative "configuration/feather"
-require_relative "configuration/heroicons"
-require_relative "configuration/lucide"
-require_relative "configuration/phosphor"
-require_relative "configuration/tabler"
-
 module RailsIcons
   def self.configuration
     @configuration ||= Configuration.new

@@ -76,15 +76,7 @@ module RailsIcons
     def create_custom_directory = FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
 
     def library_configuration
-      configs = {
-        feather: RailsIcons::Configuration::Feather.initializer_config,
-        heroicons: RailsIcons::Configuration::Heroicons.initializer_config,
-        lucide: RailsIcons::Configuration::Lucide.initializer_config,
-        phosphor: RailsIcons::Configuration::Phosphor.initializer_config,
-        tabler: RailsIcons::Configuration::Tabler.initializer_config
-      }
-
-      options[:libraries].map { configs[_1.to_sym] }.join("\n")
+      options[:libraries].map { RailsIcons.libraries[_1.to_sym].initializer_config }.join("\n")
     end
 
     def custom_configuration
