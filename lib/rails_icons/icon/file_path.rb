@@ -13,7 +13,9 @@ module RailsIcons
 
         icon_path = icons_path_in_app || icons_path_in_engines
 
-        icon_path || app_path
+        raise RailsIcons::NotFound if icon_path.nil?
+
+        icon_path
       end
 
       private
@@ -29,10 +31,10 @@ module RailsIcons
       end
 
       def icons_path_in_engines
-        Rails::Engine.subclasses.each do |engine|
+        Rails::Engine.subclasses.find do |engine|
           path = engine.root.join(*parts)
 
-          return path if File.exist?(path)
+          path if File.exist?(path)
         end
       end
 

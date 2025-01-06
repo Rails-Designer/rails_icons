@@ -1,4 +1,4 @@
-require 'rails_icons/icon/file_path'
+require "rails_icons/icon/file_path"
 require "rails_icons/icon/attributes"
 
 class RailsIcons::Icon
