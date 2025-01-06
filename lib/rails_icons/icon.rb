@@ -1,3 +1,4 @@
+require 'rails_icons/icon/file_path'
 require "rails_icons/icon/attributes"
 
 class RailsIcons::Icon
@@ -35,19 +36,7 @@ class RailsIcons::Icon
     "Icon not found: `#{attributes.join(" / ")}`"
   end
 
-  def file_path
-    return RailsIcons::Engine.root.join("app", "assets", "svg", "rails_icons", "icons", "animated", "#{@name}.svg") if @library.animated?
-    return Rails.root.join(custom_library.dig(:path), "#{@name}.svg") if custom_library?
-
-    parts = [
-      RailsIcons.configuration.destination_path,
-      @library,
-      @variant,
-      "#{@name}.svg"
-    ].compact_blank!
-
-    Rails.root.join(*parts)
-  end
+  def file_path = RailsIcons::Icon::FilePath.new(name: @name, library: @library, variant: @variant).call
 
   def attach_attributes(to:)
     RailsIcons::Icon::Attributes
