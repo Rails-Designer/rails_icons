@@ -31,11 +31,15 @@ module RailsIcons
       end
 
       def icons_path_in_engines
+        path = nil
+
         Rails::Engine.subclasses.find do |engine|
           path = engine.root.join(*parts)
 
           path if File.exist?(path)
         end
+
+        path
       end
 
       def app_path = Rails.root.join(*parts)
