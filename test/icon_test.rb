@@ -52,6 +52,12 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
+  test "radix" do
+    assert_nothing_raised do
+      icon("accessibility", library: "radix")
+    end
+  end
+
   test "boxicons" do
     assert_nothing_raised do
       icon("abacus", library: "boxicons")

@@ -80,6 +80,7 @@ icon "check", stroke_width: 2
 - [Heroicons](https://github.com/tailwindlabs/heroicons) (300+ icons)
 - [Lucide](https://github.com/lucide-icons/lucide) (1500+ icons)
 - [Phosphor](https://github.com/phosphor-icons/core) (9000+ icons)
+- [Radix](https://github.com/radix-ui/icons/) (300+ icons)
 - [Tabler](https://github.com/tabler/tabler-icons) (5700+ icons)
 
 
