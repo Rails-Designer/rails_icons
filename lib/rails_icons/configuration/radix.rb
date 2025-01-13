@@ -42,4 +42,3 @@ module RailsIcons
     end
   end
 end
-
