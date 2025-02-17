@@ -14,8 +14,8 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     run_generator
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      refute_match "Heroicons", file
-      refute_match "Tabler", file
+      refute_match "heroicons", file
+      refute_match "tabler", file
     end
   end
 
@@ -24,7 +24,7 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
 
     assert_file "config/initializers/rails_icons.rb" do |file|
       assert_match "# Override Heroicon defaults", file
-      refute_match "Lucide", file
+      refute_match "lucide", file
     end
   end
 
@@ -32,17 +32,17 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     run_generator %w[--libraries=lucide]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      assert_match "# Override Lucide defaults", file
-      refute_match "Heroicons", file
+      assert_match "# Override lucide defaults", file
+      refute_match "heroicons", file
     end
   end
 
-  test "generator creates the initializer with Phosphor library" do
+  test "generator creates the initializer with phosphor library" do
     run_generator %w[--libraries=phosphor]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      assert_match "# Override Phosphor defaults", file
-      refute_match "Tabler", file
+      assert_match "# Override phosphor defaults", file
+      refute_match "tabler", file
     end
   end
 
@@ -50,8 +50,8 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     run_generator %w[--libraries=tabler]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      assert_match "# Override Tabler defaults", file
-      refute_match "Heroicons", file
+      assert_match "# Override tabler defaults", file
+      refute_match "heroicons", file
     end
   end
 
@@ -60,9 +60,21 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
 
     assert_file "config/initializers/rails_icons.rb" do |file|
       Rails.logger.debug "File content: #{file}"
-      assert_match "# Override Lucide defaults", file
-      assert_match "# Override Tabler defaults", file
-      refute_match "Heroicons", file
+      assert_match "# Override lucide defaults", file
+      assert_match "# Override tabler defaults", file
+      refute_match "heroicons", file
+    end
+  end
+
+  test "generator correctly downcases the library names" do
+    run_generator ["--libraries", "Lucide", "Tabler"]
+
+    assert_file "config/initializers/rails_icons.rb" do |file|
+      Rails.logger.debug "File content: #{file}"
+      assert_match "lucide", file
+      refute_match "Lucide", file
+      assert_match "tabler", file
+      refute_match "Tabler", file
     end
   end
 end

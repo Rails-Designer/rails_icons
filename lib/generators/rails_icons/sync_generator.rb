@@ -19,7 +19,7 @@ module RailsIcons
     private
 
     def libraries
-      options[:libraries].presence || synced_libraries
+      options[:libraries].presence&.downcase || synced_libraries
     end
 
     def synced_libraries

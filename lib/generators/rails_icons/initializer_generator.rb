@@ -22,7 +22,7 @@ module RailsIcons
 
       if options[:libraries].present?
         default_configuration = <<~RB.indent(2)
-          config.default_library = "#{options[:libraries].first}"
+          config.default_library = "#{options[:libraries].first&.downcase}"
           # config.default_variant = "" # Set a default variant for all libraries
         RB
 
@@ -76,7 +76,7 @@ module RailsIcons
     def create_custom_directory = FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
 
     def library_configuration
-      options[:libraries].map { RailsIcons.libraries[_1.to_sym].initializer_config }.join("\n")
+      options[:libraries].map { RailsIcons.libraries[_1.downcase.to_sym].initializer_config }.join("\n")
     end
 
     def custom_configuration

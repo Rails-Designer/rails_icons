@@ -22,6 +22,6 @@ module RailsIcons
 
     private
 
-    def attributes = ["--libraries=#{options[:libraries].join(" ")}", "--destination=#{options[:destination]}"].join(" ")
+    def attributes = ["--libraries=#{options[:libraries].map(&:downcase).join(" ")}", "--destination=#{options[:destination]}"].join(" ")
   end
 end
