@@ -29,8 +29,8 @@ module RailsIcons
           apply_transformations_to(destination)
         end
 
-        remove_files_and_folders(original_variants)
-        remove_previously_downloaded_variants(excluded_variants)
+        remove_files_and_folders_for(original_variants)
+        remove_previously_downloaded(excluded_variants)
 
         say "[Rails Icons] Icon variants processed successfully"
       end
@@ -54,13 +54,13 @@ module RailsIcons
         end
       end
 
-      def remove_files_and_folders(paths)
+      def remove_files_and_folders_for(paths)
         paths.each do |path|
           FileUtils.rm_rf(File.join(@temp_directory, path))
         end
       end
 
-      def remove_previously_downloaded_variants(variants)
+      def remove_previously_downloaded(variants)
         variants.each do |variant|
           FileUtils.rm_rf(File.join(RailsIcons.configuration.destination_path, @name, variant.to_s))
         end
