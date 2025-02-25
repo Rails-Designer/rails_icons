@@ -40,7 +40,7 @@ rails generate rails_icons:install --libraries=LIBRARY_NAME
 ```bash
 rails generate rails_icons:install --libraries=heroicons
 
-Or multiple at once
+# Or multiple at once
 rails generate rails_icons:install --libraries=heroicons lucide
 ```
 
@@ -61,9 +61,9 @@ icon "check", library: "heroicons"
 icon "check", class: "text-green-500"
 
 # Add CSS with class_names
-# article: https://railsdesigner.com/conditional-css-classes-in-rails/
-# docs: https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-token_list
 icon "check", class: ["size-4", "bg-red-500": !verified?, "bg-green-500": verified?]
+# Article: https://railsdesigner.com/conditional-css-classes-in-rails/
+# Documentation: https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-token_list
 
 # Add data attributes
 icon "check", data: { controller: "swap" }
@@ -94,7 +94,7 @@ Rails Icons also includes a few animated icons. Great for loading states and so 
 - `fading-dots`
 - `bouncing-dots`
 
-Use like this: `icon "faded-spinner", library: "animated"`. The same attributes as other libraries are available.
+Use like this: `icon "faded-spinner", library: "animated"`. The same attributes as the others libraries are available.
 
 
 ## Custom icon library
@@ -112,7 +112,7 @@ icon "apple", library: "simple_icons", class: "text-black"
 
 ## Sync icons
 
-To sync all installed libraries, run
+To sync all libraries, run
 ```bash
 rails generate rails_icons:sync
 ```
