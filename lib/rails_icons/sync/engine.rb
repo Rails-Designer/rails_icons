@@ -37,7 +37,7 @@ module RailsIcons
       def clone_repository
         raise "[Rails Icons] Failed to clone repository" unless system("git clone '#{@library[:url]}' '#{@temp_directory}'")
 
-        say "'#{@name}' repository cloned successfully."
+        say "[Rails Icons] '#{@name}' repository cloned successfully."
       end
 
       def process_variants = Sync::ProcessVariants.new(@temp_directory, @name, @library).process

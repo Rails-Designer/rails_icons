@@ -1,20 +1,17 @@
 # frozen_string_literal: true
 
+require "rails_icons/base_generator"
 require "rails_icons/sync/engine"
 
 module RailsIcons
-  class SyncGenerator < Rails::Generators::Base
+  class SyncGenerator < RailsIcons::BaseGenerator
     source_root File.expand_path("templates", __dir__)
 
     desc "Sync the chosen icon libraries from their respective git repos."
 
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
 
-    def sync_icons
-      raise "[Rails Icons] Not a valid library" if libraries.empty?
-
-      libraries.each { Sync::Engine.new(_1).sync }
-    end
+    def sync_icons = libraries.each { Sync::Engine.new(_1).sync }
 
     private
 
