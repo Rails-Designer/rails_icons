@@ -10,7 +10,7 @@ class RailsIcons::Icon
   end
 
   def svg
-    raise RailsIcons::NotFound, error_message unless File.exist?(file_path)
+    raise RailsIcons::IconNotFound, error_message unless File.exist?(file_path)
 
     Nokogiri::HTML::DocumentFragment.parse(File.read(file_path))
       .at_css("svg")
