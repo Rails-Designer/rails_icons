@@ -92,6 +92,12 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
+  test "linear" do
+    assert_nothing_raised do
+      icon("alarm", library: "linear")
+    end
+  end
+
   test "it raises RailsIcons::NotFound error" do
     assert_raises(RailsIcons::NotFound) do
       icon("non-existing-icon")
