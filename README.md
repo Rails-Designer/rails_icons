@@ -83,6 +83,7 @@ icon "check", stroke_width: 2
 - [Phosphor](https://github.com/phosphor-icons/core) (9000+ icons)
 - [Radix](https://github.com/radix-ui/icons/) (300+ icons)
 - [Tabler](https://github.com/tabler/tabler-icons) (5700+ icons)
+- [Weather](https://github.com/erikflowers/weather-icons) (215 icons)
 
 
 ## Animated icons
