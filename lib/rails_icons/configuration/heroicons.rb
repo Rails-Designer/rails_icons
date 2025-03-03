@@ -71,16 +71,16 @@ module RailsIcons
         options.micro.default = default_micro_options
       end
 
-      def default_solid_options
+      def default_outline_options
         ActiveSupport::OrderedOptions.new.tap do |options|
+          options.stroke_width = 1.5
           options.css = "size-6"
           options.data = {}
         end
       end
 
-      def default_outline_options
+      def default_solid_options
         ActiveSupport::OrderedOptions.new.tap do |options|
-          options.stroke_width = 1.5
           options.css = "size-6"
           options.data = {}
         end

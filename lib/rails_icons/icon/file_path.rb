@@ -13,7 +13,7 @@ module RailsIcons
 
         icon_path = icons_path_in_app || icons_path_in_engines
 
-        raise RailsIcons::NotFound if icon_path.nil?
+        raise RailsIcons::IconNotFound if icon_path.nil?
 
         icon_path
       end

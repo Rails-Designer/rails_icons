@@ -62,8 +62,8 @@ icon "check", class: "text-green-500"
 
 # Add CSS with class_names
 icon "check", class: ["size-4", "bg-red-500": !verified?, "bg-green-500": verified?]
-# Article: https://railsdesigner.com/conditional-css-classes-in-rails/
-# Documentation: https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-token_list
+# ↳ Article: https://railsdesigner.com/conditional-css-classes-in-rails/
+# ↳ Documentation: https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-token_list
 
 # Add data attributes
 icon "check", data: { controller: "swap" }

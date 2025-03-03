@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
+require "rails_icons/base_generator"
+
 module RailsIcons
-  class InstallGenerator < Rails::Generators::Base
+  class InstallGenerator < RailsIcons::BaseGenerator
     source_root File.expand_path("templates", __dir__)
 
     desc "Install Rails Icons with the chosen libraries. This creates the configuration initializer and will sync the icons."

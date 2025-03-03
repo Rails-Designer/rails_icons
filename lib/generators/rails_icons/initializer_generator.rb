@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
+require "rails_icons/base_generator"
+
 module RailsIcons
-  class InitializerGenerator < Rails::Generators::Base
+  class InitializerGenerator < RailsIcons::BaseGenerator
     source_root File.expand_path("templates", __dir__)
 
     desc "Create the Rails Icons initializer."

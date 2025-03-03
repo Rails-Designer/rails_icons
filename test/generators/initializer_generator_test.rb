@@ -10,12 +10,21 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
 
   setup :prepare_destination
 
-  test "generator creates the initializer with default library" do
-    run_generator
+  test "generator creates the initializer with Boxicons library" do
+    run_generator %w[--libraries=boxicons]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      refute_match "heroicons", file
-      refute_match "tabler", file
+      assert_match "# Override Boxicons defaults", file
+      refute_match "Heroicons", file
+    end
+  end
+
+  test "generator creates the initializer with Feather library" do
+    run_generator %w[--libraries=feather]
+
+    assert_file "config/initializers/rails_icons.rb" do |file|
+      assert_match "# Override Feather defaults", file
+      refute_match "Tabler", file
     end
   end
 
@@ -28,7 +37,7 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     end
   end
 
-  test "generator creates the initializer with lucide library" do
+  test "generator creates the initializer with Lucide library" do
     run_generator %w[--libraries=lucide]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
@@ -37,7 +46,7 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     end
   end
 
-  test "generator creates the initializer with phosphor library" do
+  test "generator creates the initializer with Phosphor library" do
     run_generator %w[--libraries=phosphor]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
@@ -46,7 +55,7 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     end
   end
 
-  test "generator creates the initializer with tabler library" do
+  test "generator creates the initializer with Tabler library" do
     run_generator %w[--libraries=tabler]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
@@ -63,5 +72,13 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
       assert_match "# Override Tabler defaults", file
       refute_match "heroicons", file
     end
+  end
+
+  test "generator raise RailsIcons::LibraryNotFound when no library is specified" do
+    assert_raises(RailsIcons::LibraryNotFound) do
+      run_generator
+    end
+
+    assert_no_file "config/initializers/rails_icons.rb"
   end
 end
