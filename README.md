@@ -62,8 +62,8 @@ icon "check", class: "text-green-500"
 
 # Add CSS with class_names
 icon "check", class: ["size-4", "bg-red-500": !verified?, "bg-green-500": verified?]
-# Article: https://railsdesigner.com/conditional-css-classes-in-rails/
-# Documentation: https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-token_list
+# ↳ Article: https://railsdesigner.com/conditional-css-classes-in-rails/
+# ↳ Documentation: https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-token_list
 
 # Add data attributes
 icon "check", data: { controller: "swap" }
@@ -77,6 +77,7 @@ icon "check", stroke_width: 2
 
 - [Boxicons](https://github.com/atisawd/boxicons) (1600+ icons)
 - [Feather](https://github.com/feathericons/feather) (280+ icons)
+- [Flags](https://github.com/lipis/flag-icons) (540+ icons)
 - [Heroicons](https://github.com/tailwindlabs/heroicons) (300+ icons)
 - [SidekickIcons](https://github.com/ndri/sidekickicons) (49 icons, complementing Heroicons)
 - [Linear](https://github.com/cjpatoilo/linearicons) (170+ icons)
@@ -84,6 +85,7 @@ icon "check", stroke_width: 2
 - [Phosphor](https://github.com/phosphor-icons/core) (9000+ icons)
 - [Radix](https://github.com/radix-ui/icons/) (300+ icons)
 - [Tabler](https://github.com/tabler/tabler-icons) (5700+ icons)
+- [Weather](https://github.com/erikflowers/weather-icons) (215 icons)
 
 
 ## Animated icons
