@@ -75,14 +75,17 @@ icon "check", stroke_width: 2
 
 ## First-party libraries
 
-- [Boxicons](https://github.com/atisawd/boxicons) (1600+ icons)
-- [Feather](https://github.com/feathericons/feather) (280+ icons)
-- [Heroicons](https://github.com/tailwindlabs/heroicons) (300+ icons)
-- [SidekickIcons](https://github.com/ndri/sidekickicons) (49 icons, complementing Heroicons)
-- [Lucide](https://github.com/lucide-icons/lucide) (1500+ icons)
-- [Phosphor](https://github.com/phosphor-icons/core) (9000+ icons)
-- [Radix](https://github.com/radix-ui/icons/) (300+ icons)
-- [Tabler](https://github.com/tabler/tabler-icons) (5700+ icons)
+- [Boxicons](https://railsdesigner.com/rails-icons/boxicons/) (1600+ icons)
+- [Feather](https://railsdesigner.com/rails-icons/feather/) (280+ icons)
+- [Flags](https://railsdesigner.com/rails-icons/flags/) (540+ icons)
+- [Heroicons](https://railsdesigner.com/rails-icons/heroicons/) (300+ icons)
+- [Linear](https://railsdesigner.com/rails-icons/linear/) (170+ icons)
+- [Lucide](https://railsdesigner.com/rails-icons/lucide/) (1500+ icons)
+- [Phosphor](https://railsdesigner.com/rails-icons/phosphor/) (9000+ icons)
+- [Radix](https://railsdesigner.com/rails-icons/radix/) (300+ icons)
+- [SidekickIcons](https://railsdesigner.com/rails-icons/sidekickicons/) (49 icons, complementing [Heroicons](https://railsdesigner.com/rails-icons/heroicons/))
+- [Tabler](https://railsdesigner.com/rails-icons/tabler/) (5700+ icons)
+- [Weather](https://railsdesigner.com/rails-icons/weather/) (215+ icons)
 
 
 ## Animated icons
