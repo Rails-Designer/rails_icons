@@ -28,6 +28,12 @@ class IconTest < ActiveSupport::TestCase
     assert_match(/class="present"/, icon("academic-cap", class: ["present": true, "not-present": false]), "SVG should contain 'class=\"present\"'")
   end
 
+  test "`from` alias for `library`" do
+    assert_nothing_raised do
+      icon("academic-cap", from: "heroicons")
+    end
+  end
+
   test "setting variant, it returns a SVG" do
     assert_nothing_raised do
       icon("academic-cap", variant: "mini")
