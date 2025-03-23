@@ -47,7 +47,7 @@ module RailsIcons
     end
 
     def setup_custom_configuration
-      return "" if options[:custom].blank?
+      return if options[:custom].blank?
 
       insert_custom_configuration
       create_custom_directory
@@ -58,7 +58,7 @@ module RailsIcons
     INITIALIZER = "config/initializers/rails_icons.rb"
 
     def insert_custom_configuration
-      unless File.read(INITIALIZER).include?("config.libraries.merge!")
+      unless file_contains?(INITIALIZER, "config.libraries.merge!")
         custom_default_configuration = <<~RB.indent(2)
           config.libraries.merge!(
 
