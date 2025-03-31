@@ -6,6 +6,8 @@ require "rails_icons/sync/transformations"
 module RailsIcons
   module Sync
     class ProcessVariants < Rails::Generators::Base
+      hide!
+
       def initialize(temp_directory, name, library)
         @temp_directory, @name, @library = temp_directory, name, library
       end
