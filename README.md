@@ -4,10 +4,10 @@ Add any icon library to a Rails app. Rails Icons has first-party support for a [
 
 ```erb
 # Using the default icon library
-<%= icon "check", class: "text-gray-500" %>
+icon "check", class: "text-gray-500"
 
 # Using any custom library
-<%= icon "apple", library: "simple_icons", class: "text-black" %>
+icon "apple", library: "simple_icons", class: "text-black"
 ```
 
 The icons are sourced directly from their respective GitHub repositories, ensuring Rails Icons remain lightweight.
@@ -22,6 +22,8 @@ The icons are sourced directly from their respective GitHub repositories, ensuri
     <img alt="Rails Designer" src="https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/logo-light.svg" width="240" style="max-width: 100%;">
   </picture>
 </a>
+
+Want to make JavaScript your second-favorite language? 👉 [JavaScript for Rails Developers](https://javascriptforrails.com/)
 
 
 ## Install
@@ -105,7 +107,7 @@ Use like this: `icon "faded-spinner", library: "animated"`. The same attributes 
 Need to use an icon from another library?
 
 1. run `rails generate rails_icons:initializer --custom=simple_icons`;
-2. add the (SVG) icons to the created directory **app/assets/svg/icons/simple_icons**;
+2. add the (SVG) icons to the created directory *app/assets/svg/icons/simple_icons*;
 
 Every custom icon can now be used with the same interface as first-party icon libraries.
 ```ruby
