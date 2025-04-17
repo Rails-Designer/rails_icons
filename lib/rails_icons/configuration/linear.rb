@@ -17,6 +17,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Linear defaults
+          # config.libraries.linear.default_variant = "" # Set a default variant for Linear
           # config.libraries.linear.exclude_variants = []
 
           # config.libraries.linear.default.css = "size-6"

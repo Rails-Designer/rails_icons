@@ -40,6 +40,17 @@ class IconTest < ActiveSupport::TestCase
     end
   end
 
+  test "it uses the library specific default variant over the global" do
+    config = RailsIcons::Configuration.new
+    config.default_variant = "global variant"
+    config.libraries.heroicons.default_variant = "outline"
+
+    icon = RailsIcons::Icon.new(name: "academic-cap", library: "heroicons", arguments: {}, config: config)
+    assert_nothing_raised do
+      icon.svg
+    end
+  end
+
   test "setting variant as symbol, it returns a SVG" do
     assert_nothing_raised do
       icon("academic-cap", variant: :mini)

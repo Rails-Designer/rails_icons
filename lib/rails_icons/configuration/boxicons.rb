@@ -19,6 +19,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Boxicons defaults
+          # config.libraries.boxicons.default_variant = "" # Set a default variant for Boxicons
           # config.libraries.boxicons.exclude_variants = [] # Exclude specific variants
 
           # config.libraries.boxicons.solid.css = "size-6"

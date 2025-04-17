@@ -2,7 +2,9 @@ require "rails_icons/icon/file_path"
 require "rails_icons/icon/attributes"
 
 class RailsIcons::Icon
-  def initialize(name:, library:, arguments:, variant: nil)
+  def initialize(name:, library:, arguments:, variant: nil, config: RailsIcons.configuration)
+    @config = config # set first, config is used during initialization
+
     @name = name
     @library = library.to_s.inquiry
     @variant = (variant || set_variant).to_s
@@ -22,8 +24,8 @@ class RailsIcons::Icon
   private
 
   def set_variant
-    RailsIcons.configuration.default_variant.presence ||
-      RailsIcons.configuration.libraries.dig(@library.to_sym, :default_variant)
+    @config.libraries.dig(@library.to_sym, :default_variant).presence ||
+      @config.default_variant.presence
   end
 
   def error_message
@@ -55,7 +57,7 @@ class RailsIcons::Icon
   def default(key) = library_attributes.dig(:default, key)
 
   def library_attributes
-    custom_library? ? custom_library : RailsIcons.configuration.libraries.dig(@library, @variant) || {}
+    custom_library? ? custom_library : @config.libraries.dig(@library, @variant) || {}
   end
 
   def custom_library
@@ -65,7 +67,7 @@ class RailsIcons::Icon
       &.dig("custom")
       &.dig(@library.to_sym)&.with_defaults(
         {
-          path: [RailsIcons.configuration.destination_path, @library].join("/")
+          path: [@config.destination_path, @library].join("/")
         }
       ) || {}
   end

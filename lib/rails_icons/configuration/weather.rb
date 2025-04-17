@@ -17,6 +17,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Weather defaults
+          # config.libraries.weather.default_variant = "" # Set a default variant for Wweather
           # config.libraries.weather.exclude_variants = []
 
           # config.libraries.weather.default.css = "size-6"

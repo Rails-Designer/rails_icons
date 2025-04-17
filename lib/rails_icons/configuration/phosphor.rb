@@ -22,6 +22,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Phosphor defaults
+          # config.libraries.phosphor.default_variant = "" # Set a default variant for Phosphor
           # config.libraries.phosphor.exclude_variants = [:duotone, :thin] # Exclude specific variants
 
           # config.libraries.phosphor.bold.default.css = "size-6"

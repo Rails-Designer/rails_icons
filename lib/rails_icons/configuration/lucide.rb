@@ -17,6 +17,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Lucide defaults
+          # config.libraries.lucide.default_variant = "" # Set a default variant for Lucide
           # config.libraries.lucide.exclude_variants = [] # Exclude specific variants
 
           # config.libraries.lucide.outline.default.css = "size-6"

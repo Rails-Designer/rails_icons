@@ -17,6 +17,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Feather defaults
+          # config.libraries.weather.default_variant = "" # Feather has no variants, this is provided for backwards compatibility
           # config.libraries.feather.exclude_variants = [] # Feather has no variants, this is provided for backwards compatibility
 
           # config.libraries.feather.default.css = "size-6"

@@ -18,6 +18,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Tabler defaults
+          # config.libraries.tabler.default_variant = "" # Set a default variant for Tabler
           # config.libraries.tabler.exclude_variants = [] # Exclude specific variants
 
           # config.libraries.tabler.regular.default.css = "size-6"

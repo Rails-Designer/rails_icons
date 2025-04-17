@@ -20,6 +20,7 @@ module RailsIcons
       def initializer_config
         <<~RB.indent(2)
           # Override Sidekickicons defaults
+          # config.libraries.sidekickicons.default_variant = "" # Set a default variant for Sidekickicons
           # config.libraries.sidekickicons.exclude_variants = [:mini, :micro] # Exclude specific variants
 
           # config.libraries.sidekickicons.outline.default.css = "size-6"
