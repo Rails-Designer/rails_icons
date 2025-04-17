@@ -2,6 +2,8 @@
 
 module RailsIcons
   class BaseGenerator < Rails::Generators::Base
+    hide!
+
     def initialize(*arguments)
       super(*arguments)
 

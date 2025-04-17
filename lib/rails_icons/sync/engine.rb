@@ -6,6 +6,8 @@ require "rails_icons/sync/process_variants"
 module RailsIcons
   module Sync
     class Engine < Rails::Generators::Base
+      hide!
+
       def initialize(name)
         super
 

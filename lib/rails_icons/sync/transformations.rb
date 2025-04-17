@@ -1,6 +1,8 @@
 module RailsIcons
   module Sync
     class Transformations < Rails::Generators::Base
+      hide!
+
       def self.transform(filename, rules = {})
         basename = File.basename(filename, File.extname(filename))
 
