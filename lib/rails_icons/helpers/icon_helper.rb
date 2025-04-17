@@ -5,10 +5,10 @@ require_relative "../configuration"
 module RailsIcons
   module Helpers
     module IconHelper
-      def icon(name, library: RailsIcons.configuration.default_library, variant: nil, **arguments)
+      def icon(name, library: RailsIcons.configuration.default_library, from: library, variant: nil, **arguments)
         RailsIcons::Icon.new(
           name: name,
-          library: library,
+          library: from || library,
           variant: variant,
           arguments: arguments
         ).svg
