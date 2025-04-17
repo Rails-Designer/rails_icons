@@ -74,6 +74,15 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     end
   end
 
+  test "generator creates the initializer with custom library" do
+    run_generator %w[--custom=simple_icons]
+
+    assert_file "config/initializers/rails_icons.rb" do |file|
+      assert_match "simple_icons", file
+      assert_match "config.libraries.merge!", file
+    end
+  end
+
   test "generator raise RailsIcons::LibraryNotFound when no library is specified" do
     assert_raises(RailsIcons::LibraryNotFound) do
       run_generator
