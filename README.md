@@ -99,7 +99,7 @@ Rails Icons also includes a few animated icons. Great for loading states and so 
 - `fading-dots`
 - `bouncing-dots`
 
-Use like this: `icon "faded-spinner", library: "animated"`. The same attributes as the others libraries are available.
+Use like this: `icon "faded-spinner", library: "animated"`. The same attributes as the other libraries are available.
 
 
 ## Custom icon library
