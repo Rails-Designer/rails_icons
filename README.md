@@ -2,6 +2,8 @@
 
 Add any icon library to a Rails app. Rails Icons has first-party support for a [handful of libraries](#first-party-libraries). It is library agnostic so it can be used with any icon library using the same interface.
 
+![Rails Icons - A collection of icons from popular libraries like Feather, Lucide, and Heroicons arranged in a grid pattern around the title text](https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/cover.jpg)
+
 ```erb
 # Using the default icon library
 icon "check", class: "text-gray-500"
