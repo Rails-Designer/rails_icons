@@ -1,19 +1,17 @@
 require "test_helper"
+require "minitest/mock"
+
 require "generators/rails_icons/sync_generator"
 
-class SyncGeneratorTest < Rails::Generators::TestCase
-  tests RailsIcons::SyncGenerator
+class SyncGeneratorTest < Minitest::Test
+  def test_calls_sync_on_engine
+    sync_engine = Minitest::Mock.new
+    sync_engine.expect(:sync, nil)
 
-  destination Rails.root.join("../../tmp/generators")
+    RailsIcons::Sync::Engine.stub(:new, sync_engine) do
+      RailsIcons::SyncGenerator.new([], libraries: ["heroicons"]).sync_icons
+    end
 
-  setup :prepare_destination
-
-  test "generator syncs icons" do
-    # TODO: needs a bit of work; if you read this: please take a stab at it ❤️
-    skip
-
-    run_generator(%w[heroicons])
-
-    assert_directory "app/assets/images/icons/heroicons"
+    sync_engine.verify
   end
 end
