@@ -99,5 +99,7 @@ module RailsIcons
     end
 
     def libraries = options[:libraries].map(&:downcase)
+
+    def validatable? = true
   end
 end

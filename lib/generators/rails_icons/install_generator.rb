@@ -25,5 +25,7 @@ module RailsIcons
     private
 
     def attributes = ["--libraries=#{options[:libraries].map(&:downcase).join(" ")}", "--destination=#{options[:destination]}"].join(" ")
+
+    def validatable? = true
   end
 end
