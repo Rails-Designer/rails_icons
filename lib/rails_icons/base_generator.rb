@@ -5,7 +5,7 @@ module RailsIcons
     hide!
 
     def initialize(*arguments)
-      super(*arguments)
+      super
 
       validate! if validatable?
     end

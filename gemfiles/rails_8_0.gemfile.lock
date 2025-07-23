@@ -1,5 +1,5 @@
 PATH
-  remote: .
+  remote: ..
   specs:
     rails_icons (1.4.0)
       nokogiri (~> 1.16, >= 1.16.4)
@@ -121,7 +121,6 @@ GEM
       net-smtp
     marcel (1.0.4)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     minitest (5.25.5)
     net-imap (0.5.9)
       date
@@ -133,12 +132,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.9)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.18.9-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.8.0)
@@ -250,15 +244,14 @@ GEM
     zeitwerk (2.7.3)
 
 PLATFORMS
-  arm64-darwin-22
-  ruby
-  x86_64-linux
+  arm64-darwin
 
 DEPENDENCIES
   appraisal
   debug (~> 1.9, >= 1.9.2)
   minitest
   propshaft
+  rails (~> 8.0.0)
   rails_icons!
   standard
 
