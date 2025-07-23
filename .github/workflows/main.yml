@@ -36,6 +36,8 @@ jobs:
           bundler: default
           bundler-cache: true
           rubygems: latest
+      - name: Add Linux platform to lockfile
+        run: bundle lock --add-platform x86_64-linux
       - name: Run Standard
         run: bundle exec standardrb
       - name: Run tests
