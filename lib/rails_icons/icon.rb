@@ -64,8 +64,7 @@ class RailsIcons::Icon
     RailsIcons
       .configuration
       .libraries
-      &.dig("custom")
-      &.dig(@library.to_sym)&.with_defaults(
+      &.dig("custom", @library.to_sym)&.with_defaults(
         {
           path: [@config.destination_path, @library].join("/")
         }

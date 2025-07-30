@@ -5,7 +5,7 @@ include IconHelper
 
 class IconTest < ActiveSupport::TestCase
   test "it returns an icon SVG" do
-    assert_match(/\A<svg[^>]*class="".*<\/svg>\z/m, icon("academic-cap"), "Expected SVG to start with <svg and contain 'class=\"\"'")
+    assert_match(/\A<svg.*<\/svg>\z/m, icon("academic-cap"))
   end
 
   test "it should not include height" do

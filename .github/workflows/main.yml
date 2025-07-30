@@ -13,17 +13,38 @@ jobs:
     name: Ruby ${{ matrix.ruby }}
     strategy:
       matrix:
-        ruby:
-          - "3.1.0"
+        ruby: ['3.2', '3.3', '3.4']
+        gemfile:
+          - rails_7_0
+          - rails_7_1
+          - rails_7_2
+          - rails_8_0
+          - rails_main
+        exclude:
+          - gemfile: rails_7_0
+            ruby: '3.4'
+          - gemfile: rails_7_1
+            ruby: '3.4'
+          - gemfile: rails_7_2
+            ruby: '3.4'
+
+    env:
+      BUNDLE_GEMFILE: ${{ github.workspace }}/gemfiles/${{ matrix.gemfile }}.gemfile
+      BUNDLE_PATH_RELATIVE_TO_CWD: true
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
+          bundler: default
+          rubygems: latest
+
       - name: Run Standard
         run: bundle exec standardrb
+
       - name: Run the default task
         run: bundle exec rake
