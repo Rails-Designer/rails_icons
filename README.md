@@ -25,17 +25,15 @@ The icons are sourced directly from their respective GitHub repositories, ensuri
   </picture>
 </a>
 
-Want to make JavaScript your second-favorite language? 👉 [JavaScript for Rails Developers](https://javascriptforrails.com/)
-
 
 ## Install
 
-Add the gem
+Add the gem:
 ```bash
 bundle add rails_icons
 ```
 
-Install, choosing one of the supported libraries
+Install, choosing one of the supported libraries:
 ```bash
 rails generate rails_icons:install --libraries=LIBRARY_NAME
 ```
@@ -106,12 +104,12 @@ Use like this: `icon "faded-spinner", library: "animated"`. The same attributes 
 
 ## Custom icon library
 
-Need to use an icon from another library?
+Need to use an icon from another library (for example [Simple Icons](https://simpleicons.org/))?
 
 1. run `rails generate rails_icons:initializer --custom=simple_icons`;
-2. add the (SVG) icons to the created directory *app/assets/svg/icons/simple_icons*;
+2. add the SVG icons to the created directory (*app/assets/svg/icons/simple_icons*);
 
-Every custom icon can now be used with the same interface as first-party icon libraries.
+Every custom icon can now be used with the same interface as first-party icon libraries:
 ```ruby
 icon "apple", library: "simple_icons", class: "text-black"
 ```
@@ -119,12 +117,12 @@ icon "apple", library: "simple_icons", class: "text-black"
 
 ## Sync icons
 
-To sync all libraries, run
+To sync all libraries, run:
 ```bash
 rails generate rails_icons:sync
 ```
 
-To sync only a specific library, run
+To sync only a specific library, run:
 ```bash
 rails generate rails_icons:sync --libraries=heroicons
 
