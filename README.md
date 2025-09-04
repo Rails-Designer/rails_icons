@@ -133,6 +133,13 @@ rails generate rails_icons:sync --libraries=heroicons lucide
 ```
 
 
+## Projects using Rails Icons
+
+- [Rails Designer UI Components](https://railsdesigner.com/components/) — The first professionally-designed UI components library for Ruby on Rails apps
+- [Helptail](https://helptail.com/) — Put your routine tasks on autopilot
+- [Forge](https://forge.railsdesigner.com/) — Self-hosted Community Software
+
+
 ## Contributing
 
 This project uses [Standard](https://github.com/testdouble/standard) for formatting Ruby code. Please make sure to run `be standardrb` before submitting pull requests. Run tests via `rails test`.
