@@ -39,7 +39,7 @@ module RailsIcons
       def clone_repository
         raise "[Rails Icons] Failed to clone repository" unless system("git clone '#{@library[:url]}' '#{@temp_directory}'")
 
-        say "[Rails Icons] '#{@name}' repository cloned successfully."
+        say "[Rails Icons] '#{@name}' repository cloned"
       end
 
       def process_variants = Sync::ProcessVariants.new(@temp_directory, @name, @library).process
@@ -49,7 +49,7 @@ module RailsIcons
           .select { _1.file? && _1.extname != ".svg" }
           .each(&:delete)
 
-        say "[Rails Icons] Non-SVG files removed successfully"
+        say "[Rails Icons] Non-SVG files removed"
       end
 
       def move_library
@@ -58,7 +58,7 @@ module RailsIcons
         FileUtils.mkdir_p(destination)
         FileUtils.mv(Dir.glob("#{@temp_directory}/*"), destination, force: true)
 
-        say "[Rails Icons] Synced '#{@name}' library successfully #{%w[😃 🎉 ✨].sample}", :green
+        say "[Rails Icons] Synced '#{@name}' library #{%w[😃 🎉 ✨].sample}", :green
       end
 
       def purge_temp_directory = FileUtils.rm_rf(TEMP_DIRECTORY)
