@@ -60,19 +60,15 @@ module RailsIcons
     def insert_custom_configuration
       unless file_contains?(INITIALIZER, "config.libraries.merge!")
         custom_default_configuration = <<~RB.indent(2)
-          config.libraries.merge!(
 
-            {
-              custom: {
-              }
-            }
+          config.libraries.merge!(
           )
         RB
 
         insert_into_file INITIALIZER, custom_default_configuration, before: "end"
       end
 
-      insert_into_file INITIALIZER, "\n#{custom_configuration}", after: "custom: {"
+      insert_into_file INITIALIZER, "\n#{custom_configuration}", after: "config.libraries.merge!("
     end
 
     def create_custom_directory = FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
@@ -82,7 +78,7 @@ module RailsIcons
     end
 
     def custom_configuration
-      <<~RB.indent(8)
+      <<~RB.indent(4)
         #{options[:custom]}: {
           # path: "app/assets/svg/icons/#{options[:custom]}/",
           default: {
