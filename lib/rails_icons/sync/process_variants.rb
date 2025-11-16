@@ -64,7 +64,7 @@ module RailsIcons
 
       def remove_previously_downloaded(variants)
         variants.each do |variant|
-          FileUtils.rm_rf(File.join(RailsIcons.configuration.destination_path, @name, variant.to_s))
+          FileUtils.rm_rf(File.join(RailsIcons.configuration.icons_path, @name, variant.to_s))
         end
       end
 

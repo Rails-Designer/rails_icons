@@ -9,7 +9,7 @@ module RailsIcons
     desc "Create the Rails Icons initializer."
 
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
-    class_option :destination, type: :string, default: RailsIcons.configuration.destination_path, desc: "Specify destination folder for icons"
+    class_option :destination, type: :string, default: RailsIcons.configuration.icons_path, desc: "Specify icons folder"
     class_option :custom, type: :string, desc: "Name of the custom library"
 
     def copy_initializer
@@ -32,12 +32,12 @@ module RailsIcons
       end
     end
 
-    def insert_custom_destination_path
-      return if options[:destination] && options[:destination] == RailsIcons.configuration.destination_path
+    def insert_custom_icons_path
+      return if options[:destination] && options[:destination] == RailsIcons.configuration.icons_path
 
       insert_into_file INITIALIZER, <<~RB.indent(2), after: "RailsIcons.configure do |config|\n"
-        # Default destination path
-        config.destination_path = "#{options[:destination]}"
+        # Default icons path
+        config.icons_path = "#{options[:destination]}"
 
       RB
     end

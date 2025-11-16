@@ -17,6 +17,18 @@ module RailsIcons
       set_libraries_config
     end
 
+    def destination_path
+      ActiveSupport::Deprecation.new.warn("`destination_path` is deprecated. Use `icons_path` instead.")
+
+      @config.icons_path
+    end
+
+    def destination_path=(value)
+      ActiveSupport::Deprecation.new.warn("`destination_path=` is deprecated. Use `icons_path=` instead.")
+
+      @config.icons_path = value
+    end
+
     def method_missing(method_name, ...)
       if @config.respond_to?(method_name)
         @config.send(method_name, ...)
@@ -33,7 +45,7 @@ module RailsIcons
 
     def set_default_config
       @config.default_library = nil
-      @config.destination_path = "app/assets/svg/icons"
+      @config.icons_path = "app/assets/svg/icons"
     end
 
     def set_libraries_config
