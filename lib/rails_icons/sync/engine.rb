@@ -53,7 +53,7 @@ module RailsIcons
       end
 
       def move_library
-        destination = File.join(RailsIcons.configuration.destination_path, @name)
+        destination = File.join(RailsIcons.configuration.icons_path, @name)
 
         FileUtils.mkdir_p(destination)
         FileUtils.mv(Dir.glob("#{@temp_directory}/*"), destination, force: true)

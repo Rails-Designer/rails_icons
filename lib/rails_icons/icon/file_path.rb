@@ -46,7 +46,7 @@ module RailsIcons
 
       def parts
         [
-          RailsIcons.configuration.destination_path,
+          RailsIcons.configuration.icons_path,
           @library,
           @variant,
           "#{@name}.svg"

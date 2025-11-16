@@ -21,7 +21,7 @@ module RailsIcons
 
     def synced_libraries
       RailsIcons.libraries.keys.map(&:to_s).select do |library|
-        Dir.exist?(File.join(RailsIcons.configuration.destination_path, library.to_s))
+        Dir.exist?(File.join(RailsIcons.configuration.icons_path, library.to_s))
       end
     end
   end
