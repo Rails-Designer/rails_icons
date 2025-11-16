@@ -2,8 +2,8 @@ require "rails_icons/icon/file_path"
 require "rails_icons/icon/attributes"
 
 class RailsIcons::Icon
-  def initialize(name:, library:, arguments:, variant: nil, config: RailsIcons.configuration)
-    @config = config # set first, config is used during initialization
+  def initialize(name:, library:, arguments:, variant: nil)
+    @config = RailsIcons.configuration
 
     @name = name
     @library = library.to_s.inquiry
@@ -57,19 +57,6 @@ class RailsIcons::Icon
   def default(key) = library_attributes.dig(:default, key)
 
   def library_attributes
-    custom_library? ? custom_library : @config.libraries.dig(@library, @variant) || {}
+    @config.libraries.dig(*[@library, @variant].select(&:present?)) || {}
   end
-
-  def custom_library
-    RailsIcons
-      .configuration
-      .libraries
-      &.dig("custom", @library.to_sym)&.with_defaults(
-        {
-          path: [@config.destination_path, @library].join("/")
-        }
-      ) || {}
-  end
-
-  def custom_library? = custom_library.present?
 end

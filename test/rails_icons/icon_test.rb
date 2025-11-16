@@ -45,7 +45,8 @@ class IconTest < ActiveSupport::TestCase
     config.default_variant = "global variant"
     config.libraries.heroicons.default_variant = "outline"
 
-    icon = RailsIcons::Icon.new(name: "academic-cap", library: "heroicons", arguments: {}, config: config)
+    icon = RailsIcons::Icon.new(name: "academic-cap", library: "heroicons", arguments: {})
+
     assert_nothing_raised do
       icon.svg
     end
@@ -124,6 +125,12 @@ class IconTest < ActiveSupport::TestCase
   test "flags" do
     assert_nothing_raised do
       icon("nl", library: "flags")
+    end
+  end
+
+  test "custom library" do
+    assert_nothing_raised do
+      icon("apple", library: "simple")
     end
   end
 
