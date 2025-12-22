@@ -9,6 +9,7 @@ module RailsIcons
 
     desc "Sync the chosen icon libraries from their respective git repos."
 
+    class_option :library, type: :string, desc: "Choose a library (#{RailsIcons.libraries.keys.join("/")})"
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
 
     def sync_icons = libraries.each { Sync::Engine.new(_1).sync }
@@ -16,7 +17,11 @@ module RailsIcons
     private
 
     def libraries
-      options[:libraries].map(&:downcase).presence || synced_libraries
+      [options[:library], *options[:libraries]]
+        .compact_blank
+        .map(&:downcase)
+        .uniq
+        .presence || synced_libraries
     end
 
     def synced_libraries
