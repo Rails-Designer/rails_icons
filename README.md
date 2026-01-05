@@ -35,12 +35,12 @@ bundle add rails_icons
 
 Install, choosing one of the supported libraries:
 ```bash
-rails generate rails_icons:install --libraries=LIBRARY_NAME
+rails generate rails_icons:install --library=LIBRARY_NAME
 ```
 
 **Example**
 ```bash
-rails generate rails_icons:install --libraries=heroicons
+rails generate rails_icons:install --library=heroicons
 
 # Or multiple at once
 rails generate rails_icons:install --libraries=heroicons lucide
@@ -124,7 +124,7 @@ rails generate rails_icons:sync
 
 To sync only a specific library, run:
 ```bash
-rails generate rails_icons:sync --libraries=heroicons
+rails generate rails_icons:sync --library=heroicons
 
 # Or multiple at once:
 rails generate rails_icons:sync --libraries=heroicons lucide

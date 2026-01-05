@@ -8,6 +8,7 @@ module RailsIcons
 
     desc "Create the Rails Icons initializer."
 
+    class_option :library, type: :string, desc: "Choose a library (#{RailsIcons.libraries.keys.join("/")})"
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
     class_option :destination, type: :string, default: RailsIcons.configuration.icons_path, desc: "Specify icons folder"
     class_option :custom, type: :string, desc: "Name of the custom library"
@@ -94,7 +95,13 @@ module RailsIcons
       File.readlines(INITIALIZER).any? { _1.match?(line) }
     end
 
-    def libraries = options[:libraries].map(&:downcase)
+    def libraries
+      [options[:library], *options[:libraries]]
+        .compact_blank
+        .map(&:downcase)
+        .uniq
+        .presence || []
+    end
 
     def validatable? = true
   end
