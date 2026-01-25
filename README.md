@@ -40,7 +40,7 @@ rails generate rails_icons:install --library=LIBRARY_NAME
 
 **Example**
 ```bash
-rails generate rails_icons:install --library=heroicons
+rails generate rails_icons:install --libraries=heroicons
 
 # Or multiple at once
 rails generate rails_icons:install --libraries=heroicons lucide
