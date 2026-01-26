@@ -3,17 +3,32 @@
 VERSION=$1
 
 if [ -z "$VERSION" ]; then
-  echo "Error: The version number is required."
-  echo "Usage: $0 <version-number>"
+  echo "Error: Version number or bump type is required."
+  echo "Usage: $0 <major|minor|patch|version-number>"
+
   exit 1
 fi
 
+if [[ "$VERSION" =~ ^(major|minor|patch)$ ]]; then
+  CURRENT=$(grep -o '"[^"]*"' ./lib/rails_icons/version.rb | tr -d '"')
+  IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
+
+  case $VERSION in
+    major) VERSION="$((MAJOR + 1)).0.0" ;;
+    minor) VERSION="$MAJOR.$((MINOR + 1)).0" ;;
+    patch) VERSION="$MAJOR.$MINOR.$((PATCH + 1))" ;;
+  esac
+fi
+
 printf "module RailsIcons\n  VERSION = \"$VERSION\"\nend\n" > ./lib/rails_icons/version.rb
+
 bundle
+
 git add Gemfile.lock lib/rails_icons/version.rb
 git commit -m "Bump version for $VERSION"
 git push
 git tag v$VERSION
 git push --tags
-gem build rails_icons.gemspec
-gem push "rails_icons-$VERSION.gem"
+
+bundle exec rake build
+gem push "pkg/rails_icons-$VERSION.gem"
