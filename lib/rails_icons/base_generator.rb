@@ -15,13 +15,17 @@ module RailsIcons
     def validate!
       return if custom_library?
 
-      raise RailsIcons::LibraryNotFound.new("") if options.libraries.empty?
+      raise RailsIcons::LibraryNotFound.new("") if libraries.empty?
       raise RailsIcons::LibraryNotFound.new(invalid_libraries.join(", ")) if invalid_libraries.any?
     end
 
     def validatable? = false
 
-    def invalid_libraries = options.libraries.map(&:to_sym).map(&:downcase).reject { RailsIcons.libraries.key?(_1) }
+    def libraries
+      [*options.libraries, options.library].compact_blank
+    end
+
+    def invalid_libraries = libraries.map(&:to_sym).map(&:downcase).reject { RailsIcons.libraries.key?(_1) }
 
     def custom_library? = options.custom.present?
 

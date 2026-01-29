@@ -8,6 +8,7 @@ module RailsIcons
 
     desc "Install Rails Icons with the chosen libraries. This creates the configuration initializer and will sync the icons."
 
+    class_option :library, type: :string, desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
     class_option :destination, type: :string, default: RailsIcons.configuration.icons_path, desc: "Specify destination folder for icons"
     class_option :skip_sync, type: :boolean, default: false
@@ -17,14 +18,20 @@ module RailsIcons
     end
 
     def sync_generator
-      return if options[:skip_sync] || options[:libraries].blank?
+      return if options[:skip_sync] || libraries.blank?
 
       generate("rails_icons:sync", *attributes)
     end
 
     private
 
-    def attributes = ["--libraries=#{options[:libraries].map(&:downcase).join(" ")}", "--destination=#{options[:destination]}"].join(" ")
+    def attributes
+      ["--libraries=#{libraries.map(&:downcase).join(" ")}", "--destination=#{options[:destination]}"].join(" ")
+    end
+
+    def libraries
+      [*options.libraries, options.library].compact_blank
+    end
 
     def validatable? = true
   end
