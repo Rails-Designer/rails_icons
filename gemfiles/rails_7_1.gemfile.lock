@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    rails_icons (1.5.1)
+    rails_icons (1.6.0)
       nokogiri (~> 1.16, >= 1.16.4)
       rails (>= 7.0)
 
@@ -129,7 +129,8 @@ GEM
       net-smtp
     marcel (1.0.4)
     mini_mime (1.1.5)
-    minitest (5.25.5)
+    mini_portile2 (2.8.9)
+    minitest (5.27.0)
     mutex_m (0.3.0)
     net-imap (0.5.9)
       date
@@ -141,11 +142,8 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.9-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-gnu)
+    nokogiri (1.18.9)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.8.0)
@@ -245,9 +243,9 @@ GEM
     timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (3.1.4)
-      unicode-emoji (~> 4.0, >= 4.0.4)
-    unicode-emoji (4.0.4)
+    unicode-display_width (3.2.0)
+      unicode-emoji (~> 4.1)
+    unicode-emoji (4.2.0)
     websocket-driver (0.8.0)
       base64
       websocket-extensions (>= 0.1.0)
