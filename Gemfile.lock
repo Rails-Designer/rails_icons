@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_icons (1.6.0)
+    rails_icons (1.6.1)
       nokogiri (~> 1.16, >= 1.16.4)
       rails (>= 7.0)
 
