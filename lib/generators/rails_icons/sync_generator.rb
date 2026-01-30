@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "rails_icons/base_generator"
-require "rails_icons/sync/engine"
 
 module RailsIcons
   class SyncGenerator < RailsIcons::BaseGenerator
@@ -12,7 +11,9 @@ module RailsIcons
     class_option :library, type: :string, desc: "Choose a library (#{RailsIcons.libraries.keys.join("/")})"
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
 
-    def sync_icons = libraries.each { Sync::Engine.new(_1).sync }
+    def sync_icons
+      libraries.each { |library| Icons::Sync.new(library).now }
+    end
 
     private
 

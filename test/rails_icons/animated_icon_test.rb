@@ -1,5 +1,5 @@
 require "test_helper"
-require "rails_icons/icon"
+require "icons"
 
 class AnimatedIconTest < ActiveSupport::TestCase
   include IconHelper
