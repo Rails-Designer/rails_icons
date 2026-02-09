@@ -1,11 +1,17 @@
 # frozen_string_literal: true
 
+require "icons"
+
 require_relative "rails_icons/version"
-require_relative "rails_icons/libraries"
-require_relative "rails_icons/configuration"
 require_relative "rails_icons/engine"
-require_relative "rails_icons/errors"
-require_relative "rails_icons/icon"
 
 module RailsIcons
+  class << self
+    def configure(&block) = Icons.configure(&block)
+
+    def configuration = Icons.configuration
+    alias_method :config, :configuration
+
+    def libraries = Icons.libraries
+  end
 end

@@ -75,7 +75,7 @@ module RailsIcons
     def create_custom_directory = FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
 
     def library_configuration
-      libraries.map { RailsIcons.libraries[_1.to_sym].initializer_config }.join("\n")
+      libraries.map { |library| RailsIcons.libraries[library.to_sym].initializer_config }.join("\n")
     end
 
     def custom_configuration
@@ -92,7 +92,7 @@ module RailsIcons
     def default_configuration_exists?
       line = /^\s*config\.default_library\s*=/
 
-      File.readlines(INITIALIZER).any? { _1.match?(line) }
+      File.readlines(INITIALIZER).any? { |file_line| file_line.match?(line) }
     end
 
     def libraries

@@ -5,7 +5,6 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in rails_icons.gemspec
 gemspec
 
-# gem "rails", "~> 7.0.6"
 gem "appraisal"
 gem "propshaft"
 

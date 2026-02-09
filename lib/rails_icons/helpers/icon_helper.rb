@@ -4,16 +4,16 @@ module RailsIcons
   module Helpers
     module IconHelper
       def icon(name, library: RailsIcons.configuration.default_library, from: library, variant: nil, **arguments)
-        RailsIcons::Icon.new(
+        Icons::Icon.new(
           name: name,
           library: from || library,
           variant: variant,
           arguments: arguments
-        ).svg
+        ).svg.html_safe
       end
 
       def encoded_icon(name, library: RailsIcons.configuration.default_library, from: library, variant: nil, **arguments)
-        svg_content = RailsIcons::Icon.new(
+        svg_content = Icons::Icon.new(
           name: name,
           library: from || library,
           variant: variant,

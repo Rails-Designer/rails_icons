@@ -15,8 +15,8 @@ module RailsIcons
     def validate!
       return if custom_library?
 
-      raise RailsIcons::LibraryNotFound.new("") if libraries.empty?
-      raise RailsIcons::LibraryNotFound.new(invalid_libraries.join(", ")) if invalid_libraries.any?
+      raise Icons::LibraryNotFound.new("") if libraries.empty?
+      raise Icons::LibraryNotFound.new(invalid_libraries.join(", ")) if invalid_libraries.any?
     end
 
     def validatable? = false
@@ -25,9 +25,13 @@ module RailsIcons
       [*options.libraries, options.library].compact_blank
     end
 
-    def invalid_libraries = libraries.map(&:to_sym).map(&:downcase).reject { RailsIcons.libraries.key?(_1) }
+    def invalid_libraries
+      libraries.map(&:to_sym).map(&:downcase).reject { |library| RailsIcons.libraries.key?(library) }
+    end
 
-    def custom_library? = options.custom.present?
+    def custom_library?
+      options.custom.present?
+    end
 
     # Uses `gsub_file` as a read-only operation to check file content. This
     # approach is preferred over `File.read` because `gsub_file` is properly stubbed

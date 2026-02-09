@@ -83,8 +83,8 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
     end
   end
 
-  test "generator raise RailsIcons::LibraryNotFound when no library is specified" do
-    assert_raises(RailsIcons::LibraryNotFound) do
+  test "generator raise Icons::LibraryNotFound when no library is specified" do
+    assert_raises(Icons::LibraryNotFound) do
       run_generator
     end
 
