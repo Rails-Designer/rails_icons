@@ -23,6 +23,14 @@ module RailsIcons
       generate("rails_icons:sync", *attributes)
     end
 
+    def add_route
+      unless file_contains?("config/routes.rb", "mount RailsIcons::Engine")
+        inject_into_file "config/routes.rb", after: "Rails.application.routes.draw do\n" do
+          "  mount RailsIcons::Engine, at: '/rails_icons'\n"
+        end
+      end
+    end
+
     private
 
     def attributes

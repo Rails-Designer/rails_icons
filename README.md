@@ -46,6 +46,8 @@ rails generate rails_icons:install --library=heroicons
 rails generate rails_icons:install --libraries=heroicons lucide
 ```
 
+The generator also mounts an icon preview at `/rails_icons` where you can browse and search all your available icons. This route is open by default, so restrict it in production if needed.
+
 
 ## Usage
 
