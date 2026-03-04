@@ -10,7 +10,8 @@ module RubyLsp
         @icons = index_icons
       end
 
-      def deactivate; end
+      def deactivate
+      end
 
       def name = "Rails Icons"
 
