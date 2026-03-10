@@ -19,5 +19,5 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{bin,app,config,db,lib,public}/**/*", "Rakefile", "README.md", "rails_icons.gemspec", "Gemfile", "Gemfile.lock"]
 
   spec.add_dependency "rails", ">= 7.0"
-  spec.add_dependency "icons", "~> 0.7.0"
+  spec.add_dependency "icons", "~> 0.8.0"
 end
