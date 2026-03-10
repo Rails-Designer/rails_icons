@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_icons (1.6.1)
+    rails_icons (1.7.0)
       icons (~> 0.8.0)
       rails (>= 7.0)
 
