@@ -1,6 +1,6 @@
 # Rails Icons
 
-Add any icon library to a Rails app. Rails Icons has first-party support for a [handful of libraries](#first-party-libraries). It is library agnostic so it can be used with any icon library using the same interface.
+Add any icon library to a Rails app. Rails Icons has first-party support for a [handful of libraries](#first-party-libraries). It is library agnostic so it can be used with any icon library using the same interface. Rails Icons is a Rails gem for the [Icons Ruby gem](https://github.com/Rails-Designer/icons).
 
 ![Rails Icons - A collection of icons from popular libraries like Feather, Lucide, and Heroicons arranged in a grid pattern around the title text](https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/cover.jpg)
 
@@ -81,6 +81,7 @@ icon "check", stroke_width: 2
 - [Feather](https://railsdesigner.com/open-source/rails-icons/feather/) (280+ icons)
 - [Flags](https://railsdesigner.com/open-source/rails-icons/flags/) (540+ icons)
 - [Heroicons](https://railsdesigner.com/open-source/rails-icons/heroicons/) (300+ icons)
+- [Hugeicons](https://railsdesigner.com/open-source/rails-icons/hugeicons/) (4600+ icons)
 - [Linear](https://railsdesigner.com/open-source/rails-icons/linear/) (170+ icons)
 - [Lucide](https://railsdesigner.com/open-source/rails-icons/lucide/) (1500+ icons)
 - [Phosphor](https://railsdesigner.com/open-source/rails-icons/phosphor/) (9000+ icons)
