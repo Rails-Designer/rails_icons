@@ -1,8 +1,8 @@
 PATH
   remote: ..
   specs:
-    rails_icons (1.7.0)
-      icons (~> 0.8.0)
+    rails_icons (1.7.1)
+      icons (~> 0.8.1)
       rails (>= 7.0)
 
 GEM
@@ -110,7 +110,7 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    icons (0.8.0)
+    icons (0.8.1)
       nokogiri (~> 1.16, >= 1.16.4)
     io-console (0.8.1)
     irb (1.15.2)
