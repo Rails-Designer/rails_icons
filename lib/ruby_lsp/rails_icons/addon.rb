@@ -2,6 +2,8 @@
 
 require "ruby_lsp/addon"
 
+require_relative "../../rails_icons/version"
+
 module RubyLsp
   module RailsIcons
     class Addon < ::RubyLsp::Addon
