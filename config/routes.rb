@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 RailsIcons::Engine.routes.draw do
-  # TODO: use DSL
   get ":library", to: "previews#show", as: :library
   get ":library/:variant", to: "previews#show", as: :library_variant
 
