@@ -1,0 +1,219 @@
+alien: ufo space
+barometer: pressure weather
+celsius: temperature weather metric
+cloud: weather sky
+cloud-down: cloud download
+cloud-refresh: cloud refresh
+cloud-up: cloud upload
+cloudy: weather overcast
+cloudy-gusts: weather windy
+cloudy-windy: weather windy
+day-cloudy: weather partly cloudy
+day-cloudy-gusts: weather windy
+day-cloudy-high: weather cloudy
+day-cloudy-windy: weather windy
+day-fog: weather fog
+day-hail: weather hail
+day-haze: weather fog
+day-light-wind: weather windy
+day-lightning: weather storm
+day-rain: weather rain
+day-rain-mix: weather rain
+day-rain-wind: weather rain windy
+day-showers: weather rain
+day-sleet: weather sleet
+day-sleet-storm: weather storm
+day-snow: weather snow
+day-snow-thunderstorm: weather snow storm
+day-snow-wind: weather snow windy
+day-sprinkle: weather rain
+day-storm-showers: weather storm rain
+day-sunny: weather sunny clear
+day-sunny-overcast: weather partly cloudy
+day-thunderstorm: weather storm
+day-windy: weather windy
+degrees: temperature angle
+direction-down: direction arrow down
+direction-down-left: direction arrow
+direction-down-right: direction arrow
+direction-left: direction arrow left
+direction-right: direction arrow
+direction-up: direction arrow up
+direction-up-left: direction arrow
+direction-up-right: direction arrow
+dust: weather air quality
+earthquake: disaster seism
+fahrenheit: temperature weather imperial
+fire: hot flame
+flood: water disaster
+fog: weather mist
+gale-warning: weather warning wind
+hail: weather ice
+horizon: sunrise sunset horizon
+horizon-alt: horizon sunrise
+hot: temperature heat
+humidity: weather moisture
+hurricane: weather storm tropical
+hurricane-warning: weather warning storm
+lightning: weather electric storm
+lunar-eclipse: moon astronomy
+meteor: space rock astronomy
+moon-alt-first-quarter: moon phase
+moon-alt-full: moon phase
+moon-alt-new: moon phase
+moon-alt-third-quarter: moon phase
+moon-alt-waning-crescent-1: moon phase
+moon-alt-waning-crescent-2: moon phase
+moon-alt-waning-crescent-3: moon phase
+moon-alt-waning-crescent-4: moon phase
+moon-alt-waning-crescent-5: moon phase
+moon-alt-waning-crescent-6: moon phase
+moon-alt-waning-gibbous-1: moon phase
+moon-alt-waning-gibbous-2: moon phase
+moon-alt-waning-gibbous-3: moon phase
+moon-alt-waning-gibbous-4: moon phase
+moon-alt-waning-gibbous-5: moon phase
+moon-alt-waning-gibbous-6: moon phase
+moon-alt-waxing-crescent-1: moon phase
+moon-alt-waxing-crescent-2: moon phase
+moon-alt-waxing-crescent-3: moon phase
+moon-alt-waxing-crescent-4: moon phase
+moon-alt-waxing-crescent-5: moon phase
+moon-alt-waxing-crescent-6: moon phase
+moon-alt-waxing-gibbous-1: moon phase
+moon-alt-waxing-gibbous-2: moon phase
+moon-alt-waxing-gibbous-3: moon phase
+moon-alt-waxing-gibbous-4: moon phase
+moon-alt-waxing-gibbous-5: moon phase
+moon-alt-waxing-gibbous-6: moon phase
+moon-first-quarter: moon phase
+moon-full: moon phase full
+moon-new: moon phase
+moon-third-quarter: moon phase
+moon-waning-crescent-1: moon phase
+moon-waning-crescent-2: moon phase
+moon-waning-crescent-3: moon phase
+moon-waning-crescent-4: moon phase
+moon-waning-crescent-5: moon phase
+moon-waning-crescent-6: moon phase
+moon-waning-gibbous-1: moon phase
+moon-waning-gibbous-2: moon phase
+moon-waning-gibbous-3: moon phase
+moon-waning-gibbous-4: moon phase
+moon-waning-gibbous-5: moon phase
+moon-waning-gibbous-6: moon phase
+moon-waxing-6: moon
+moon-waxing-crescent-1: moon phase
+moon-waxing-crescent-2: moon phase
+moon-waxing-crescent-3: moon phase
+moon-waxing-crescent-4: moon phase
+moon-waxing-crescent-5: moon phase
+moon-waxing-gibbous-1: moon phase
+moon-waxing-gibbous-2: moon phase
+moon-waxing-gibbous-3: moon phase
+moon-waxing-gibbous-4: moon phase
+moon-waxing-gibbous-5: moon phase
+moon-waxing-gibbous-6: moon phase
+moonrise: moon astronomy
+moonset: moon astronomy
+na: not available
+night-alt-cloudy: weather night cloudy
+night-alt-cloudy-gusts: weather night windy
+night-alt-cloudy-high: weather night cloudy
+night-alt-cloudy-windy: weather night windy
+night-alt-hail: weather night hail
+night-alt-lightning: weather night storm
+night-alt-partly-cloudy: weather night partly cloudy
+night-alt-rain: weather night rain
+night-alt-rain-mix: weather night rain
+night-alt-rain-wind: weather night rain windy
+night-alt-showers: weather night rain
+night-alt-sleet: weather night sleet
+night-alt-sleet-storm: weather night storm
+night-alt-snow: weather night snow
+night-alt-snow-thunderstorm: weather night snow storm
+night-alt-snow-wind: weather night snow windy
+night-alt-sprinkle: weather night rain
+night-alt-storm-showers: weather night storm
+night-alt-thunderstorm: weather night storm
+night-clear: weather night clear
+night-cloudy: weather night cloudy
+night-cloudy-gusts: weather night windy
+night-cloudy-high: weather night cloudy
+night-cloudy-windy: weather night windy
+night-fog: weather night fog
+night-hail: weather night hail
+night-lightning: weather night storm
+night-partly-cloudy: weather night partly cloudy
+night-rain: weather night rain
+night-rain-mix: weather night rain
+night-rain-wind: weather night rain windy
+night-showers: weather night rain
+night-sleet: weather night sleet
+night-sleet-storm: weather night storm
+night-snow: weather night snow
+night-snow-thunderstorm: weather night snow storm
+night-snow-wind: weather night snow windy
+night-sprinkle: weather night rain
+night-storm-showers: weather night storm
+night-thunderstorm: weather night storm
+rain: weather water
+rain-mix: weather rain snow
+rain-wind: weather rain windy
+raindrop: water drop
+raindrops: water drops
+refresh: refresh sync
+refresh-alt: refresh sync
+sandstorm: weather dust wind
+showers: weather rain
+sleet: weather ice snow
+small-craft-advisory: weather warning water
+smog: weather pollution
+smoke: weather fire
+snow: weather winter cold
+snow-wind: weather snow windy
+snowflake-cold: weather snow cold
+solar-eclipse: sun astronomy
+sprinkle: weather rain light
+stars: night sky astronomy
+storm-showers: weather rain storm
+storm-warning: weather warning storm
+strong-wind: weather windy
+sunrise: morning weather
+sunset: evening weather
+thermometer: temperature weather
+thermometer-exterior: temperature outside
+thermometer-internal: temperature body
+thunderstorm: weather lightning storm
+time-1: time clock
+time-10: time clock
+time-11: time clock
+time-12: time clock
+time-2: time clock
+time-3: time clock
+time-4: time clock
+time-5: time clock
+time-6: time clock
+time-7: time clock
+time-8: time clock
+time-9: time clock
+tornado: weather disaster wind
+train: transport rail
+tsunami: water disaster wave
+umbrella: weather rain protection
+volcano: disaster geology
+wind-beaufort-0: wind calm
+wind-beaufort-1: wind light
+wind-beaufort-10: wind storm
+wind-beaufort-11: wind violent storm
+wind-beaufort-12: wind hurricane
+wind-beaufort-2: wind light
+wind-beaufort-3: wind gentle
+wind-beaufort-4: wind moderate
+wind-beaufort-5: wind fresh
+wind-beaufort-6: wind strong
+wind-beaufort-7: wind near gale
+wind-beaufort-8: wind gale
+wind-beaufort-9: wind strong gale
+wind-deg: wind direction
+windy: weather air

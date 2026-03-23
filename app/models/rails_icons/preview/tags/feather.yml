@@ -1,0 +1,287 @@
+activity: chart pulse health
+airplay: screen stream
+alert-circle: warning alert
+alert-octagon: warning alert
+alert-triangle: warning alert
+align-center: text center
+align-justify: text justify
+align-left: text left
+align-right: text right
+anchor: ship nautical
+aperture: camera photo
+archive: compress storage
+arrow-down: direction south
+arrow-down-circle: arrow direction circle
+arrow-down-left: arrow direction
+arrow-down-right: arrow direction
+arrow-left: direction west back
+arrow-left-circle: arrow direction circle
+arrow-right: direction east forward
+arrow-right-circle: arrow direction circle
+arrow-up: direction north top
+arrow-up-circle: arrow direction circle
+arrow-up-left: arrow direction
+arrow-up-right: arrow direction
+at-sign: contact email
+award: trophy prize
+bar-chart: graph analytics
+bar-chart-2: graph analytics
+battery: power charge
+battery-charging: power charging
+bell: notification alert
+bell-off: notification off
+bluetooth: wireless connection
+bold: text format
+book: read document
+book-open: read documentation
+bookmark: save mark
+box: package container
+briefcase: work office business
+calendar: date schedule
+camera: photo video
+camera-off: video off
+cast: screen stream
+check: complete done success
+check-circle: success complete
+check-square: complete done success
+chevron-down: direction down expand
+chevron-left: direction left back
+chevron-right: direction right forward
+chevron-up: direction up collapse
+chevrons-down: direction down skip
+chevrons-left: direction left skip
+chevrons-right: direction right skip
+chevrons-up: direction up skip
+chrome: browser web
+circle: shape round
+clipboard: copy paste
+clock: time watch
+cloud: weather sky
+cloud-drizzle: rain weather
+cloud-lightning: storm weather
+cloud-off: offline weather
+cloud-rain: rain weather
+cloud-snow: snow weather
+code: programming developer
+codepen: code editor
+codesandbox: code editor
+coffee: drink cafe
+columns: layout grid columns
+command: keyboard shortcut
+compass: direction nav
+copy: duplicate clone
+corner-down-left: arrow direction
+corner-down-right: arrow direction
+corner-left-down: arrow direction
+corner-left-up: arrow direction
+corner-right-down: arrow direction
+corner-right-up: arrow direction
+corner-up-left: arrow direction
+corner-up-right: arrow direction
+cpu: computer processor
+credit-card: payment card
+crop: resize cut
+crosshair: target aim
+database: server storage
+delete: remove trash
+disc: music vinyl record
+divide: math split
+divide-circle: math split
+divide-square: math split
+dollar-sign: money currency
+download: save export
+download-cloud: download cloud
+dribbble: design social
+droplet: water drop
+edit: write edit
+edit-2: write edit
+edit-3: write edit
+external-link: link open
+eye: view show
+eye-off: hide hidden
+facebook: social
+fast-forward: media skip
+feather: light bird
+figma: design tool
+file: document page
+file-minus: file remove
+file-plus: file add create
+file-text: document text
+film: video movie
+filter: funnel sort
+flag: country report
+folder: directory
+folder-minus: folder remove
+folder-plus: folder add
+framer: design tool
+frown: emoji sad
+gift: present
+git-branch: version control
+git-commit: version control
+git-merge: version control
+git-pull-request: version control
+github: code repository
+gitlab: code repository
+globe: world earth internet
+grid: layout grid
+hard-drive: computer storage
+hash: tag number social
+headphones: audio listen
+heart: like love favorite
+help-circle: help question
+hexagon: shape
+home: house start
+image: photo picture
+inbox: email receive
+info: information help
+instagram: social photo
+italic: text format
+key: security password
+layers: stack design
+layout: page grid
+life-buoy: support help
+link: chain url
+link-2: chain url
+linkedin: social professional
+list: items menu
+loader: loading spinner
+lock: secure locked
+log-in: login enter
+log-out: logout exit
+mail: email letter
+map: location navigation
+map-pin: location marker
+maximize: expand enlarge
+maximize-2: expand enlarge
+meh: emoji neutral
+menu: hamburger nav
+message-circle: chat comment
+message-square: chat comment
+mic: microphone audio record
+mic-off: mute audio
+minimize: shrink reduce
+minimize-2: shrink reduce
+minus: remove subtract
+minus-circle: remove subtract
+minus-square: remove subtract
+monitor: screen display
+moon: night dark
+more-horizontal: menu dots
+more-vertical: menu dots
+mouse-pointer: cursor click
+move: drag position
+music: audio note
+navigation: direction nav
+navigation-2: direction nav
+octagon: shape
+package: box deliver
+paperclip: attachment
+pause: media stop
+pause-circle: media stop
+pen-tool: draw write edit
+percent: discount math
+phone: call contact
+phone-call: call
+phone-forwarded: call forward
+phone-incoming: call receive
+phone-missed: call missed
+phone-off: call off
+phone-outgoing: call
+pie-chart: graph analytics
+play: media start
+play-circle: media
+plus: add create new
+plus-circle: add create new
+plus-square: add create
+pocket: save store
+power: on off shutdown
+printer: print
+radio: broadcast
+refresh-ccw: undo refresh
+refresh-cw: redo refresh
+repeat: loop media
+rewind: media back
+rotate-ccw: undo rotate
+rotate-cw: redo rotate
+rss: feed syndication
+save: save store
+scissors: cut
+search: find magnifying glass
+send: message submit
+server: network host
+settings: gear cog
+share: send social
+share-2: send social
+shield: security protect
+shield-off: security off
+shopping-bag: ecommerce store
+shopping-cart: checkout ecommerce
+shuffle: random mix
+sidebar: nav panel
+skip-back: media previous
+skip-forward: media next
+slack: chat team
+slash: cancel off
+sliders: settings adjust
+smartphone: phone mobile
+smile: emoji happy
+speaker: audio sound
+square: shape box
+star: favorite rating
+stop-circle: media stop
+sun: day weather light
+sunrise: morning weather
+sunset: evening weather
+table: 'data grid'
+tablet: device ipad
+tag: label category
+target: goal aim bullseye
+terminal: command code
+thermometer: temperature
+thumbs-down: dislike reject
+thumbs-up: like approve
+toggle-left: off switch
+toggle-right: on switch
+tool: fix repair
+trash: delete garbage
+trash-2: delete garbage
+trello: project board
+trending-down: decrease drop
+trending-up: growth increase
+triangle: shape direction
+truck: delivery vehicle
+tv: television display
+twitch: streaming social
+twitter: social tweet
+type: text font
+umbrella: rain protection
+underline: text format
+unlock: secure unlocked
+upload: send import
+upload-cloud: upload cloud
+user: person profile
+user-check: approved verified
+user-minus: remove
+user-plus: add invite
+user-x: remove delete
+users: people team
+video: media record
+video-off: media off
+voicemail: message audio
+volume: audio sound
+volume-1: audio sound
+volume-2: audio sound loud
+volume-x: mute audio
+watch: time wrist
+wifi: wireless internet
+wifi-off: offline wireless
+wind: air breeze
+x: close delete remove
+x-circle: error fail
+x-octagon: close delete error
+x-square: close delete
+youtube: video social
+zap: lightning electric
+zap-off: lightning off
+zoom-in: search enlarge
+zoom-out: search shrink

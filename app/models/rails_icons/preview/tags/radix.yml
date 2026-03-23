@@ -1,0 +1,332 @@
+accessibility: a11y disabled
+activity-log: activity history pulse
+align-baseline: text align
+align-bottom: align bottom
+align-center-horizontally: align center
+align-center-vertically: align center
+align-left: align text left
+align-right: align text right
+align-top: align top
+all-sides: align all
+angle: geometry angle
+archive: compress storage
+arrow-bottom-left: direction arrow
+arrow-bottom-right: direction arrow
+arrow-down: direction south
+arrow-left: back direction
+arrow-right: forward direction
+arrow-top-left: direction arrow
+arrow-top-right: direction arrow
+arrow-up: direction north
+aspect-ratio: size ratio
+avatar: user profile picture
+backpack: bag travel
+badge: tag status rank
+bar-chart: graph analytics
+bell: notification alert
+blending-mode: effect blend
+bookmark: save mark
+bookmark-filled: save mark
+border-all: border style
+border-bottom: border style
+border-dashed: border style
+border-dotted: border style
+border-left: border style
+border-none: border off
+border-right: border style
+border-solid: border style
+border-split: border style
+border-style: border style
+border-top: border style
+border-width: border thickness
+box: shape container
+box-model: layout box
+button: ui click
+calendar: ''
+camera: photo video
+card-stack: ui card
+card-stack-minus: ui remove card
+card-stack-plus: ui add card
+caret-down: direction dropdown
+caret-left: direction back
+caret-right: direction forward
+caret-sort: sort direction
+caret-up: direction collapse
+chat-bubble: chat message comment
+check: complete done
+check-circled: complete success
+checkbox: ui check select
+chevron-down: direction expand
+chevron-left: direction back
+chevron-right: direction forward
+chevron-up: direction collapse
+circle: shape round
+circle-backslash: no off cancel
+clipboard: copy paste
+clipboard-copy: clipboard copy
+clock: time watch
+code: programming developer
+codesandbox-logo: code editor
+color-wheel: color palette
+column-spacing: layout spacing
+columns: layout grid columns
+commit: git version control
+component-1: ui element
+component-2: ui element
+component-boolean: ui boolean
+component-instance: ui element
+component-none: ui element
+component-placeholder: ui placeholder
+container: layout box
+cookie: web browser
+copy: duplicate clone
+corner-bottom-left: align corner
+corner-bottom-right: align corner
+corner-top-left: align corner
+corner-top-right: align corner
+corners: align corner
+countdown-timer: timer
+counter-clockwise-clock: undo rotate
+crop: resize cut
+cross-1: cancel close
+cross-2: cancel close
+cross-circled: cancel error
+crosshair-1: ''
+crosshair-2: ''
+crumpled-paper: trash delete
+cube: 3d shape
+cursor-arrow: pointer click
+cursor-text: text cursor
+dash: dashboard
+dashboard: home analytics
+database: storage server
+desktop: computer monitor
+dimensions: size measure
+disc: music vinyl
+discord-logo: chat social
+divider-horizontal: ''
+divider-vertical: ''
+dot: bullet point
+dot-filled: bullet filled
+dots-horizontal: menu dots
+dots-vertical: menu dots
+double-arrow-down: direction skip
+double-arrow-left: direction skip back
+double-arrow-right: direction skip forward
+double-arrow-up: direction skip
+download: save export
+drag-handle-dots-1: ''
+drag-handle-dots-2: ''
+drag-handle-horizontal: ''
+drag-handle-vertical: ''
+drawing-pin: pin marker
+drawing-pin-filled: pin marker
+dropdown-menu: menu dropdown
+enter: login enter
+enter-full-screen: expand fullscreen
+envelope-closed: email mail
+envelope-open: email read
+eraser: delete remove
+exclamation-circled: warning alert
+exclamation-mark: alert
+exclamation-triangle: warning alert
+exit: logout exit
+exit-full-screen: exit fullscreen
+external-link: link open
+eye-closed: hide hidden
+eye-none: eye off
+eye-open: view show
+face: emoji
+figma-logo: design tool
+file: document
+file-minus: file remove
+file-plus: file add create
+file-text: document text
+filter: funnel sort
+font-bold: text format
+font-family: text font
+font-italic: text format
+font-roman: ''
+font-size: text size
+font-style: text format
+frame: border picture
+framer-logo: design tool
+gear: settings cog
+github-logo: code repository
+globe: world earth internet
+globe-2: world earth
+grid: layout grid
+group: team cluster
+half-1: half split
+half-2: half split
+hamburger-menu: menu nav
+hand: gesture point
+heading: text title
+heart: like love
+heart-filled: like love
+height: size vertical
+hobby-knife: craft cut
+home: house start
+iconjar-logo: icons tool
+id-card: identification badge
+image: photo picture
+info-circled: info help
+input: ui form field
+instagram-logo: social photo
+keyboard: ''
+lap-timer: timer
+laptop: computer portable
+layers: stack design
+layout: page grid
+letter-case-capitalize: text format
+letter-case-lowercase: text format
+letter-case-toggle: text format
+letter-case-uppercase: text format
+letter-spacing: text spacing
+lightning-bolt: electric power fast
+line-height: text spacing
+link-1: chain url
+link-2: chain url
+link-break-1: link broken
+link-break-2: link broken
+link-none-1: link off
+link-none-2: link off
+linkedin-logo: social professional
+list-bullet: ''
+lock-closed: secure privacy
+lock-open-1: unlock
+lock-open-2: unlock
+loop: repeat cycle
+magic-wand: ai magic
+magnifying-glass: search find
+margin: spacing css
+mask-off: mask off
+mask-on: mask on
+minimize: shrink
+minus: remove subtract
+minus-circled: remove
+mix: combine blend
+mixer-horizontal: settings sliders
+mixer-vertical: settings sliders
+mobile: phone smartphone
+modulz-logo: code tool
+moon: night dark
+move: ''
+notion-logo: notes tool
+opacity: effect transparency
+open-in-new-window: link open
+overline: text format
+padding: spacing css
+panel-bottom: panel bottom
+panel-bottom-minimized: panel minimize
+panel-left: panel sidebar
+panel-left-minimized: panel minimize
+panel-right: panel sidebar
+panel-right-minimized: panel minimize
+paper-plane: send message
+pause: media stop
+pencil-1: edit write
+pencil-2: edit write
+people: users team group
+person: user profile
+pie-chart: graph analytics
+pilcrow: text paragraph
+pin-bottom: pin location
+pin-left: pin location
+pin-right: pin location
+pin-top: pin location
+play: media start
+plus: add create
+plus-circled: add
+question-mark: help
+question-mark-circled: help question
+quote: text quotation
+radiobutton: ui select option
+reader: read document
+reload: refresh
+reset: undo restart
+resume: continue play
+rocket: start launch
+rotate-counter-clockwise: undo
+row-spacing: layout spacing
+rows: layout list
+ruler-horizontal: measure
+ruler-square: measure
+scissors: cut
+section: text section
+server: network host
+sewing-pin: pin marker
+sewing-pin-filled: pin marker
+shadow: effect drop
+shadow-inner: effect inner
+shadow-none: effect off
+shadow-outer: effect outer
+share-1: send social
+share-2: send social
+shuffle: random mix
+size: size scale
+sketch-logo: design tool
+slash: cancel off
+slider: settings adjust range
+space-between-horizontally: spacing justify
+space-between-vertically: spacing justify
+space-evenly-horizontally: spacing distribute
+space-evenly-vertically: spacing distribute
+speaker-loud: audio volume
+speaker-moderate: audio volume
+speaker-off: mute audio
+speaker-quiet: audio volume
+square: shape box
+stack: layers pile
+star: favorite rating
+star-filled: favorite rating
+stitches-logo: code tool
+stop: media end
+stopwatch: timer
+stretch-horizontally: ''
+stretch-vertically: ''
+strikethrough: text format delete
+sun: day light
+switch: toggle on off
+symbol: text icon
+table: data grid
+target: goal aim
+text: typography write
+text-align-bottom: text align bottom
+text-align-center: text align center
+text-align-justify: text align justify
+text-align-left: text align left
+text-align-middle: text align middle
+text-align-right: text align right
+text-align-top: text align top
+text-none: text none
+thick-arrow-down: direction
+thick-arrow-left: direction
+thick-arrow-right: direction
+thick-arrow-up: direction
+timer: countdown
+tokens: design system
+track-next: media next
+track-previous: media previous
+transform: rotate scale
+transparency-grid: background grid
+trash: delete garbage
+triangle-down: direction arrow
+triangle-left: direction arrow
+triangle-right: direction arrow
+triangle-up: direction arrow
+twitter-logo: social tweet
+underline: text format
+update: upgrade version
+upload: send import
+value: text number
+value-none: text none
+vercel-logo: hosting deployment
+video: media record
+view-grid: grid layout
+view-horizontal: layout horizontal
+view-none: view off
+view-vertical: layout vertical
+width: size horizontal
+zoom-in: search enlarge
+zoom-out: search shrink

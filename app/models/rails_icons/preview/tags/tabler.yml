@@ -1,0 +1,5021 @@
+a-b: ''
+a-b-2: ''
+a-b-off: ''
+abacus: ''
+abacus-off: ''
+abc: alphabet text
+access-point: wifi
+access-point-off: wifi off
+accessible: a11y wheelchair
+accessible-off: accessible
+activity: pulse heartbeat graph
+activity-heartbeat: activity heartbeat
+ad: ''
+ad-2: ''
+ad-circle: circle
+ad-circle-off: circle
+ad-off: ''
+address-book: contact
+address-book-off: address book
+adjustments: sliders
+adjustments-alt: sliders
+adjustments-bolt: adjustments
+adjustments-cancel: adjustments
+adjustments-check: adjustments check
+adjustments-code: adjustments code
+adjustments-cog: adjustments
+adjustments-dollar: adjustments dollar
+adjustments-down: adjustments
+adjustments-exclamation: adjustments
+adjustments-heart: adjustments heart
+adjustments-horizontal: sliders
+adjustments-minus: adjustments minus
+adjustments-off: adjustments
+adjustments-pause: adjustments pause
+adjustments-pin: adjustments
+adjustments-plus: adjustments plus
+adjustments-question: adjustments
+adjustments-search: adjustments search
+adjustments-share: adjustments share
+adjustments-spark: adjustments
+adjustments-star: adjustments star
+adjustments-up: adjustments
+adjustments-x: adjustments x
+aerial-lift: ''
+affiliate: ''
+ai: ''
+ai-agent: ''
+ai-agents: ''
+ai-gateway: ''
+air-balloon: ''
+air-conditioning: ''
+air-conditioning-disabled: ''
+air-traffic-control: ''
+alarm: morning
+alarm-average: alarm
+alarm-minus: alarm remove
+alarm-off: alarm off
+alarm-plus: alarm plus
+alarm-smoke: alarm
+alarm-snooze: alarm
+album: music collection
+album-off: album
+alert-circle: warning alert
+alert-circle-off: circle
+alert-hexagon: danger
+alert-hexagon-off: hexagon
+alert-octagon: danger
+alert-small: warning
+alert-small-off: small
+alert-square: square
+alert-square-rounded: square
+alert-square-rounded-off: square
+alert-triangle: warning
+alert-triangle-off: triangle
+alien: ''
+align-box-bottom-center: align bottom
+align-box-bottom-left: align bottom left
+align-box-bottom-right: align bottom right
+align-box-center-bottom: align bottom
+align-box-center-middle: align center
+align-box-center-stretch: box
+align-box-center-top: align top
+align-box-left-bottom: align
+align-box-left-middle: align
+align-box-left-stretch: box
+align-box-left-top: align
+align-box-right-bottom: align
+align-box-right-middle: align
+align-box-right-stretch: box
+align-box-right-top: align
+align-box-top-center: align top
+align-box-top-left: align top left
+align-box-top-right: align top right
+align-center: text center
+align-justified: text justify
+align-left: text left
+align-left-2: ''
+align-right: text right
+align-right-2: ''
+alpha: ''
+alphabet-arabic: ''
+alphabet-bangla: ''
+alphabet-cyrillic: ''
+alphabet-greek: ''
+alphabet-hebrew: ''
+alphabet-korean: ''
+alphabet-latin: ''
+alphabet-polish: ''
+alphabet-runes: ''
+alphabet-thai: ''
+alt: ''
+ambulance: ''
+ampersand: and symbol
+analyze: ''
+analyze-off: ''
+anchor: ''
+anchor-off: ''
+angle: ''
+ankh: ''
+antenna: broadcast signal
+antenna-bars-1: antenna
+antenna-bars-2: antenna
+antenna-bars-3: antenna
+antenna-bars-4: antenna
+antenna-bars-5: antenna
+antenna-bars-off: antenna
+antenna-off: antenna
+aperture: ''
+aperture-off: ''
+api: ''
+api-app: ''
+api-app-off: ''
+api-book: book
+api-off: ''
+app-window: ''
+apple: fruit food
+apps: ''
+apps-off: ''
+archery-arrow: ''
+archive: compress storage box
+archive-off: archive off
+armchair: ''
+armchair-2: ''
+armchair-2-off: ''
+armchair-off: ''
+arrow-autofit-content: ''
+arrow-autofit-down: ''
+arrow-autofit-height: direction
+arrow-autofit-left: ''
+arrow-autofit-right: ''
+arrow-autofit-up: ''
+arrow-autofit-width: direction
+arrow-back: backward return
+arrow-back-up: backup
+arrow-back-up-double: ''
+arrow-badge-down: badge
+arrow-badge-left: badge
+arrow-badge-right: badge
+arrow-badge-up: badge
+arrow-bar-both: ''
+arrow-bar-down: ''
+arrow-bar-left: ''
+arrow-bar-right: ''
+arrow-bar-to-down: direction
+arrow-bar-to-down-dashed: ''
+arrow-bar-to-left: direction
+arrow-bar-to-left-dashed: ''
+arrow-bar-to-right: direction
+arrow-bar-to-right-dashed: ''
+arrow-bar-to-up: direction
+arrow-bar-to-up-dashed: ''
+arrow-bar-up: ''
+arrow-bear-left: ''
+arrow-bear-left-2: ''
+arrow-bear-right: ''
+arrow-bear-right-2: ''
+arrow-big-down: direction south
+arrow-big-down-line: ''
+arrow-big-down-lines: ''
+arrow-big-left: direction west
+arrow-big-left-line: ''
+arrow-big-left-lines: ''
+arrow-big-right: direction east
+arrow-big-right-line: ''
+arrow-big-right-lines: ''
+arrow-big-up: direction north
+arrow-big-up-line: ''
+arrow-big-up-lines: ''
+arrow-bounce: ''
+arrow-capsule: ''
+arrow-curve-left: ''
+arrow-curve-right: ''
+arrow-down: direction
+arrow-down-bar: direction
+arrow-down-circle: circle
+arrow-down-dashed: ''
+arrow-down-from-arc: direction
+arrow-down-left: direction
+arrow-down-left-circle: circle
+arrow-down-rhombus: rhombus
+arrow-down-right: direction
+arrow-down-right-circle: circle
+arrow-down-square: square
+arrow-down-tail: ''
+arrow-down-to-arc: direction
+arrow-elbow-left: ''
+arrow-elbow-right: ''
+arrow-fork: fork
+arrow-forward: forward ahead
+arrow-forward-up: forward
+arrow-forward-up-double: ''
+arrow-guide: ''
+arrow-iteration: ''
+arrow-left: direction
+arrow-left-bar: ''
+arrow-left-circle: circle
+arrow-left-dashed: ''
+arrow-left-from-arc: ''
+arrow-left-rhombus: rhombus
+arrow-left-right: direction horizontal
+arrow-left-square: square
+arrow-left-tail: ''
+arrow-left-to-arc: ''
+arrow-loop-left: loop
+arrow-loop-left-2: ''
+arrow-loop-right: loop
+arrow-loop-right-2: ''
+arrow-merge: merge
+arrow-merge-alt-left: ''
+arrow-merge-alt-right: ''
+arrow-merge-both: ''
+arrow-merge-left: ''
+arrow-merge-right: ''
+arrow-move-down: move
+arrow-move-left: move
+arrow-move-right: move
+arrow-move-up: move
+arrow-narrow-down: direction
+arrow-narrow-down-dashed: ''
+arrow-narrow-left: direction
+arrow-narrow-left-dashed: ''
+arrow-narrow-right: direction
+arrow-narrow-right-dashed: ''
+arrow-narrow-up: direction
+arrow-narrow-up-dashed: ''
+arrow-ramp-left: direction
+arrow-ramp-left-2: ''
+arrow-ramp-left-3: '3'
+arrow-ramp-right: direction
+arrow-ramp-right-2: ''
+arrow-ramp-right-3: '3'
+arrow-right: direction
+arrow-right-bar: ''
+arrow-right-circle: circle
+arrow-right-dashed: ''
+arrow-right-from-arc: ''
+arrow-right-rhombus: rhombus
+arrow-right-square: square
+arrow-right-tail: ''
+arrow-right-to-arc: ''
+arrow-rotary-first-left: ''
+arrow-rotary-first-right: ''
+arrow-rotary-last-left: ''
+arrow-rotary-last-right: ''
+arrow-rotary-left: ''
+arrow-rotary-right: ''
+arrow-rotary-straight: ''
+arrow-roundabout-left: ''
+arrow-roundabout-right: ''
+arrow-sharp-turn-left: ''
+arrow-sharp-turn-right: ''
+arrow-up: direction
+arrow-up-bar: ''
+arrow-up-circle: direction
+arrow-up-dashed: ''
+arrow-up-from-arc: direction
+arrow-up-left: direction
+arrow-up-left-circle: circle
+arrow-up-rhombus: rhombus
+arrow-up-right: direction
+arrow-up-right-circle: circle
+arrow-up-square: square
+arrow-up-tail: ''
+arrow-up-to-arc: direction
+arrow-wave-left-down: ''
+arrow-wave-left-up: ''
+arrow-wave-right-down: ''
+arrow-wave-right-up: ''
+arrow-zig-zag: ''
+arrows-cross: exchange
+arrows-diagonal: diagonal
+arrows-diagonal-2: ''
+arrows-diagonal-minimize: minimize
+arrows-diagonal-minimize-2: minimize
+arrows-diff: ''
+arrows-double-ne-sw: ''
+arrows-double-nw-se: ''
+arrows-double-se-nw: ''
+arrows-double-sw-ne: ''
+arrows-down: ''
+arrows-down-up: ''
+arrows-exchange: swap
+arrows-exchange-2: exchange
+arrows-horizontal: ''
+arrows-join: ''
+arrows-join-2: ''
+arrows-left: ''
+arrows-left-down: ''
+arrows-left-right: ''
+arrows-maximize: expand
+arrows-minimize: collapse
+arrows-move: move
+arrows-move-horizontal: move
+arrows-move-vertical: move
+arrows-random: random
+arrows-right: ''
+arrows-right-down: ''
+arrows-right-left: ''
+arrows-shuffle: shuffle
+arrows-shuffle-2: shuffle
+arrows-sort: sort
+arrows-split: ''
+arrows-split-2: ''
+arrows-transfer-down: ''
+arrows-transfer-up: ''
+arrows-transfer-up-down: ''
+arrows-up: ''
+arrows-up-down: ''
+arrows-up-left: direction
+arrows-up-right: direction
+arrows-vertical: ''
+artboard: ''
+artboard-off: ''
+article: ''
+article-off: ''
+aspect-ratio: size ratio
+aspect-ratio-off: ''
+assembly: ''
+assembly-off: ''
+asset: ''
+asterisk: symbol star
+asterisk-simple: asterisk
+at: ''
+at-off: ''
+atom: science molecule
+atom-2: science
+atom-off: atom
+augmented-reality: ''
+augmented-reality-2: ''
+augmented-reality-off: ''
+auth-2fa: ''
+automatic-gearbox: ''
+automation: ''
+avocado: ''
+award: prize ribbon
+award-off: award
+axe: tool chop
+axis-x: x
+axis-y: ''
+baby-bottle: baby food
+baby-carriage: child infant
+background: ''
+backhoe: ''
+backpack: ''
+backpack-off: ''
+backslash: symbol
+backspace: ''
+badge: tag status
+badge-2k: badge
+badge-3d: badge
+badge-3k: badge
+badge-4k: badge
+badge-5k: badge
+badge-8k: badge
+badge-ad: badge
+badge-ad-off: badge
+badge-ar: badge
+badge-cc: badge
+badge-hd: badge
+badge-off: tag off
+badge-sd: badge
+badge-tm: badge
+badge-vo: badge
+badge-vr: badge
+badge-wc: wc accessible
+badges: ''
+badges-off: ''
+baguette: ''
+ball-american-football: ''
+ball-american-football-off: ''
+ball-baseball: ''
+ball-basketball: ''
+ball-bowling: ''
+ball-football: ''
+ball-football-off: ''
+ball-tennis: ''
+ball-volleyball: ''
+balloon: ''
+balloon-off: ''
+ballpen: ''
+ballpen-off: ''
+ban: ''
+bandage: ''
+bandage-off: ''
+barbell: ''
+barbell-off: ''
+barcode: ''
+barcode-off: barcode off
+barrel: ''
+barrel-off: ''
+barrier-block: ''
+barrier-block-off: ''
+baseline: ''
+baseline-density-large: ''
+baseline-density-medium: ''
+baseline-density-small: small
+basket: ''
+basket-bolt: ''
+basket-cancel: ''
+basket-check: check
+basket-code: code
+basket-cog: ''
+basket-discount: ''
+basket-dollar: dollar
+basket-down: ''
+basket-exclamation: ''
+basket-heart: heart
+basket-minus: minus
+basket-off: ''
+basket-pause: pause
+basket-pin: ''
+basket-plus: plus
+basket-question: ''
+basket-search: search
+basket-share: share
+basket-star: star
+basket-up: ''
+basket-x: x
+bat: ''
+bath: bathroom hygiene
+bath-off: bath
+battery: power charge
+battery-1: battery 1
+battery-2: power
+battery-3: battery
+battery-4: power full
+battery-automotive: battery
+battery-charging: power
+battery-charging-2: battery 2
+battery-eco: battery
+battery-exclamation: battery
+battery-off: power off
+battery-spark: battery
+battery-vertical: battery
+battery-vertical-1: battery
+battery-vertical-2: battery
+battery-vertical-3: battery
+battery-vertical-4: battery
+battery-vertical-charging: battery
+battery-vertical-charging-2: battery
+battery-vertical-eco: battery
+battery-vertical-exclamation: battery
+battery-vertical-off: battery
+beach: ''
+beach-off: ''
+bed: sleep hotel
+bed-flat: hotel
+bed-off: bed
+beer: drink alcohol
+beer-off: drink off
+bell: notification alert
+bell-bolt: bell
+bell-cancel: bell
+bell-check: bell check
+bell-code: bell code
+bell-cog: bell
+bell-dollar: bell dollar
+bell-down: bell
+bell-exclamation: bell
+bell-heart: bell heart
+bell-minus: notification remove
+bell-off: silent off
+bell-pause: bell pause
+bell-pin: bell
+bell-plus: notification add
+bell-question: bell
+bell-ringing: notification ring
+bell-ringing-2: notification
+bell-school: bell
+bell-search: bell search
+bell-share: bell share
+bell-star: bell star
+bell-up: bell
+bell-x: notification delete
+bell-z: bell
+beta: ''
+bible: ''
+bike: cycling
+bike-off: bike
+binary: ''
+binary-off: ''
+binary-tree: structure
+binary-tree-2: structure
+binoculars: explore search
+biohazard: danger biology
+biohazard-off: biohazard
+blade: knife
+bleach: ''
+bleach-chlorine: ''
+bleach-no-chlorine: ''
+bleach-off: ''
+blend-mode: ''
+blender: ''
+blind: ''
+blob: ''
+blockquote: ''
+blocks: ''
+bluetooth: wireless connection
+bluetooth-connected: paired
+bluetooth-off: disabled
+bluetooth-x: disconnected
+blur: ''
+blur-off: ''
+bmp: ''
+body-scan: scan
+bold: format text
+bold-off: bold
+bolt: ''
+bolt-off: ''
+bomb: ''
+bone: skeleton anatomy
+bone-off: bone
+bong: ''
+bong-off: ''
+book: read guide
+book-2: read
+book-download: ebook download
+book-off: book off
+book-upload: ebook upload
+bookmark: save mark
+bookmark-ai: bookmark
+bookmark-edit: bookmark edit
+bookmark-minus: bookmark minus
+bookmark-off: mark off
+bookmark-plus: mark add
+bookmark-question: bookmark
+bookmarks: ''
+bookmarks-off: ''
+books: library
+books-off: books
+boom: ''
+border-all: ''
+border-bottom: ''
+border-bottom-plus: plus
+border-corner-ios: ''
+border-corner-pill: ''
+border-corner-rounded: ''
+border-corner-square: square
+border-corners: ''
+border-horizontal: ''
+border-inner: ''
+border-left: ''
+border-left-plus: plus
+border-none: ''
+border-outer: ''
+border-radius: ''
+border-right: ''
+border-right-plus: plus
+border-sides: ''
+border-style: ''
+border-style-2: '2'
+border-top: ''
+border-top-plus: plus
+border-vertical: ''
+bot-id: id
+bottle: ''
+bottle-off: ''
+bounce-left: bounce
+bounce-right: bounce
+bow: ''
+bowl: ''
+bowl-chopsticks: ''
+bowl-spoon: ''
+bowling: ''
+box: container
+box-align-bottom: align bottom
+box-align-bottom-left: align
+box-align-bottom-right: align
+box-align-left: align left
+box-align-right: align right
+box-align-top: align top
+box-align-top-left: align
+box-align-top-right: align
+box-margin: spacing
+box-model: layout
+box-model-2: box
+box-model-2-off: box
+box-model-off: box
+box-multiple: boxes
+box-multiple-0: box
+box-multiple-1: box
+box-multiple-2: box
+box-multiple-3: box
+box-multiple-4: box
+box-multiple-5: box
+box-multiple-6: box
+box-multiple-7: box
+box-multiple-8: box
+box-multiple-9: box
+box-off: box
+box-padding: spacing
+braces: code developer
+braces-off: braces
+brackets: ''
+brackets-angle: ''
+brackets-angle-off: ''
+brackets-contain: ''
+brackets-contain-end: ''
+brackets-contain-start: ''
+brackets-off: ''
+braille: ''
+brain: mind think
+brand-4chan: ''
+brand-abstract: ''
+brand-adobe: ''
+brand-adobe-after-effect: ''
+brand-adobe-illustrator: ''
+brand-adobe-indesign: ''
+brand-adobe-photoshop: ''
+brand-adobe-premiere: ''
+brand-adobe-xd: ''
+brand-adonis-js: ''
+brand-airbnb: ''
+brand-airtable: ''
+brand-algolia: ''
+brand-alipay: payment
+brand-alpine-js: ''
+brand-amazon: ecommerce
+brand-amd: ''
+brand-amie: ''
+brand-amigo: ''
+brand-among-us: ''
+brand-android: mobile
+brand-angular: code framework
+brand-ansible: automation
+brand-ao3: ''
+brand-appgallery: ''
+brand-apple: apple
+brand-apple-arcade: gaming
+brand-apple-news: apple
+brand-apple-podcast: apple
+brand-appstore: store
+brand-arc: ''
+brand-asana: project
+brand-astro: ''
+brand-auth0: ''
+brand-aws: cloud
+brand-azure: cloud
+brand-backbone: ''
+brand-badoo: ''
+brand-baidu: ''
+brand-bandcamp: ''
+brand-bandlab: ''
+brand-beats: ''
+brand-bebo: ''
+brand-behance: design
+brand-bilibili: ''
+brand-binance: crypto
+brand-bing: ''
+brand-bitbucket: code
+brand-blackberry: ''
+brand-blender: 3d
+brand-blogger: ''
+brand-bluesky: social
+brand-booking: ''
+brand-bootstrap: css
+brand-bulma: ''
+brand-bumble: dating
+brand-bunpo: ''
+brand-c-sharp: code
+brand-cake: ''
+brand-cakephp: ''
+brand-campaignmonitor: ''
+brand-carbon: ''
+brand-cashapp: ''
+brand-chrome: browser
+brand-cinema-4d: ''
+brand-citymapper: ''
+brand-cloudflare: cdn
+brand-codecov: ''
+brand-codepen: code
+brand-codesandbox: code
+brand-cohost: ''
+brand-coinbase: ''
+brand-comedy-central: ''
+brand-coreos: ''
+brand-couchdb: ''
+brand-couchsurfing: ''
+brand-cpp: ''
+brand-craft: ''
+brand-crunchbase: ''
+brand-css3: code
+brand-ctemplar: ''
+brand-cucumber: ''
+brand-cupra: ''
+brand-cypress: ''
+brand-d3: ''
+brand-databricks: ''
+brand-days-counter: ''
+brand-dcos: ''
+brand-debian: linux
+brand-deezer: ''
+brand-deliveroo: ''
+brand-deno: code
+brand-denodo: ''
+brand-deviantart: ''
+brand-digg: ''
+brand-dingtalk: ''
+brand-discord: chat
+brand-disney: ''
+brand-disqus: ''
+brand-django: code framework
+brand-docker: container
+brand-doctrine: ''
+brand-dolby-digital: ''
+brand-douban: ''
+brand-dribbble: design
+brand-dropbox: cloud
+brand-drops: drops
+brand-drupal: ''
+brand-edge: browser
+brand-elastic: ''
+brand-electronic-arts: ''
+brand-ember: ''
+brand-envato: ''
+brand-etsy: ''
+brand-evernote: ''
+brand-facebook: social
+brand-feedly: ''
+brand-figma: design
+brand-filezilla: ''
+brand-finder: ''
+brand-firebase: backend
+brand-firefox: browser
+brand-fiverr: ''
+brand-flickr: ''
+brand-flightradar24: ''
+brand-flipboard: ''
+brand-flutter: ''
+brand-fortnite: ''
+brand-foursquare: ''
+brand-framer: design
+brand-framer-motion: ''
+brand-funimation: ''
+brand-gatsby: ''
+brand-git: vcs
+brand-github: code
+brand-github-copilot: github
+brand-gitlab: code
+brand-gmail: ''
+brand-golang: ''
+brand-google: search
+brand-google-analytics: analytics
+brand-google-big-query: ''
+brand-google-drive: cloud
+brand-google-fit: ''
+brand-google-home: home
+brand-google-maps: ''
+brand-google-one: one
+brand-google-photos: photos
+brand-google-play: store
+brand-google-podcasts: ''
+brand-grammarly: ''
+brand-graphql: ''
+brand-gravatar: ''
+brand-grindr: ''
+brand-guardian: ''
+brand-gumroad: ''
+brand-hackerrank: ''
+brand-hbo: ''
+brand-headlessui: ''
+brand-hexo: ''
+brand-hipchat: ''
+brand-html5: code
+brand-inertia: ''
+brand-infakt: ''
+brand-instagram: social
+brand-intercom: ''
+brand-itch: ''
+brand-javascript: code
+brand-juejin: ''
+brand-kako-talk: ''
+brand-kbin: ''
+brand-kick: streaming
+brand-kickstarter: ''
+brand-kotlin: code
+brand-laravel: code framework
+brand-lastfm: ''
+brand-leetcode: ''
+brand-letterboxd: ''
+brand-line: chat
+brand-linkedin: social
+brand-linktree: ''
+brand-linqpad: ''
+brand-livewire: ''
+brand-loom: ''
+brand-mailgun: ''
+brand-mantine: ''
+brand-mastercard: ''
+brand-mastodon: social
+brand-matrix: ''
+brand-mcdonalds: ''
+brand-medium: blog
+brand-meetup: ''
+brand-mercedes: ''
+brand-messenger: chat
+brand-meta: social
+brand-metabrainz: ''
+brand-minecraft: ''
+brand-miniprogram: ''
+brand-mixpanel: ''
+brand-monday: ''
+brand-mongodb: database
+brand-my-oppo: ''
+brand-mysql: database
+brand-national-geographic: ''
+brand-nem: ''
+brand-netbeans: ''
+brand-netease-music: music
+brand-netflix: ''
+brand-nexo: ''
+brand-nextcloud: ''
+brand-nextjs: code framework
+brand-nodejs: code
+brand-nord-vpn: ''
+brand-notion: notes
+brand-npm: package
+brand-nuxt: ''
+brand-nytimes: ''
+brand-oauth: ''
+brand-office: productivity
+brand-ok-ru: ''
+brand-onedrive: cloud
+brand-onlyfans: ''
+brand-open-source: code
+brand-openai: ''
+brand-openvpn: ''
+brand-opera: browser
+brand-pagekit: ''
+brand-parsinta: ''
+brand-patreon: patronage
+brand-paypal: payment
+brand-paypay: ''
+brand-peanut: ''
+brand-pepsi: ''
+brand-php: code
+brand-picsart: ''
+brand-pinterest: social
+brand-planetscale: database
+brand-pnpm: package
+brand-pocket: ''
+brand-polymer: ''
+brand-powershell: ''
+brand-printables: ''
+brand-prisma: ''
+brand-producthunt: ''
+brand-pushbullet: ''
+brand-pushover: ''
+brand-python: code
+brand-qq: ''
+brand-radix-ui: ''
+brand-react: code framework
+brand-react-native: ''
+brand-reason: ''
+brand-reddit: social
+brand-redhat: linux
+brand-redux: ''
+brand-revolut: ''
+brand-rumble: ''
+brand-rust: code
+brand-safari: browser
+brand-samsungpass: ''
+brand-sass: ''
+brand-sentry: monitoring
+brand-sharik: ''
+brand-shazam: ''
+brand-shopee: ecommerce
+brand-sketch: design
+brand-skype: chat
+brand-slack: chat
+brand-snapchat: social
+brand-snapseed: ''
+brand-snowflake: snowflake
+brand-socket-io: ''
+brand-solidjs: ''
+brand-soundcloud: ''
+brand-spacehey: ''
+brand-speedtest: ''
+brand-spotify: music streaming
+brand-stackoverflow: code
+brand-stackshare: ''
+brand-steam: gaming
+brand-stocktwits: ''
+brand-storj: ''
+brand-storybook: ''
+brand-storytel: ''
+brand-strava: ''
+brand-stripe: payment
+brand-sublime-text: text
+brand-sugarizer: ''
+brand-supabase: backend
+brand-superhuman: ''
+brand-supernova: ''
+brand-surfshark: ''
+brand-svelte: ''
+brand-swift: code
+brand-symfony: ''
+brand-tabler: icons
+brand-tabnine: ''
+brand-tailwind: css
+brand-taobao: ''
+brand-teams: chat
+brand-ted: ''
+brand-telegram: chat
+brand-terraform: iac
+brand-tesla: ''
+brand-tether: crypto
+brand-thingiverse: ''
+brand-threads: social
+brand-threejs: ''
+brand-tidal: ''
+brand-tiktok: video
+brand-tinder: dating
+brand-topbuzz: ''
+brand-torchain: ''
+brand-toyota: ''
+brand-trello: project
+brand-tripadvisor: ''
+brand-tumblr: social blog
+brand-twilio: ''
+brand-twitch: streaming
+brand-twitter: social
+brand-typescript: code
+brand-uber: ''
+brand-ubuntu: linux
+brand-unity: 3d
+brand-unsplash: ''
+brand-upwork: ''
+brand-valorant: ''
+brand-vercel: hosting
+brand-vimeo: video
+brand-vinted: ''
+brand-visa: ''
+brand-visual-studio: ''
+brand-vite: ''
+brand-vivaldi: ''
+brand-vk: ''
+brand-vlc: ''
+brand-volkswagen: ''
+brand-vsco: ''
+brand-vscode: ''
+brand-vue: code framework
+brand-walmart: ''
+brand-waze: ''
+brand-webflow: ''
+brand-wechat: chat
+brand-weibo: social chinese
+brand-whatsapp: chat
+brand-wikipedia: ''
+brand-windows: microsoft
+brand-windy: ''
+brand-wish: ''
+brand-wix: ''
+brand-wordpress: ''
+brand-x: social
+brand-xamarin: ''
+brand-xbox: gaming
+brand-xdeep: ''
+brand-xing: ''
+brand-yahoo: ''
+brand-yandex: ''
+brand-yarn: package
+brand-yatse: ''
+brand-ycombinator: ''
+brand-youtube: video
+brand-youtube-kids: ''
+brand-zalando: ''
+brand-zapier: ''
+brand-zeit: ''
+brand-zhihu: ''
+brand-zoom: video
+brand-zulip: ''
+brand-zwift: ''
+bread: ''
+bread-off: ''
+briefcase: ''
+briefcase-2: '2'
+briefcase-off: ''
+brightness: ''
+brightness-2: '2'
+brightness-auto: ''
+brightness-down: ''
+brightness-half: ''
+brightness-off: ''
+brightness-up: ''
+broadcast: radio
+broadcast-off: broadcast
+browser: ''
+browser-check: check
+browser-maximize: maximize
+browser-minus: minus
+browser-off: ''
+browser-plus: plus
+browser-share: share
+browser-x: x
+brush: ''
+brush-off: ''
+bubble: ''
+bubble-minus: minus
+bubble-plus: plus
+bubble-tea: ''
+bubble-tea-2: '2'
+bubble-text: text
+bubble-x: x
+bucket: ''
+bucket-droplet: droplet
+bucket-off: ''
+bug: insect error
+bug-off: error fix
+building: office company
+building-airport: building
+building-arch: architecture
+building-bank: bank
+building-bridge: building
+building-bridge-2: building 2
+building-broadcast-tower: building broadcast
+building-burj-al-arab: building
+building-carousel: building carousel
+building-castle: building
+building-church: church
+building-circus: building
+building-cog: building
+building-community: building
+building-cottage: building
+building-estate: building
+building-factory: factory
+building-factory-2: factory
+building-fortress: building
+building-hospital: hospital
+building-lighthouse: lighthouse
+building-minus: building minus
+building-monument: building
+building-mosque: building
+building-off: building
+building-pavilion: pavilion
+building-plus: building plus
+building-skyscraper: skyscraper
+building-stadium: building
+building-store: store
+building-tunnel: building
+building-warehouse: warehouse
+building-wind-turbine: building wind
+buildings: ''
+bulb: light idea
+bulb-off: light off
+bulldozer: ''
+burger: ''
+bus: vehicle transport
+bus-off: bus off
+bus-stop: bus stop
+businessplan: ''
+butterfly: ''
+cactus: nature desert
+cactus-off: cactus
+cake: ''
+cake-off: ''
+cake-roll: ''
+calculator: ''
+calculator-off: ''
+calendar: date schedule
+calendar-bolt: calendar
+calendar-cancel: calendar
+calendar-check: date done
+calendar-clock: calendar clock
+calendar-code: calendar code
+calendar-cog: calendar
+calendar-dollar: calendar dollar
+calendar-dot: calendar dot
+calendar-down: calendar
+calendar-due: calendar
+calendar-event: event
+calendar-exclamation: calendar
+calendar-heart: calendar heart
+calendar-minus: date remove
+calendar-month: month
+calendar-off: calendar off
+calendar-pause: calendar pause
+calendar-pin: calendar
+calendar-plus: date add
+calendar-question: calendar
+calendar-repeat: calendar
+calendar-sad: calendar
+calendar-search: calendar search
+calendar-share: calendar share
+calendar-smile: calendar
+calendar-star: calendar star
+calendar-stats: calendar
+calendar-time: schedule
+calendar-up: calendar
+calendar-user: calendar user
+calendar-week: week
+calendar-x: date delete
+camera: photo
+camera-ai: camera
+camera-bitcoin: camera bitcoin
+camera-bolt: camera
+camera-cancel: camera
+camera-check: camera check
+camera-code: camera code
+camera-cog: camera
+camera-dollar: camera dollar
+camera-down: camera
+camera-exclamation: camera
+camera-heart: camera heart
+camera-minus: photo remove
+camera-moon: camera moon
+camera-off: photo off
+camera-pause: camera pause
+camera-pin: camera
+camera-plus: photo add
+camera-question: camera
+camera-rotate: camera
+camera-search: camera search
+camera-selfie: camera
+camera-share: camera share
+camera-spark: camera
+camera-star: camera star
+camera-up: camera
+camera-x: camera x
+camper: ''
+campfire: ''
+canary: ''
+cancel: ''
+candle: flame
+candy: ''
+candy-off: ''
+cane: ''
+cannabis: ''
+cap-projecting: ''
+cap-rounded: ''
+cap-straight: ''
+capsule: ''
+capsule-horizontal: ''
+capture: screenshot
+capture-off: capture
+car: vehicle automobile
+car-4wd: car
+car-crane: car
+car-crash: vehicle accident
+car-fan: car
+car-fan-1: car
+car-fan-2: car
+car-fan-3: car
+car-fan-auto: car
+car-garage: car
+car-off: vehicle off
+car-suv: vehicle
+car-turbine: car
+carambola: fruit food
+caravan: ''
+cardboards: ''
+cardboards-off: ''
+cards: ''
+caret-down: ''
+caret-left: ''
+caret-left-right: ''
+caret-right: ''
+caret-up: ''
+caret-up-down: ''
+carousel-horizontal: ''
+carousel-vertical: ''
+carrot: ''
+carrot-off: ''
+cash: money
+cash-banknote: cash
+cash-banknote-edit: cash edit
+cash-banknote-heart: cash heart
+cash-banknote-minus: cash minus
+cash-banknote-move: cash move
+cash-banknote-move-back: cash move
+cash-banknote-off: cash
+cash-banknote-plus: cash plus
+cash-edit: cash edit
+cash-heart: cash heart
+cash-minus: cash minus
+cash-move: cash move
+cash-move-back: cash move
+cash-off: money off
+cash-plus: cash plus
+cash-register: cash
+cast: ''
+cast-off: ''
+cat: animal pet
+category: ''
+category-2: '2'
+category-minus: minus
+category-plus: plus
+ce: ''
+ce-off: ''
+cell: ''
+cell-signal-1: '1'
+cell-signal-2: '2'
+cell-signal-3: '3'
+cell-signal-4: '4'
+cell-signal-5: '5'
+cell-signal-off: ''
+certificate: ''
+certificate-2: '2'
+certificate-2-off: '2'
+certificate-off: ''
+chair-director: ''
+chalkboard: ''
+chalkboard-off: ''
+chalkboard-teacher: ''
+charging-pile: ''
+chart-arcs: graph
+chart-arcs-3: graph
+chart-area: ''
+chart-area-line: ''
+chart-arrows: ''
+chart-arrows-vertical: ''
+chart-bar: graph
+chart-bar-off: ''
+chart-bar-popular: ''
+chart-bubble: ''
+chart-candle: candle
+chart-circles: ''
+chart-cohort: ''
+chart-column: ''
+chart-covariate: ''
+chart-donut: graph ring
+chart-donut-2: graph
+chart-donut-3: graph
+chart-donut-4: graph
+chart-dots: dots
+chart-dots-2: dots
+chart-dots-3: dots
+chart-funnel: ''
+chart-grid-dots: grid dots
+chart-histogram: ''
+chart-infographic: analytics
+chart-line: graph trend
+chart-pie: graph
+chart-pie-2: graph
+chart-pie-3: graph
+chart-pie-4: graph
+chart-pie-off: ''
+chart-ppf: ''
+chart-radar: graph
+chart-sankey: ''
+chart-scatter: graph
+chart-scatter-3d: 3d graph
+chart-treemap: ''
+check: complete done tick
+checkbox: check select
+checklist: ''
+checks: ''
+checkup-list: list
+cheese: ''
+chef-hat: ''
+chef-hat-off: ''
+cherry: fruit food
+chess: ''
+chess-bishop: ''
+chess-king: ''
+chess-knight: ''
+chess-queen: ''
+chess-rook: ''
+chevron-compact-down: ''
+chevron-compact-left: ''
+chevron-compact-right: ''
+chevron-compact-up: ''
+chevron-down: expand
+chevron-down-left: ''
+chevron-down-right: ''
+chevron-left: collapse
+chevron-left-pipe: ''
+chevron-right: expand
+chevron-right-pipe: ''
+chevron-up: collapse
+chevron-up-left: ''
+chevron-up-right: ''
+chevrons-down: expand
+chevrons-down-left: ''
+chevrons-down-right: ''
+chevrons-left: collapse
+chevrons-right: expand
+chevrons-up: collapse
+chevrons-up-left: ''
+chevrons-up-right: ''
+chisel: ''
+christmas-ball: ''
+christmas-tree: tree
+christmas-tree-off: tree
+circle: shape
+circle-arrow-down: circle
+circle-arrow-down-left: circle
+circle-arrow-down-right: circle
+circle-arrow-left: circle
+circle-arrow-right: circle
+circle-arrow-up: circle
+circle-arrow-up-left: circle
+circle-arrow-up-right: circle
+circle-asterisk: circle asterisk
+circle-caret-down: circle
+circle-caret-left: circle
+circle-caret-right: circle
+circle-caret-up: circle
+circle-check: check done
+circle-chevron-down: circle
+circle-chevron-left: circle
+circle-chevron-right: circle
+circle-chevron-up: circle
+circle-chevrons-down: circle
+circle-chevrons-left: circle
+circle-chevrons-right: circle
+circle-chevrons-up: circle
+circle-dashed: outline
+circle-dashed-check: circle check
+circle-dashed-letter-a: circle
+circle-dashed-letter-b: circle
+circle-dashed-letter-c: circle
+circle-dashed-letter-d: circle
+circle-dashed-letter-e: circle
+circle-dashed-letter-f: circle
+circle-dashed-letter-g: circle
+circle-dashed-letter-h: circle
+circle-dashed-letter-i: circle
+circle-dashed-letter-j: circle
+circle-dashed-letter-k: circle
+circle-dashed-letter-l: circle
+circle-dashed-letter-m: circle
+circle-dashed-letter-n: circle
+circle-dashed-letter-o: circle
+circle-dashed-letter-p: circle
+circle-dashed-letter-q: circle
+circle-dashed-letter-r: circle
+circle-dashed-letter-s: circle
+circle-dashed-letter-t: circle
+circle-dashed-letter-u: circle
+circle-dashed-letter-v: circle
+circle-dashed-letter-w: circle
+circle-dashed-letter-x: circle x
+circle-dashed-letter-y: circle
+circle-dashed-letter-z: circle
+circle-dashed-minus: circle minus
+circle-dashed-number-0: circle
+circle-dashed-number-1: circle
+circle-dashed-number-2: circle
+circle-dashed-number-3: circle
+circle-dashed-number-4: circle
+circle-dashed-number-5: circle
+circle-dashed-number-6: circle
+circle-dashed-number-7: circle
+circle-dashed-number-8: circle
+circle-dashed-number-9: circle
+circle-dashed-percentage: circle
+circle-dashed-plus: circle plus
+circle-dashed-x: circle x
+circle-dot: radio button
+circle-dotted: dotted
+circle-dotted-letter-a: circle
+circle-dotted-letter-b: circle
+circle-dotted-letter-c: circle
+circle-dotted-letter-d: circle
+circle-dotted-letter-e: circle
+circle-dotted-letter-f: circle
+circle-dotted-letter-g: circle
+circle-dotted-letter-h: circle
+circle-dotted-letter-i: circle
+circle-dotted-letter-j: circle
+circle-dotted-letter-k: circle
+circle-dotted-letter-l: circle
+circle-dotted-letter-m: circle
+circle-dotted-letter-n: circle
+circle-dotted-letter-o: circle
+circle-dotted-letter-p: circle
+circle-dotted-letter-q: circle
+circle-dotted-letter-r: circle
+circle-dotted-letter-s: circle
+circle-dotted-letter-t: circle
+circle-dotted-letter-u: circle
+circle-dotted-letter-v: circle
+circle-dotted-letter-w: circle
+circle-dotted-letter-x: circle x
+circle-dotted-letter-y: circle
+circle-dotted-letter-z: circle
+circle-half: half
+circle-half-2: half
+circle-half-vertical: circle
+circle-key: circle
+circle-letter-a: letter
+circle-letter-b: circle
+circle-letter-c: circle
+circle-letter-d: circle
+circle-letter-e: circle
+circle-letter-f: circle
+circle-letter-g: circle
+circle-letter-h: circle
+circle-letter-i: circle
+circle-letter-j: circle
+circle-letter-k: circle
+circle-letter-l: circle
+circle-letter-m: circle
+circle-letter-n: circle
+circle-letter-o: circle
+circle-letter-p: circle
+circle-letter-q: circle
+circle-letter-r: circle
+circle-letter-s: circle
+circle-letter-t: circle
+circle-letter-u: letter
+circle-letter-v: circle
+circle-letter-w: circle
+circle-letter-x: circle x
+circle-letter-y: circle
+circle-letter-z: circle
+circle-minus: remove
+circle-minus-2: circle minus
+circle-number-0: circle
+circle-number-1: circle
+circle-number-2: circle 2
+circle-number-3: circle
+circle-number-4: circle
+circle-number-5: circle
+circle-number-6: circle
+circle-number-7: circle
+circle-number-8: circle
+circle-number-9: circle
+circle-off: circle
+circle-open-arrow-down: circle
+circle-open-arrow-left: circle
+circle-open-arrow-right: circle
+circle-open-arrow-up: circle
+circle-percentage: circle
+circle-plus: add
+circle-plus-2: circle plus 2
+circle-plus-minus: circle plus minus
+circle-rectangle: circle rectangle
+circle-rectangle-off: circle rectangle
+circle-square: circle square
+circle-triangle: circle triangle
+circle-x: close error
+circles: ''
+circles-relation: ''
+circuit-ammeter: ''
+circuit-battery: battery
+circuit-bulb: bulb
+circuit-capacitor: ''
+circuit-capacitor-polarized: ''
+circuit-cell: ''
+circuit-cell-plus: plus
+circuit-changeover: ''
+circuit-diode: ''
+circuit-diode-zener: ''
+circuit-ground: ''
+circuit-ground-digital: ''
+circuit-inductor: ''
+circuit-motor: ''
+circuit-pushbutton: ''
+circuit-resistor: ''
+circuit-switch-closed: ''
+circuit-switch-open: ''
+circuit-voltmeter: ''
+clear-all: ''
+clear-formatting: ''
+click: cursor
+cliff-jumping: ''
+clipboard: copy paste
+clipboard-check: done tasks
+clipboard-copy: clipboard copy
+clipboard-data: data paste
+clipboard-heart: clipboard heart
+clipboard-list: tasks checklist
+clipboard-off: clipboard off
+clipboard-plus: clipboard plus
+clipboard-search: clipboard search
+clipboard-smile: clipboard
+clipboard-text: text paste
+clipboard-typography: text paste
+clipboard-x: clipboard remove
+clock: time watch
+clock-12: clock 12
+clock-2: time
+clock-24: clock
+clock-bitcoin: clock bitcoin
+clock-bolt: clock
+clock-cancel: clock
+clock-check: clock check
+clock-code: clock code
+clock-cog: clock
+clock-dollar: clock dollar
+clock-down: clock
+clock-edit: clock edit
+clock-exclamation: clock
+clock-heart: clock heart
+clock-hour-1: clock 1
+clock-hour-10: clock 10
+clock-hour-11: clock 11
+clock-hour-12: clock 12
+clock-hour-2: clock 2
+clock-hour-3: clock 3
+clock-hour-4: clock 4
+clock-hour-5: clock 5
+clock-hour-6: clock 6
+clock-hour-7: clock 7
+clock-hour-8: clock 8
+clock-hour-9: clock 9
+clock-minus: clock minus
+clock-off: time off
+clock-pause: clock pause
+clock-pin: clock
+clock-play: clock play
+clock-plus: clock plus
+clock-question: clock
+clock-record: clock
+clock-search: clock search
+clock-share: clock share
+clock-shield: clock
+clock-star: clock star
+clock-stop: clock stop
+clock-up: clock
+clock-x: clock x
+clothes-rack: ''
+clothes-rack-off: ''
+cloud: weather sky
+cloud-bitcoin: cloud bitcoin
+cloud-bolt: cloud
+cloud-cancel: cloud
+cloud-check: cloud check
+cloud-code: cloud code
+cloud-cog: cloud
+cloud-computing: cloud
+cloud-data-connection: cloud
+cloud-dollar: cloud dollar
+cloud-down: cloud
+cloud-download: cloud download
+cloud-exclamation: cloud
+cloud-fog: weather fog
+cloud-heart: cloud heart
+cloud-lock: cloud lock
+cloud-lock-open: cloud lock
+cloud-minus: cloud minus
+cloud-network: cloud
+cloud-off: weather off
+cloud-pause: cloud pause
+cloud-pin: cloud
+cloud-plus: cloud plus
+cloud-question: cloud
+cloud-rain: weather rain
+cloud-search: cloud search
+cloud-share: cloud share
+cloud-snow: weather snow
+cloud-star: cloud star
+cloud-storm: weather
+cloud-up: cloud
+cloud-upload: cloud upload
+cloud-x: cloud x
+clover: ''
+clover-2: '2'
+clubs: ''
+code: developer programming
+code-asterisk: code asterisk
+code-circle: code circle
+code-circle-2: code circle 2
+code-dots: code dots
+code-minus: code remove
+code-off: code
+code-plus: code add
+code-variable: code variable
+code-variable-minus: code variable minus
+code-variable-plus: code variable plus
+codeblock: ''
+coffee: drink beverage cafe
+coffee-off: coffee
+coffin: ''
+coin: money gold
+coin-bitcoin: coin bitcoin
+coin-euro: coin euro
+coin-monero: coin
+coin-off: coin
+coin-pound: coin pound
+coin-rupee: coin rupee
+coin-taka: coin taka
+coin-yen: coin yen
+coin-yuan: coin
+coins: money cash
+color-filter: filter
+color-picker: ''
+color-picker-off: ''
+color-swatch: ''
+color-swatch-off: ''
+column-insert-left: ''
+column-insert-right: ''
+column-remove: remove
+columns: vertical
+columns-1: columns 1
+columns-2: columns 2
+columns-3: columns 3
+columns-off: columns
+comet: ''
+command: keyboard symbol
+command-off: command
+compass: navigation direction
+compass-off: compass
+components: ''
+components-off: ''
+cone: 3d shape
+cone-2: 3d
+cone-off: cone
+cone-plus: cone plus
+confetti: ''
+confetti-off: ''
+confucius: ''
+congruent-to: ''
+connection: ''
+container: ''
+container-off: ''
+contract: ''
+contrast: ''
+contrast-2: '2'
+contrast-2-off: '2'
+contrast-off: ''
+cooker: ''
+cookie: ''
+cookie-man: ''
+cookie-off: ''
+copy: duplicate clipboard
+copy-check: copy check
+copy-minus: copy minus
+copy-off: copy
+copy-plus: copy plus
+copy-x: copy x
+copyleft: ''
+copyleft-off: ''
+copyright: ''
+copyright-off: ''
+corner-down-left: direction
+corner-down-left-double: ''
+corner-down-right: direction
+corner-down-right-double: ''
+corner-left-down: direction
+corner-left-down-double: ''
+corner-left-up: direction
+corner-left-up-double: ''
+corner-right-down: direction
+corner-right-down-double: ''
+corner-right-up: direction
+corner-right-up-double: ''
+corner-up-left: direction
+corner-up-left-double: ''
+corner-up-right: direction
+corner-up-right-double: ''
+cpu: processor chip
+cpu-2: processor
+cpu-off: cpu
+crane: ''
+crane-off: ''
+creative-commons: ''
+creative-commons-by: ''
+creative-commons-nc: ''
+creative-commons-nd: ''
+creative-commons-off: ''
+creative-commons-sa: ''
+creative-commons-zero: zero
+credit-card: payment
+credit-card-off: payment off
+credit-card-pay: ''
+credit-card-refund: ''
+credits: ''
+cricket: ''
+crop: ''
+crop-1-1: '1'
+crop-16-9: '9'
+crop-3-2: 3 2
+crop-5-4: 5 4
+crop-7-5: 7 5
+crop-landscape: ''
+crop-portrait: ''
+cross: symbol plus
+cross-off: cross
+crosshair: aim target
+crown: king royalty
+crown-off: royalty off
+crutches: health
+crutches-off: crutches
+crystal-ball: ''
+csv: ''
+cube: 3d box
+cube-3d-sphere: cube sphere
+cube-3d-sphere-off: cube sphere
+cube-off: cube
+cube-plus: cube plus
+cube-send: cube send
+cube-spark: cube
+cube-unfolded: cube
+cup: drink
+cup-off: cup
+curling: ''
+curly-loop: ''
+currency: money
+currency-afghani: currency
+currency-bahraini: currency
+currency-baht: money thai
+currency-bitcoin: crypto
+currency-cent: currency
+currency-dinar: currency
+currency-dirham: currency
+currency-dogecoin: currency
+currency-dollar: money
+currency-dollar-australian: currency dollar
+currency-dollar-brunei: currency dollar
+currency-dollar-canadian: currency dollar
+currency-dollar-guyanese: currency dollar
+currency-dollar-off: currency dollar
+currency-dollar-singapore: currency dollar
+currency-dollar-zimbabwean: currency dollar
+currency-dong: money vietnamese
+currency-dram: currency
+currency-ethereum: currency
+currency-euro: money
+currency-euro-off: currency euro
+currency-florin: currency
+currency-forint: money hungarian
+currency-frank: currency
+currency-guarani: currency
+currency-hryvnia: currency
+currency-iranian-rial: currency
+currency-kip: currency
+currency-krone-czech: currency
+currency-krone-danish: currency
+currency-krone-swedish: currency
+currency-lari: currency
+currency-leu: currency
+currency-lira: money turkish
+currency-litecoin: currency
+currency-lyd: currency
+currency-manat: money azerbaijani
+currency-monero: currency
+currency-naira: money nigerian
+currency-nano: currency
+currency-off: currency
+currency-paanga: currency
+currency-peso: currency
+currency-pound: money
+currency-pound-off: currency pound
+currency-quetzal: currency
+currency-real: currency
+currency-renminbi: currency
+currency-ripple: crypto
+currency-riyal: currency
+currency-rubel: currency
+currency-rufiyaa: currency
+currency-rupee: money
+currency-rupee-nepalese: currency rupee
+currency-shekel: money
+currency-solana: currency
+currency-som: currency
+currency-taka: money
+currency-tenge: currency
+currency-tugrik: currency
+currency-won: currency
+currency-xrp: currency
+currency-yen: money
+currency-yen-off: currency yen
+currency-yuan: currency
+currency-zloty: money polish
+current-location: ''
+current-location-off: ''
+cursor-off: cursor off
+cursor-text: text select
+cut: scissors
+cylinder: 3d shape
+cylinder-off: cylinder
+cylinder-plus: cylinder plus
+dashboard: ''
+dashboard-off: ''
+database: server storage
+database-cog: database
+database-dollar: database dollar
+database-edit: database edit
+database-exclamation: database
+database-export: export
+database-heart: database heart
+database-import: import
+database-leak: security
+database-minus: database minus
+database-off: server off
+database-plus: database add
+database-search: database search
+database-share: database share
+database-smile: database
+database-star: database star
+database-x: database x
+deaf: ''
+decimal: ''
+deer: ''
+delta: ''
+dental: ''
+dental-broken: ''
+dental-off: ''
+deselect: ''
+desk: ''
+details: ''
+details-off: ''
+device-airpods: ''
+device-airpods-case: ''
+device-airtag: ''
+device-analytics: analytics
+device-audio-tape: ''
+device-camera-phone: camera phone
+device-cctv: ''
+device-cctv-off: ''
+device-computer-camera: camera
+device-computer-camera-off: camera
+device-desktop: computer
+device-desktop-analytics: computer analytics
+device-desktop-bolt: ''
+device-desktop-cancel: ''
+device-desktop-check: check
+device-desktop-code: code
+device-desktop-cog: ''
+device-desktop-dollar: dollar
+device-desktop-down: ''
+device-desktop-exclamation: computer warning
+device-desktop-heart: computer health
+device-desktop-minus: computer
+device-desktop-off: computer off
+device-desktop-pause: pause
+device-desktop-pin: ''
+device-desktop-plus: computer
+device-desktop-question: ''
+device-desktop-search: computer find
+device-desktop-share: share
+device-desktop-star: star
+device-desktop-up: ''
+device-desktop-x: computer delete
+device-floppy: save disk
+device-gamepad: 'gaming games'
+device-gamepad-2: 'gaming games'
+device-gamepad-3: 'games gaming'
+device-heart-monitor: heart monitor
+device-imac: ''
+device-imac-bolt: ''
+device-imac-cancel: ''
+device-imac-check: check
+device-imac-code: code
+device-imac-cog: ''
+device-imac-dollar: dollar
+device-imac-down: ''
+device-imac-exclamation: ''
+device-imac-heart: heart
+device-imac-minus: minus
+device-imac-off: ''
+device-imac-pause: pause
+device-imac-pin: ''
+device-imac-plus: plus
+device-imac-question: ''
+device-imac-search: search
+device-imac-share: share
+device-imac-star: star
+device-imac-up: ''
+device-imac-x: x
+device-ipad: ''
+device-ipad-bolt: ''
+device-ipad-cancel: ''
+device-ipad-check: check
+device-ipad-code: code
+device-ipad-cog: ''
+device-ipad-dollar: dollar
+device-ipad-down: ''
+device-ipad-exclamation: ''
+device-ipad-heart: heart
+device-ipad-horizontal: ''
+device-ipad-horizontal-bolt: ''
+device-ipad-horizontal-cancel: ''
+device-ipad-horizontal-check: check
+device-ipad-horizontal-code: code
+device-ipad-horizontal-cog: ''
+device-ipad-horizontal-dollar: dollar
+device-ipad-horizontal-down: ''
+device-ipad-horizontal-exclamation: ''
+device-ipad-horizontal-heart: heart
+device-ipad-horizontal-minus: minus
+device-ipad-horizontal-off: ''
+device-ipad-horizontal-pause: pause
+device-ipad-horizontal-pin: ''
+device-ipad-horizontal-plus: plus
+device-ipad-horizontal-question: ''
+device-ipad-horizontal-search: search
+device-ipad-horizontal-share: share
+device-ipad-horizontal-star: star
+device-ipad-horizontal-up: ''
+device-ipad-horizontal-x: x
+device-ipad-minus: minus
+device-ipad-off: ''
+device-ipad-pause: pause
+device-ipad-pin: ''
+device-ipad-plus: plus
+device-ipad-question: ''
+device-ipad-search: search
+device-ipad-share: share
+device-ipad-star: star
+device-ipad-up: ''
+device-ipad-x: x
+device-landline-phone: phone
+device-laptop: laptop
+device-laptop-off: laptop
+device-mobile: ''
+device-mobile-bolt: ''
+device-mobile-cancel: ''
+device-mobile-charging: ''
+device-mobile-check: check
+device-mobile-code: code
+device-mobile-cog: ''
+device-mobile-dollar: dollar
+device-mobile-down: ''
+device-mobile-exclamation: ''
+device-mobile-heart: heart
+device-mobile-message: message
+device-mobile-minus: minus
+device-mobile-off: ''
+device-mobile-pause: pause
+device-mobile-pin: ''
+device-mobile-plus: plus
+device-mobile-question: ''
+device-mobile-rotated: ''
+device-mobile-search: search
+device-mobile-share: share
+device-mobile-star: star
+device-mobile-up: ''
+device-mobile-vibration: ''
+device-mobile-x: x
+device-nintendo: ''
+device-nintendo-off: ''
+device-projector: projector
+device-remote: ''
+device-sd-card: ''
+device-sim: ''
+device-sim-1: '1'
+device-sim-2: '2'
+device-sim-3: '3'
+device-speaker: speaker
+device-speaker-off: speaker
+device-tablet: tablet
+device-tablet-bolt: tablet
+device-tablet-cancel: tablet
+device-tablet-check: tablet check
+device-tablet-code: tablet code
+device-tablet-cog: tablet
+device-tablet-dollar: tablet dollar
+device-tablet-down: tablet
+device-tablet-exclamation: tablet
+device-tablet-heart: tablet heart
+device-tablet-minus: tablet minus
+device-tablet-off: tablet
+device-tablet-pause: tablet pause
+device-tablet-pin: tablet
+device-tablet-plus: tablet plus
+device-tablet-question: tablet
+device-tablet-search: tablet search
+device-tablet-share: tablet share
+device-tablet-star: tablet star
+device-tablet-up: tablet
+device-tablet-x: tablet x
+device-tv: television
+device-tv-off: television off
+device-tv-old: tv
+device-unknown: ''
+device-usb: usb
+device-vision-pro: ''
+device-watch: watch
+device-watch-bolt: watch
+device-watch-cancel: watch
+device-watch-check: watch check
+device-watch-code: watch code
+device-watch-cog: watch
+device-watch-dollar: watch dollar
+device-watch-down: watch
+device-watch-exclamation: watch
+device-watch-heart: watch heart
+device-watch-minus: watch minus
+device-watch-off: watch
+device-watch-pause: watch pause
+device-watch-pin: watch
+device-watch-plus: watch plus
+device-watch-question: watch
+device-watch-search: watch search
+device-watch-share: watch share
+device-watch-star: watch star
+device-watch-stats: watch
+device-watch-stats-2: watch 2
+device-watch-up: watch
+device-watch-x: watch x
+devices: ''
+devices-2: '2'
+devices-bolt: ''
+devices-cancel: ''
+devices-check: check
+devices-code: code
+devices-cog: ''
+devices-dollar: dollar
+devices-down: ''
+devices-exclamation: ''
+devices-heart: heart
+devices-minus: minus
+devices-off: ''
+devices-pause: pause
+devices-pc: ''
+devices-pc-off: ''
+devices-pin: ''
+devices-plus: plus
+devices-question: ''
+devices-search: search
+devices-share: share
+devices-star: star
+devices-up: ''
+devices-x: x
+diabolo: ''
+diabolo-off: ''
+diabolo-plus: plus
+dialpad: ''
+dialpad-off: ''
+diamond: shape
+diamond-off: diamond
+diamonds: cards shape
+diaper: ''
+dice: ''
+dice-1: '1'
+dice-2: '2'
+dice-3: '3'
+dice-4: '4'
+dice-5: '5'
+dice-6: '6'
+dimensions: ''
+direction: ''
+direction-arrows: ''
+direction-horizontal: direction
+direction-sign: ''
+direction-sign-off: ''
+directions: ''
+directions-off: ''
+disabled: ''
+disabled-2: '2'
+disabled-off: ''
+disc: cd music vinyl
+disc-golf: disc
+disc-off: disc
+discount: ''
+discount-off: ''
+divide: ''
+dna: genetics science
+dna-2: helix
+dna-2-off: dna 2
+dna-off: dna
+dog: animal pet
+dog-bowl: dog
+door: entrance
+door-enter: enter
+door-exit: exit leave
+door-off: door off
+dots: loading
+dots-circle-horizontal: dots circle
+dots-diagonal: loading
+dots-diagonal-2: loading
+dots-vertical: dots
+download: export arrow
+download-off: download
+drag-drop: drag
+drag-drop-2: drag
+drone: ''
+drone-off: ''
+drop-circle: drop circle
+droplet: water drop
+droplet-bolt: droplet
+droplet-cancel: droplet
+droplet-check: droplet check
+droplet-code: droplet code
+droplet-cog: droplet
+droplet-dollar: droplet dollar
+droplet-down: droplet
+droplet-exclamation: droplet
+droplet-half: droplet
+droplet-half-2: droplet 2
+droplet-heart: droplet heart
+droplet-minus: droplet minus
+droplet-off: droplet
+droplet-pause: droplet pause
+droplet-pin: droplet
+droplet-plus: droplet plus
+droplet-question: droplet
+droplet-search: droplet search
+droplet-share: droplet share
+droplet-star: droplet star
+droplet-up: droplet
+droplet-x: droplet x
+droplets: water drops
+dual-screen: ''
+dumpling: ''
+e-passport: ''
+ear: ''
+ear-off: ''
+ear-scan: scan
+ease-in: ''
+ease-in-control-point: point
+ease-in-out: ''
+ease-in-out-control-points: ''
+ease-out: ''
+ease-out-control-point: point
+edit: pencil write modify
+edit-circle: edit circle
+edit-circle-off: edit circle
+edit-off: edit
+egg: ''
+egg-cracked: ''
+egg-fried: ''
+egg-off: ''
+eggs: ''
+elevator: ''
+elevator-off: ''
+emergency-bed: bed
+empathize: ''
+empathize-off: ''
+emphasis: ''
+engine: ''
+engine-off: ''
+equal: math symbol
+equal-double: equal
+equal-not: not equal
+eraser: delete remove
+eraser-off: delete off
+error-404: ''
+error-404-off: ''
+escalator: ''
+escalator-down: ''
+escalator-up: ''
+exchange: swap
+exchange-off: swap off
+exclamation-circle: circle
+exclamation-mark: ''
+exclamation-mark-off: ''
+explicit: ''
+explicit-off: ''
+exposure: ''
+exposure-0: ''
+exposure-minus-1: minus 1
+exposure-minus-2: minus 2
+exposure-off: ''
+exposure-plus-1: plus 1
+exposure-plus-2: plus 2
+external-link: open link
+external-link-off: link
+eye: view see
+eye-bitcoin: eye bitcoin
+eye-bolt: eye
+eye-cancel: eye
+eye-check: view confirm
+eye-closed: eye
+eye-code: eye code
+eye-cog: eye
+eye-discount: eye
+eye-dollar: eye dollar
+eye-dotted: eye
+eye-down: eye
+eye-edit: eye edit
+eye-exclamation: eye
+eye-heart: eye heart
+eye-minus: eye minus
+eye-off: hide hidden
+eye-pause: eye pause
+eye-pin: eye
+eye-plus: eye plus
+eye-question: eye
+eye-search: eye search
+eye-share: eye share
+eye-spark: eye
+eye-star: eye star
+eye-table: eye table
+eye-up: eye
+eye-x: view delete
+eyeglass: ''
+eyeglass-2: '2'
+eyeglass-off: ''
+face-id: biometric
+face-id-error: face id
+face-mask: face
+face-mask-off: face
+fall: ''
+favicon: ''
+feather: ''
+feather-off: ''
+fence: ''
+fence-off: ''
+ferry: ship boat
+fidget-spinner: ''
+file: document
+file-3d: file
+file-ai: file
+file-alert: file
+file-analytics: file analytics
+file-arrow-left: file
+file-arrow-right: file
+file-barcode: file
+file-bitcoin: file bitcoin
+file-broken: file
+file-certificate: file
+file-chart: file
+file-check: file check
+file-code: code file
+file-code-2: code file
+file-cv: file
+file-database: file database
+file-delta: file
+file-description: file
+file-diff: document compare
+file-digit: file
+file-dislike: file
+file-dollar: file dollar
+file-dots: file dots
+file-download: file download
+file-euro: file euro
+file-excel: file
+file-export: file
+file-function: file
+file-horizontal: document
+file-import: file
+file-infinity: file
+file-info: file
+file-invoice: file invoice
+file-isr: file
+file-lambda: file
+file-like: file
+file-minus: document remove
+file-music: file music
+file-neutral: file
+file-off: document off
+file-orientation: file
+file-pencil: file pencil
+file-percent: file percent
+file-phone: file phone
+file-plus: document add
+file-power: file power
+file-report: file report
+file-rss: file
+file-sad: file
+file-scissors: file scissors
+file-search: document find
+file-settings: file settings
+file-shredder: file
+file-signal: file
+file-smile: file
+file-spark: file
+file-spreadsheet: excel spreadsheet
+file-stack: file
+file-star: file star
+file-symlink: file
+file-text: document text
+file-text-ai: file text
+file-text-shield: file text
+file-text-spark: file text
+file-time: file
+file-type-bmp: file type
+file-type-css: file type
+file-type-csv: file type
+file-type-doc: file type
+file-type-docx: file type
+file-type-html: file type
+file-type-jpg: file type
+file-type-js: file type
+file-type-jsx: file type
+file-type-pdf: pdf document
+file-type-php: file type
+file-type-png: file type
+file-type-ppt: file type
+file-type-rs: file type
+file-type-sql: file type
+file-type-svg: file type
+file-type-ts: file type
+file-type-tsx: file type
+file-type-txt: file type
+file-type-vue: file type
+file-type-xls: file type
+file-type-xml: file type
+file-type-zip: file type
+file-typography: file typography
+file-unknown: file
+file-upload: file upload
+file-vector: file
+file-word: file
+file-x: document delete
+file-zip: file
+files: documents multiple
+files-off: documents off
+filter: funnel sort
+filter-2: filter 2
+filter-2-bolt: filter 2
+filter-2-cancel: filter 2
+filter-2-check: filter 2 check
+filter-2-code: filter 2 code
+filter-2-cog: filter 2
+filter-2-discount: filter 2
+filter-2-dollar: filter 2 dollar
+filter-2-down: filter 2
+filter-2-edit: filter 2 edit
+filter-2-exclamation: filter 2
+filter-2-minus: filter 2 minus
+filter-2-pause: filter 2 pause
+filter-2-pin: filter 2
+filter-2-plus: filter 2 plus
+filter-2-question: filter 2
+filter-2-search: filter 2 search
+filter-2-share: filter 2 share
+filter-2-spark: filter 2
+filter-2-up: filter 2
+filter-2-x: filter 2 x
+filter-bolt: filter
+filter-cancel: filter
+filter-check: filter check
+filter-code: filter code
+filter-cog: filter
+filter-discount: filter
+filter-dollar: filter dollar
+filter-down: filter
+filter-edit: filter edit
+filter-exclamation: filter
+filter-heart: filter heart
+filter-minus: filter minus
+filter-off: filter
+filter-pause: filter pause
+filter-pin: filter
+filter-plus: filter plus
+filter-question: filter
+filter-search: filter search
+filter-share: filter share
+filter-spark: filter
+filter-star: filter star
+filter-up: filter
+filter-x: filter x
+filters: ''
+fingerprint: security
+fingerprint-off: security off
+fingerprint-scan: fingerprint scan
+fire-extinguisher: ''
+fire-hydrant: ''
+fire-hydrant-off: ''
+firetruck: ''
+firewall-check: check
+firewall-flame: ''
+first-aid-kit: health medical
+first-aid-kit-off: ''
+fish: animal aquatic
+fish-bone: fish bone
+fish-christianity: fish
+fish-hook: fish
+fish-hook-off: fish
+fish-off: animal missing
+flag: ''
+flag-2: '2'
+flag-2-off: '2'
+flag-3: '3'
+flag-bitcoin: bitcoin
+flag-bolt: ''
+flag-cancel: ''
+flag-check: check
+flag-code: code
+flag-cog: ''
+flag-discount: ''
+flag-dollar: dollar
+flag-down: ''
+flag-exclamation: ''
+flag-heart: heart
+flag-minus: minus
+flag-off: ''
+flag-pause: pause
+flag-pin: ''
+flag-plus: plus
+flag-question: ''
+flag-search: search
+flag-share: share
+flag-spark: ''
+flag-star: star
+flag-up: ''
+flag-x: x
+flame: ''
+flame-off: ''
+flare: ''
+flask: chemistry lab
+flask-2: lab
+flask-2-off: flask 2
+flask-off: lab off
+flip-flops: ''
+flip-horizontal: ''
+flip-vertical: ''
+float-center: ''
+float-left: ''
+float-none: ''
+float-right: ''
+flower: nature plant
+flower-off: flower
+focus: ''
+focus-2: center aim
+focus-auto: ''
+focus-centered: center
+fold: ''
+fold-down: ''
+fold-up: ''
+folder: directory
+folder-bolt: folder
+folder-cancel: folder
+folder-check: folder check
+folder-code: folder code
+folder-cog: folder
+folder-dollar: folder dollar
+folder-down: folder
+folder-exclamation: folder
+folder-heart: folder heart
+folder-minus: directory remove
+folder-off: directory off
+folder-open: folder
+folder-pause: folder pause
+folder-pin: folder
+folder-plus: directory add
+folder-question: folder
+folder-root: folder
+folder-search: folder search
+folder-share: folder share
+folder-star: folder star
+folder-symlink: folder
+folder-up: folder
+folder-x: directory delete
+folders: directories
+folders-off: directories off
+forbid: ''
+forbid-2: '2'
+forklift: ''
+forms: ''
+fountain: ''
+fountain-off: ''
+frame: picture photo
+frame-off: frame
+free-rights: ''
+freeze-column: ''
+freeze-row: ''
+freeze-row-column: ''
+fridge: ''
+fridge-off: ''
+friends: ''
+friends-off: ''
+frustum: ''
+frustum-off: ''
+frustum-plus: plus
+function: ''
+function-off: ''
+galaxy: ''
+garden-cart: cart
+garden-cart-off: cart
+gas-station: ''
+gas-station-off: ''
+gauge: ''
+gauge-off: ''
+gavel: ''
+gender-agender: ''
+gender-androgyne: ''
+gender-bigender: ''
+gender-demiboy: ''
+gender-demigirl: ''
+gender-epicene: ''
+gender-female: ''
+gender-femme: ''
+gender-genderfluid: ''
+gender-genderless: ''
+gender-genderqueer: ''
+gender-hermaphrodite: ''
+gender-intergender: ''
+gender-male: ''
+gender-neutrois: ''
+gender-third: ''
+gender-transgender: ''
+gender-trasvesti: ''
+geometry: ''
+ghost: halloween spooky
+ghost-2: spooky
+ghost-3: spooky
+ghost-off: spooky off
+gif: ''
+gift: present
+gift-card: voucher
+gift-off: gift
+git-branch: branch
+git-branch-deleted: git
+git-cherry-pick: git cherry
+git-commit: commit
+git-compare: diff
+git-fork: split branch
+git-merge: combine
+git-pull-request: merge request
+git-pull-request-closed: git
+git-pull-request-draft: git
+gizmo: ''
+glass: drink
+glass-champagne: glass
+glass-cocktail: glass
+glass-full: glass
+glass-gin: glass
+glass-off: glass
+globe: world earth internet
+globe-off: world off
+go-game: ''
+golf: ''
+golf-off: ''
+gps: ''
+gradienter: ''
+grain: ''
+graph: ''
+graph-off: ''
+grave: ''
+grave-2: '2'
+grid-3x3: layout
+grid-4x4: grid
+grid-dots: layout dots
+grid-goldenratio: grid
+grid-pattern: grid
+grid-scan: layout
+grill: ''
+grill-fork: ''
+grill-off: ''
+grill-spatula: ''
+grip-horizontal: drag
+grip-vertical: drag
+growth: ''
+guitar-pick: ''
+gymnastics: ''
+h-1: title
+h-2: title
+h-3: title
+h-4: title
+h-5: title
+h-6: title
+hammer: build
+hammer-off: tool off
+hand-click: click
+hand-click-off: click
+hand-finger: ''
+hand-finger-down: ''
+hand-finger-left: ''
+hand-finger-off: ''
+hand-finger-right: ''
+hand-grab: grab
+hand-little-finger: ''
+hand-love-you: ''
+hand-middle-finger: ''
+hand-move: move
+hand-off: ''
+hand-ring-finger: ''
+hand-sanitizer: ''
+hand-stop: stop
+hand-three-fingers: three
+hand-two-fingers: two
+hanger: ''
+hanger-2: '2'
+hanger-off: ''
+hash: number symbol
+haze: weather fog
+haze-moon: haze moon
+hdr: ''
+heading: title h1
+heading-off: heading
+headphones: audio listen
+headphones-off: audio off
+headset: ''
+headset-off: ''
+health-recognition: ''
+heart: love like
+heart-bitcoin: heart bitcoin
+heart-bolt: heart
+heart-broken: heart
+heart-cancel: heart
+heart-check: heart check
+heart-code: heart code
+heart-cog: heart
+heart-discount: heart
+heart-dollar: heart dollar
+heart-down: heart
+heart-exclamation: heart
+heart-handshake: team collaboration
+heart-minus: heart minus
+heart-off: love off
+heart-pause: heart pause
+heart-pin: heart
+heart-plus: heart plus
+heart-question: heart
+heart-rate-monitor: heart monitor
+heart-search: heart search
+heart-share: heart share
+heart-spark: heart
+heart-star: heart star
+heart-up: heart
+heart-x: heart x
+heartbeat: health pulse
+hearts: love multiple
+hearts-off: hearts
+helicopter: ''
+helicopter-landing: ''
+helmet: ''
+helmet-off: ''
+help: question
+help-circle: question
+help-hexagon: help hexagon
+help-octagon: help octagon
+help-off: help
+help-small: help small
+help-square: help square
+help-square-rounded: help square
+help-triangle: help triangle
+hemisphere: ''
+hemisphere-off: ''
+hemisphere-plus: plus
+hexagon: shape
+hexagon-3d: hexagon
+hexagon-asterisk: hexagon asterisk
+hexagon-letter-a: hexagon
+hexagon-letter-b: hexagon
+hexagon-letter-c: hexagon
+hexagon-letter-d: hexagon
+hexagon-letter-e: hexagon
+hexagon-letter-f: hexagon
+hexagon-letter-g: hexagon
+hexagon-letter-h: hexagon
+hexagon-letter-i: hexagon
+hexagon-letter-j: hexagon
+hexagon-letter-k: hexagon
+hexagon-letter-l: hexagon
+hexagon-letter-m: hexagon
+hexagon-letter-n: hexagon
+hexagon-letter-o: hexagon
+hexagon-letter-p: hexagon
+hexagon-letter-q: hexagon
+hexagon-letter-r: hexagon
+hexagon-letter-s: hexagon
+hexagon-letter-t: hexagon
+hexagon-letter-u: hexagon
+hexagon-letter-v: hexagon
+hexagon-letter-w: hexagon
+hexagon-letter-x: hexagon x
+hexagon-letter-y: hexagon
+hexagon-letter-z: hexagon
+hexagon-minus: hexagon minus
+hexagon-minus-2: hexagon minus 2
+hexagon-number-0: hexagon
+hexagon-number-1: hexagon 1
+hexagon-number-2: hexagon 2
+hexagon-number-3: hexagon 3
+hexagon-number-4: hexagon 4
+hexagon-number-5: hexagon 5
+hexagon-number-6: hexagon 6
+hexagon-number-7: hexagon 7
+hexagon-number-8: hexagon 8
+hexagon-number-9: hexagon 9
+hexagon-off: hexagon
+hexagon-plus: hexagon plus
+hexagon-plus-2: hexagon plus 2
+hexagonal-prism: ''
+hexagonal-prism-off: ''
+hexagonal-prism-plus: plus
+hexagonal-pyramid: pyramid
+hexagonal-pyramid-off: pyramid
+hexagonal-pyramid-plus: pyramid plus
+hexagons: ''
+hexagons-off: ''
+hierarchy: ''
+hierarchy-2: '2'
+hierarchy-3: '3'
+hierarchy-off: ''
+highlight: ''
+highlight-off: ''
+history: ''
+history-off: ''
+history-toggle: ''
+home: house start
+home-2: house
+home-bitcoin: home bitcoin
+home-bolt: home
+home-cancel: home
+home-check: home check
+home-cog: house settings
+home-dollar: home dollar
+home-dot: house
+home-down: home
+home-eco: home
+home-edit: house edit
+home-exclamation: home
+home-hand: home
+home-heart: home heart
+home-infinity: home
+home-link: house link
+home-lock: home lock
+home-minus: house remove
+home-move: home move
+home-off: house off
+home-plus: house add
+home-question: house
+home-ribbon: home
+home-search: house find
+home-share: house share
+home-shield: home
+home-signal: wifi
+home-spark: home
+home-star: home star
+home-stats: analytics
+home-up: home
+home-x: house delete
+horse: animal
+horse-toy: horse
+horseshoe: ''
+hospital: ''
+hospital-circle: circle
+hotel-service: ''
+hourglass: time waiting
+hourglass-empty: hourglass
+hourglass-high: hourglass
+hourglass-low: hourglass
+hourglass-off: hourglass
+hours-12: '12'
+hours-24: ''
+html: ''
+http-connect: ''
+http-connect-off: ''
+http-delete: ''
+http-delete-off: ''
+http-get: ''
+http-get-off: ''
+http-head: ''
+http-head-off: ''
+http-options: ''
+http-options-off: ''
+http-patch: ''
+http-patch-off: ''
+http-post: ''
+http-post-off: ''
+http-put: ''
+http-put-off: ''
+http-que: ''
+http-que-off: ''
+http-trace: ''
+http-trace-off: ''
+ice-cream: ''
+ice-cream-2: '2'
+ice-cream-off: ''
+ice-skating: ''
+icons: ''
+icons-off: ''
+id: identification card
+id-badge: identification card
+id-badge-2: id badge 2
+id-badge-off: id badge
+id-off: id
+ikosaedr: ''
+image-generation: image
+image-in-picture: image
+inbox: email message
+inbox-off: inbox
+indent-decrease: ''
+indent-increase: ''
+infinity: ''
+infinity-off: ''
+info-circle: information
+info-hexagon: hexagon
+info-octagon: octagon
+info-small: information
+info-square: square
+info-square-rounded: square
+info-triangle: triangle
+inner-shadow-bottom: ''
+inner-shadow-bottom-left: ''
+inner-shadow-bottom-right: ''
+inner-shadow-left: ''
+inner-shadow-right: ''
+inner-shadow-top: ''
+inner-shadow-top-left: ''
+inner-shadow-top-right: ''
+input-ai: ''
+input-check: input valid
+input-search: input find
+input-spark: ''
+input-x: input invalid
+invoice: receipt
+ironing: ''
+ironing-1: '1'
+ironing-2: '2'
+ironing-3: '3'
+ironing-off: ''
+ironing-steam: ''
+ironing-steam-off: ''
+irregular-polyhedron: ''
+irregular-polyhedron-off: ''
+irregular-polyhedron-plus: plus
+italic: format text
+jacket: ''
+jetpack: ''
+jewish-star: star
+join-bevel: ''
+join-round: ''
+join-straight: ''
+joker: ''
+jpg: ''
+json: ''
+jump-rope: ''
+karate: ''
+kayak: ''
+kerning: ''
+key: ''
+key-off: ''
+keyboard: input computer
+keyboard-hide: keyboard
+keyboard-off: keyboard off
+keyboard-show: keyboard
+keyframe: ''
+keyframe-align-center: ''
+keyframe-align-horizontal: ''
+keyframe-align-vertical: ''
+keyframes: ''
+label: ''
+label-important: ''
+label-off: ''
+ladder: ''
+ladder-off: ''
+ladle: ''
+lambda: ''
+lamp: light desk
+lamp-2: light
+lamp-off: lamp
+lane: ''
+language: ''
+language-hiragana: ''
+language-katakana: ''
+language-off: ''
+lasso: ''
+lasso-off: ''
+lasso-polygon: ''
+laurel-wreath: ''
+laurel-wreath-1: '1'
+laurel-wreath-2: '2'
+laurel-wreath-3: '3'
+layers-difference: ''
+layers-intersect: ''
+layers-intersect-2: '2'
+layers-linked: ''
+layers-off: ''
+layers-selected: ''
+layers-selected-bottom: ''
+layers-subtract: ''
+layers-union: ''
+layout: page grid
+layout-2: grid
+layout-align-bottom: align
+layout-align-center: align
+layout-align-left: align
+layout-align-middle: layout
+layout-align-right: align
+layout-align-top: align
+layout-board: kanban board
+layout-board-split: split board
+layout-bottombar: footer bar
+layout-bottombar-collapse: collapse
+layout-bottombar-expand: expand
+layout-bottombar-inactive: layout
+layout-cards: layout
+layout-collage: layout
+layout-columns: split columns
+layout-dashboard: home
+layout-distribute-horizontal: distribute
+layout-distribute-vertical: distribute
+layout-grid: grid
+layout-grid-add: grid add
+layout-grid-remove: layout grid remove
+layout-kanban: kanban
+layout-list: list
+layout-navbar: header
+layout-navbar-collapse: collapse
+layout-navbar-expand: expand
+layout-navbar-inactive: layout
+layout-off: 'off'
+layout-rows: rows
+layout-sidebar: sidebar
+layout-sidebar-inactive: layout sidebar
+layout-sidebar-left-collapse: collapse
+layout-sidebar-left-expand: expand
+layout-sidebar-right: sidebar
+layout-sidebar-right-collapse: collapse
+layout-sidebar-right-expand: expand
+layout-sidebar-right-inactive: layout sidebar
+leaf: nature plant
+leaf-2: nature
+leaf-off: leaf
+lego: ''
+lego-off: ''
+lemon: ''
+lemon-2: '2'
+letter-a: ''
+letter-a-small: small
+letter-b: ''
+letter-b-small: small
+letter-c: ''
+letter-c-small: small
+letter-case: ''
+letter-case-lower: ''
+letter-case-toggle: ''
+letter-case-upper: ''
+letter-d: ''
+letter-d-small: small
+letter-e: ''
+letter-e-small: small
+letter-f: ''
+letter-f-small: small
+letter-g: ''
+letter-g-small: small
+letter-h: ''
+letter-h-small: small
+letter-i: ''
+letter-i-small: small
+letter-j: ''
+letter-j-small: small
+letter-k: ''
+letter-k-small: small
+letter-l: ''
+letter-l-small: small
+letter-m: ''
+letter-m-small: small
+letter-n: ''
+letter-n-small: small
+letter-o: ''
+letter-o-small: small
+letter-p: ''
+letter-p-small: small
+letter-q: ''
+letter-q-small: small
+letter-r: ''
+letter-r-small: small
+letter-s: ''
+letter-s-small: small
+letter-spacing: spacing
+letter-t: ''
+letter-t-small: small
+letter-u: ''
+letter-u-small: small
+letter-v: ''
+letter-v-small: small
+letter-w: ''
+letter-w-small: small
+letter-x: x
+letter-x-small: x small
+letter-y: ''
+letter-y-small: small
+letter-z: ''
+letter-z-small: small
+library: ''
+library-minus: minus
+library-photo: photo
+library-plus: plus
+license: ''
+license-off: ''
+lifebuoy: ''
+lifebuoy-off: ''
+lighter: ''
+line: ''
+line-dashed: ''
+line-dotted: ''
+line-height: spacing
+line-scan: scan
+link: chain url
+link-minus: link minus
+link-off: link
+link-plus: link plus
+list: items
+list-check: checklist tasks
+list-details: details
+list-letters: list
+list-numbers: numbered
+list-search: search list
+list-tree: list tree
+live-photo: photo
+live-photo-off: photo
+live-view: ''
+load-balancer: ''
+loader: loading spinner
+loader-2: loading
+loader-3: loading
+loader-quarter: loading
+location: ''
+location-bolt: ''
+location-broken: ''
+location-cancel: ''
+location-check: check
+location-code: code
+location-cog: ''
+location-discount: ''
+location-dollar: dollar
+location-down: ''
+location-exclamation: ''
+location-heart: heart
+location-minus: minus
+location-off: ''
+location-pause: pause
+location-pin: ''
+location-plus: plus
+location-question: ''
+location-search: search
+location-share: share
+location-star: star
+location-up: ''
+location-x: x
+lock: secure privacy
+lock-access: lock
+lock-access-off: lock
+lock-bitcoin: lock bitcoin
+lock-bolt: lock
+lock-cancel: lock
+lock-check: lock check
+lock-code: lock code
+lock-cog: lock
+lock-dollar: lock dollar
+lock-down: lock
+lock-exclamation: lock
+lock-heart: lock heart
+lock-minus: lock minus
+lock-off: lock
+lock-open: unlock
+lock-open-2: lock 2
+lock-open-off: lock
+lock-password: lock
+lock-pause: lock pause
+lock-pin: lock
+lock-plus: lock plus
+lock-question: lock
+lock-search: lock search
+lock-share: lock share
+lock-square: lock square
+lock-square-rounded: lock square
+lock-star: lock star
+lock-up: lock
+lock-x: lock x
+logic-and: ''
+logic-buffer: ''
+logic-nand: ''
+logic-nor: ''
+logic-not: ''
+logic-or: ''
+logic-xnor: ''
+logic-xor: ''
+login: ''
+login-2: '2'
+logout: ''
+logout-2: '2'
+logs: ''
+lollipop: ''
+lollipop-off: ''
+luggage: ''
+luggage-off: ''
+lungs: health breathing
+lungs-off: lungs
+macro: ''
+macro-off: ''
+magnet: magnetic
+magnet-off: magnet
+magnetic: ''
+mail: email envelope
+mail-ai: mail
+mail-bitcoin: mail bitcoin
+mail-bolt: mail
+mail-cancel: mail
+mail-check: mail check
+mail-code: mail code
+mail-cog: mail
+mail-dollar: mail dollar
+mail-down: mail
+mail-exclamation: mail
+mail-fast: mail
+mail-forward: mail
+mail-heart: mail heart
+mail-minus: mail minus
+mail-off: mail
+mail-opened: mail
+mail-pause: mail pause
+mail-pin: mail
+mail-plus: mail plus
+mail-question: mail
+mail-search: mail search
+mail-share: mail share
+mail-spark: mail
+mail-star: mail star
+mail-up: mail
+mail-x: mail x
+mailbox: ''
+mailbox-off: ''
+man: ''
+manual-gearbox: ''
+map: navigation location
+map-2: navigation
+map-bolt: map
+map-cancel: map
+map-check: map check
+map-code: map code
+map-cog: map
+map-discount: map
+map-dollar: map dollar
+map-down: map
+map-east: map east
+map-exclamation: map
+map-heart: map heart
+map-lock: map lock
+map-minus: map minus
+map-north: map north
+map-off: map
+map-pause: map pause
+map-pin: location marker
+map-pin-2: location
+map-pin-bolt: map
+map-pin-cancel: map
+map-pin-check: map check
+map-pin-code: map code
+map-pin-cog: map
+map-pin-dollar: map dollar
+map-pin-down: map
+map-pin-exclamation: map
+map-pin-heart: map heart
+map-pin-minus: map minus
+map-pin-off: location off
+map-pin-pause: map pause
+map-pin-pin: map
+map-pin-plus: location add
+map-pin-question: map
+map-pin-search: map search
+map-pin-share: map share
+map-pin-star: map star
+map-pin-up: map
+map-pin-x: map x
+map-pins: location markers
+map-plus: map plus
+map-question: map
+map-route: navigation
+map-search: map search
+map-share: map share
+map-shield: map
+map-south: map south
+map-star: map star
+map-up: map
+map-west: map west
+map-x: map x
+markdown: ''
+markdown-off: ''
+marquee: ''
+marquee-2: '2'
+marquee-off: ''
+mars: ''
+mask: ''
+mask-off: ''
+masks-theater: ''
+masks-theater-off: ''
+massage: ''
+matchstick: ''
+math: ''
+math-1-divide-2: 1 2
+math-1-divide-3: 1 3
+math-avg: ''
+math-cos: ''
+math-ctg: ''
+math-equal-greater: equal
+math-equal-lower: equal
+math-function: ''
+math-function-off: ''
+math-function-y: ''
+math-greater: ''
+math-integral: ''
+math-integral-x: x
+math-integrals: ''
+math-lower: ''
+math-max: ''
+math-max-min: ''
+math-min: ''
+math-not: ''
+math-off: ''
+math-pi: ''
+math-pi-divide-2: '2'
+math-sec: ''
+math-sin: ''
+math-symbols: ''
+math-tg: ''
+math-x-divide-2: x 2
+math-x-divide-y: x
+math-x-divide-y-2: x 2
+math-x-floor-divide-y: x
+math-x-minus-x: x minus
+math-x-minus-y: x minus
+math-x-plus-x: x plus
+math-x-plus-y: x plus
+math-xy: ''
+math-y-minus-y: minus
+math-y-plus-y: plus
+matrix: ''
+maximize: fullscreen expand
+maximize-off: maximize
+meat: ''
+meat-off: ''
+medal: award
+medal-2: award
+medical-cross: cross
+medical-cross-circle: cross circle
+medical-cross-off: cross
+medicine-syrup: medicine
+meeple: ''
+melon: ''
+menorah: ''
+menu: hamburger
+menu-2: dots
+menu-3: kebab
+menu-4: menu 4
+menu-deep: nested
+menu-order: list order
+mesh: ''
+message: chat sms
+message-2: chat
+message-2-bolt: message 2
+message-2-cancel: message 2
+message-2-check: message 2 check
+message-2-code: message 2 code
+message-2-cog: message 2
+message-2-dollar: message 2 dollar
+message-2-down: message 2
+message-2-exclamation: message 2
+message-2-heart: message 2 heart
+message-2-minus: message 2 minus
+message-2-off: message 2
+message-2-pause: message 2 pause
+message-2-pin: message 2
+message-2-plus: message 2 plus
+message-2-question: message 2
+message-2-search: message 2 search
+message-2-share: message 2 share
+message-2-star: message 2 star
+message-2-up: message 2
+message-2-x: message 2 x
+message-bolt: message
+message-cancel: message
+message-chatbot: message
+message-check: message check
+message-circle: chat comment
+message-circle-bolt: message circle
+message-circle-cancel: message circle
+message-circle-check: message circle check
+message-circle-code: message circle code
+message-circle-cog: message circle
+message-circle-dollar: message circle dollar
+message-circle-down: message circle
+message-circle-exclamation: message circle
+message-circle-heart: message circle heart
+message-circle-minus: message circle minus
+message-circle-off: message circle
+message-circle-pause: message circle pause
+message-circle-pin: message circle
+message-circle-plus: chat add
+message-circle-question: message circle
+message-circle-search: message circle search
+message-circle-share: message circle share
+message-circle-star: message circle star
+message-circle-up: message circle
+message-circle-user: message circle user
+message-circle-x: message circle x
+message-code: message code
+message-cog: message
+message-dollar: message dollar
+message-dots: message dots
+message-down: message
+message-exclamation: message
+message-forward: message
+message-heart: message heart
+message-language: message
+message-minus: message minus
+message-off: message
+message-pause: message pause
+message-pin: message
+message-plus: message plus
+message-question: message
+message-reply: message
+message-report: message report
+message-search: message search
+message-share: message share
+message-star: message star
+message-up: message
+message-user: message user
+message-x: message x
+messages: chat multiple
+messages-off: chat off
+meteor: ''
+meteor-off: ''
+meter-cube: cube
+meter-square: square
+metronome: ''
+michelin-bib-gourmand: ''
+michelin-star: star
+michelin-star-green: star
+mickey: ''
+microfrontends: ''
+microphone: mic audio
+microphone-2: mic
+microphone-2-off: microphone 2
+microphone-off: mic mute
+microscope: science lab
+microscope-off: microscope
+microwave: ''
+microwave-off: ''
+middleware: ''
+military-award: award
+military-rank: ''
+milk: ''
+milk-off: ''
+milkshake: ''
+minimize: shrink window
+minus: subtract symbol
+minus-vertical: minus
+mist: weather fog
+mist-off: mist
+mobiledata: ''
+mobiledata-off: ''
+moneybag: ''
+moneybag-edit: edit
+moneybag-heart: heart
+moneybag-minus: minus
+moneybag-move: move
+moneybag-move-back: move
+moneybag-plus: plus
+monkeybar: ''
+mood-angry: emoji
+mood-annoyed: emoji
+mood-annoyed-2: '2'
+mood-bitcoin: bitcoin
+mood-boy: ''
+mood-check: check
+mood-cog: ''
+mood-confuzed: emoji
+mood-crazy-happy: emoji
+mood-cry: emoji sad
+mood-dollar: dollar
+mood-edit: edit
+mood-empty: ''
+mood-happy: emoji
+mood-heart: heart
+mood-kid: emoji
+mood-look-down: ''
+mood-look-left: emoji
+mood-look-right: emoji
+mood-look-up: emoji
+mood-minus: minus
+mood-nerd: ''
+mood-nervous: ''
+mood-neutral: emoji
+mood-off: emoji off
+mood-pin: ''
+mood-plus: plus
+mood-puzzled: ''
+mood-sad: emoji
+mood-sad-2: '2'
+mood-sad-dizzy: ''
+mood-sad-squint: ''
+mood-search: search
+mood-share: share
+mood-sick: emoji
+mood-silence: ''
+mood-sing: ''
+mood-smile: emoji
+mood-smile-beam: ''
+mood-smile-dizzy: ''
+mood-spark: ''
+mood-surprised: emoji
+mood-tongue: emoji
+mood-tongue-wink: ''
+mood-tongue-wink-2: '2'
+mood-unamused: ''
+mood-up: ''
+mood-wink: emoji
+mood-wink-2: emoji
+mood-wrrr: ''
+mood-x: x
+mood-xd: emoji
+moon: night dark astronomy
+moon-2: night
+moon-off: moon
+moon-stars: night sky
+moped: ''
+motorbike: ''
+mountain: ''
+mountain-off: ''
+mouse: ''
+mouse-2: '2'
+mouse-off: ''
+moustache: ''
+movie: ''
+movie-off: ''
+mug: drink coffee
+mug-off: drink off
+multiplier-0-5x: ''
+multiplier-1-5x: '1'
+multiplier-1x: ''
+multiplier-2x: ''
+mushroom: nature fungi
+mushroom-off: mushroom
+music: audio sound
+music-bolt: music
+music-cancel: music
+music-check: music check
+music-code: music code
+music-cog: music
+music-discount: music
+music-dollar: music dollar
+music-down: music
+music-exclamation: music
+music-heart: music heart
+music-minus: music minus
+music-off: audio off
+music-pause: music pause
+music-pin: music
+music-plus: music plus
+music-question: music
+music-search: music search
+music-share: music share
+music-star: music star
+music-up: music
+music-x: music x
+navigation: direction arrow
+navigation-bolt: navigation
+navigation-cancel: navigation
+navigation-check: navigation check
+navigation-code: navigation code
+navigation-cog: navigation
+navigation-discount: navigation
+navigation-dollar: navigation dollar
+navigation-down: navigation
+navigation-east: navigation east
+navigation-exclamation: navigation
+navigation-heart: navigation heart
+navigation-minus: navigation minus
+navigation-north: navigation north
+navigation-off: navigation
+navigation-pause: navigation pause
+navigation-pin: navigation
+navigation-plus: navigation plus
+navigation-question: navigation
+navigation-search: navigation search
+navigation-share: navigation share
+navigation-south: navigation south
+navigation-star: navigation star
+navigation-top: navigation
+navigation-up: navigation
+navigation-west: navigation west
+navigation-x: navigation x
+needle: ''
+needle-thread: ''
+network: ''
+network-off: ''
+new-section: ''
+news: ''
+news-off: ''
+nfc: ''
+nfc-off: ''
+no-copyright: ''
+no-creative-commons: ''
+no-derivatives: ''
+north-star: north star
+note: memo text
+note-off: note
+notebook: notes journal
+notebook-off: notebook
+notes: memos
+notes-off: notes
+notification: ''
+notification-off: ''
+number: ''
+number-0: ''
+number-0-small: small
+number-1: '1'
+number-1-small: 1 small
+number-10: '10'
+number-10-small: 10 small
+number-100-small: small
+number-11: '11'
+number-11-small: 11 small
+number-12-small: 12 small
+number-123: ''
+number-13-small: small
+number-14-small: small
+number-15-small: small
+number-16-small: small
+number-17-small: small
+number-18-small: small
+number-19-small: small
+number-2: '2'
+number-2-small: 2 small
+number-20-small: small
+number-21-small: small
+number-22-small: small
+number-23-small: small
+number-24-small: small
+number-25-small: small
+number-26-small: small
+number-27-small: small
+number-28-small: small
+number-29-small: small
+number-3: '3'
+number-3-small: 3 small
+number-30-small: small
+number-31-small: small
+number-32-small: small
+number-33-small: small
+number-34-small: small
+number-35-small: small
+number-36-small: small
+number-37-small: small
+number-38-small: small
+number-39-small: small
+number-4: '4'
+number-4-small: 4 small
+number-40-small: small
+number-41-small: small
+number-42-small: small
+number-43-small: small
+number-44-small: small
+number-45-small: small
+number-46-small: small
+number-47-small: small
+number-48-small: small
+number-49-small: small
+number-5: '5'
+number-5-small: 5 small
+number-50-small: small
+number-51-small: small
+number-52-small: small
+number-53-small: small
+number-54-small: small
+number-55-small: small
+number-56-small: small
+number-57-small: small
+number-58-small: small
+number-59-small: small
+number-6: '6'
+number-6-small: 6 small
+number-60-small: small
+number-61-small: small
+number-62-small: small
+number-63-small: small
+number-64-small: small
+number-65-small: small
+number-66-small: small
+number-67-small: small
+number-68-small: small
+number-69-small: small
+number-7: '7'
+number-7-small: 7 small
+number-70-small: small
+number-71-small: small
+number-72-small: small
+number-73-small: small
+number-74-small: small
+number-75-small: small
+number-76-small: small
+number-77-small: small
+number-78-small: small
+number-79-small: small
+number-8: '8'
+number-8-small: 8 small
+number-80-small: small
+number-81-small: small
+number-82-small: small
+number-83-small: small
+number-84-small: small
+number-85-small: small
+number-86-small: small
+number-87-small: small
+number-88-small: small
+number-89-small: small
+number-9: '9'
+number-9-small: 9 small
+number-90-small: small
+number-91-small: small
+number-92-small: small
+number-93-small: small
+number-94-small: small
+number-95-small: small
+number-96-small: small
+number-97-small: small
+number-98-small: small
+number-99-small: small
+numbers: ''
+nurse: ''
+nut: ''
+object-scan: scan
+octagon: shape
+octagon-minus: octagon minus
+octagon-minus-2: octagon minus 2
+octagon-off: octagon
+octagon-plus: octagon plus
+octagon-plus-2: octagon plus 2
+octahedron: ''
+octahedron-off: ''
+octahedron-plus: plus
+old: ''
+olympics: ''
+olympics-off: ''
+om: ''
+omega: ''
+option: ''
+outbound: ''
+outlet: ''
+oval: shape
+oval-vertical: oval
+overline: format text
+package: npm box
+package-export: deploy
+package-import: install
+package-off: package off
+packages: ''
+pacman: ''
+page-break: ''
+paint: ''
+paint-off: ''
+palette: ''
+palette-off: ''
+panorama-horizontal: ''
+panorama-horizontal-off: ''
+panorama-vertical: ''
+panorama-vertical-off: ''
+paper-bag: ''
+paper-bag-off: ''
+paperclip: attachment link
+parachute: ''
+parachute-off: ''
+parentheses: code
+parentheses-off: parentheses
+parking: ''
+parking-circle: circle
+parking-off: ''
+password: ''
+password-fingerprint: fingerprint
+password-mobile-phone: phone
+password-user: user
+paw: animal foot
+paw-off: paw
+paywall: ''
+pdf: ''
+peace: ''
+pencil: edit write
+pencil-bolt: pencil
+pencil-cancel: pencil
+pencil-check: pencil check
+pencil-code: pencil code
+pencil-cog: pencil
+pencil-discount: pencil
+pencil-dollar: pencil dollar
+pencil-down: pencil
+pencil-exclamation: pencil
+pencil-heart: pencil heart
+pencil-minus: pencil minus
+pencil-off: edit off
+pencil-pause: pencil pause
+pencil-pin: pencil
+pencil-plus: pencil plus
+pencil-question: pencil
+pencil-search: pencil search
+pencil-share: pencil share
+pencil-star: pencil star
+pencil-up: pencil
+pencil-x: pencil x
+pennant: ''
+pennant-2: '2'
+pennant-off: ''
+pentagon: shape
+pentagon-minus: pentagon minus
+pentagon-number-0: pentagon
+pentagon-number-1: pentagon 1
+pentagon-number-2: pentagon 2
+pentagon-number-3: pentagon 3
+pentagon-number-4: pentagon 4
+pentagon-number-5: pentagon 5
+pentagon-number-6: pentagon 6
+pentagon-number-7: pentagon 7
+pentagon-number-8: pentagon 8
+pentagon-number-9: pentagon 9
+pentagon-off: pentagon
+pentagon-plus: pentagon plus
+pentagon-x: pentagon x
+pentagram: ''
+pepper: ''
+pepper-off: ''
+percentage: ''
+percentage-0: ''
+percentage-10: '10'
+percentage-100: ''
+percentage-20: ''
+percentage-25: ''
+percentage-30: ''
+percentage-33: ''
+percentage-40: ''
+percentage-50: ''
+percentage-60: ''
+percentage-66: ''
+percentage-70: ''
+percentage-75: ''
+percentage-80: ''
+percentage-90: ''
+perfume: ''
+perspective: ''
+perspective-off: ''
+phone: call telephone
+phone-call: call ringing
+phone-calling: phone
+phone-check: phone check
+phone-done: phone
+phone-end: phone
+phone-incoming: call receive
+phone-off: call end
+phone-outgoing: call send
+phone-pause: phone pause
+phone-plus: call add
+phone-ringing: phone
+phone-spark: phone
+phone-x: call delete
+photo: picture
+photo-ai: photo
+photo-bitcoin: photo bitcoin
+photo-bolt: photo
+photo-cancel: photo
+photo-check: photo check
+photo-circle: photo circle
+photo-circle-minus: photo circle minus
+photo-circle-plus: photo circle plus
+photo-code: photo code
+photo-cog: photo
+photo-dollar: photo dollar
+photo-down: photo
+photo-edit: photo edit
+photo-exclamation: photo
+photo-heart: photo heart
+photo-hexagon: photo hexagon
+photo-minus: photo minus
+photo-off: picture off
+photo-pause: photo pause
+photo-pentagon: photo pentagon
+photo-pin: photo
+photo-plus: picture add
+photo-question: photo
+photo-scan: scan
+photo-search: photo search
+photo-sensor: photo
+photo-sensor-2: photo 2
+photo-sensor-3: photo 3
+photo-share: photo share
+photo-shield: photo
+photo-spark: photo
+photo-square-rounded: photo square
+photo-star: photo star
+photo-up: photo
+photo-video: photo video
+photo-x: photo x
+physotherapist: ''
+piano: ''
+pick: ''
+picnic-table: table
+picture-in-picture: ''
+picture-in-picture-off: ''
+picture-in-picture-on: ''
+picture-in-picture-top: ''
+pig: ''
+pig-money: ''
+pig-off: ''
+pilcrow: paragraph text
+pilcrow-left: pilcrow
+pilcrow-right: pilcrow
+pill: ''
+pill-off: medicine off
+pills: medicine
+pin: ''
+pin-end: ''
+pin-invoke: ''
+ping-pong: ''
+pinned: ''
+pinned-off: ''
+pizza: ''
+pizza-off: ''
+placeholder: ''
+plane: vehicle travel
+plane-arrival: arrive
+plane-departure: depart
+plane-inflight: plane
+plane-off: plane
+plane-tilt: plane
+planet: world space
+planet-off: planet
+plant: ''
+plant-2: '2'
+plant-2-off: '2'
+plant-off: ''
+play-basketball: play
+play-card: play
+play-card-1: play 1
+play-card-10: play 10
+play-card-2: play 2
+play-card-3: play 3
+play-card-4: play 4
+play-card-5: play 5
+play-card-6: play 6
+play-card-7: play 7
+play-card-8: play 8
+play-card-9: play 9
+play-card-a: play
+play-card-j: play
+play-card-k: play
+play-card-off: play
+play-card-q: play
+play-card-star: play star
+play-football: play
+play-handball: play
+play-volleyball: play
+player-eject: remove
+player-pause: pause media
+player-play: play media
+player-record: record media
+player-skip-back: backward
+player-skip-forward: forward
+player-stop: stop
+player-track-next: ''
+player-track-prev: ''
+playlist: music list
+playlist-add: music add
+playlist-off: music off
+playlist-x: music remove
+playstation-circle: circle
+playstation-square: square
+playstation-triangle: triangle
+playstation-x: x
+plug: electric connect
+plug-connected: connected
+plug-connected-x: plug x
+plug-off: disconnected
+plug-x: plug x
+plus: add symbol
+plus-equal: plus equal
+plus-minus: plus minus
+png: ''
+podium: ''
+podium-off: ''
+point: cursor
+point-off: cursor off
+pointer: ''
+pointer-bolt: ''
+pointer-cancel: ''
+pointer-check: check
+pointer-code: code
+pointer-cog: ''
+pointer-dollar: dollar
+pointer-down: ''
+pointer-exclamation: ''
+pointer-heart: heart
+pointer-minus: minus
+pointer-off: ''
+pointer-pause: pause
+pointer-pin: ''
+pointer-plus: plus
+pointer-question: ''
+pointer-search: search
+pointer-share: share
+pointer-star: star
+pointer-up: ''
+pointer-x: x
+pokeball: ''
+pokeball-off: ''
+poker-chip: ''
+polaroid: photo
+polygon: ''
+polygon-off: ''
+poo: ''
+pool: ''
+pool-off: ''
+power: on off button
+pray: ''
+premium-rights: ''
+prescription: ''
+presentation: ''
+presentation-analytics: analytics
+presentation-off: ''
+printer: ''
+printer-off: ''
+prism: ''
+prism-light: ''
+prism-off: ''
+prism-plus: plus
+prison: ''
+progress: ''
+progress-alert: ''
+progress-bolt: ''
+progress-check: check
+progress-down: ''
+progress-help: help
+progress-x: x
+prompt: ''
+prong: ''
+propeller: ''
+propeller-off: ''
+protocol: ''
+pumpkin-scary: ''
+puzzle: ''
+puzzle-2: '2'
+puzzle-off: ''
+pyramid: 3d
+pyramid-off: pyramid
+pyramid-plus: pyramid plus
+qrcode: barcode
+qrcode-off: qrcode
+question-mark: ''
+queue-pop-in: ''
+queue-pop-out: ''
+quote: quotation
+quote-off: quote off
+quotes: ''
+radar: ''
+radar-2: '2'
+radar-off: ''
+radio: device tuner
+radio-off: radio
+radioactive: ''
+radioactive-off: ''
+radius-bottom-left: ''
+radius-bottom-right: ''
+radius-top-left: ''
+radius-top-right: ''
+rainbow: ''
+rainbow-off: ''
+rating-12-plus: 12 plus
+rating-14-plus: plus
+rating-16-plus: plus
+rating-18-plus: plus
+rating-21-plus: plus
+razor: ''
+razor-electric: ''
+receipt: invoice
+receipt-2: bill
+receipt-bitcoin: receipt bitcoin
+receipt-dollar: receipt dollar
+receipt-euro: bill
+receipt-off: bill off
+receipt-pound: bill
+receipt-refund: receipt
+receipt-rupee: bill
+receipt-tax: tax invoice
+receipt-yen: bill
+receipt-yuan: receipt
+recharging: ''
+record-mail: mail
+record-mail-off: mail
+rectangle: shape
+rectangle-rounded-bottom: rectangle
+rectangle-rounded-top: rectangle
+rectangle-vertical: portrait shape
+rectangular-prism: ''
+rectangular-prism-off: ''
+rectangular-prism-plus: plus
+recycle: ''
+recycle-off: ''
+refresh: reload sync
+refresh-alert: refresh
+refresh-dot: refresh dot
+refresh-off: refresh
+regex: ''
+regex-off: ''
+registered: ''
+relation-many-to-many: ''
+relation-one-to-many: one
+relation-one-to-one: one
+reload: sync refresh
+reorder: ''
+repeat: ''
+repeat-off: ''
+repeat-once: ''
+replace: swap
+replace-off: replace
+replace-user: replace user
+report: analytics
+report-analytics: analytics
+report-medical: report
+report-money: report
+report-off: report off
+report-search: report search
+reserved-line: ''
+resize: ''
+restore: undo backup
+rewind-backward-10: '10'
+rewind-backward-15: ''
+rewind-backward-20: ''
+rewind-backward-30: ''
+rewind-backward-40: ''
+rewind-backward-5: '5'
+rewind-backward-50: ''
+rewind-backward-60: ''
+rewind-forward-10: '10'
+rewind-forward-15: ''
+rewind-forward-20: ''
+rewind-forward-30: ''
+rewind-forward-40: ''
+rewind-forward-5: '5'
+rewind-forward-50: ''
+rewind-forward-60: ''
+ribbon-health: ''
+rings: ''
+ripple: ''
+ripple-down: ''
+ripple-off: ''
+ripple-up: ''
+road: ''
+road-off: ''
+road-sign: ''
+robot: ''
+robot-face: face
+robot-off: ''
+rocket: space launch
+rocket-off: rocket off
+roller-skating: ''
+rollercoaster: ''
+rollercoaster-off: ''
+rosette: badge
+rosette-asterisk: rosette asterisk
+rosette-discount: rosette
+rosette-discount-check: rosette check
+rosette-discount-check-off: rosette check
+rosette-discount-off: rosette
+rosette-number-0: rosette
+rosette-number-1: rosette 1
+rosette-number-2: rosette 2
+rosette-number-3: rosette 3
+rosette-number-4: rosette 4
+rosette-number-5: rosette 5
+rosette-number-6: rosette 6
+rosette-number-7: rosette 7
+rosette-number-8: rosette 8
+rosette-number-9: rosette 9
+rotate: ''
+rotate-2: direction turn
+rotate-360: ''
+rotate-3d: ''
+rotate-clockwise: direction turn
+rotate-clockwise-2: '2'
+rotate-dot: dot
+rotate-rectangle: rectangle
+route: path navigation
+route-2: path
+route-alt-left: route
+route-alt-right: route
+route-off: path off
+route-scan: route scan
+route-square: path
+route-square-2: route square 2
+route-x: path delete
+route-x-2: path
+router: network wifi
+router-off: router
+row-insert-bottom: ''
+row-insert-top: ''
+row-remove: remove
+rss: ''
+rubber-stamp: stamp
+rubber-stamp-off: stamp
+ruler: ''
+ruler-2: '2'
+ruler-2-off: '2'
+ruler-3: '3'
+ruler-measure: ''
+ruler-measure-2: '2'
+ruler-off: ''
+run: ''
+rv-truck: truck
+s-turn-down: ''
+s-turn-left: ''
+s-turn-right: ''
+s-turn-up: ''
+sailboat: ''
+sailboat-2: '2'
+sailboat-off: ''
+salad: ''
+salt: ''
+sandbox: ''
+satellite: communication dish
+satellite-off: signal off
+sausage: ''
+scale: ''
+scale-off: ''
+scale-outline: ''
+scale-outline-off: ''
+scan: barcode
+scan-eye: verify detect
+scan-position: position
+scan-traces: scan
+schema: ''
+schema-off: ''
+school: ''
+school-bell: bell
+school-off: ''
+scissors: cut tool
+scissors-off: cut off
+scooter: ''
+scooter-electric: ''
+scoreboard: ''
+screen-share: display
+screen-share-off: display off
+screenshot: capture screen
+scribble: ''
+scribble-off: ''
+script: ''
+script-minus: minus
+script-plus: plus
+script-x: x
+scuba-diving: ''
+scuba-diving-tank: ''
+scuba-mask: ''
+scuba-mask-off: ''
+sdk: ''
+search: find magnify
+search-off: find off
+section: ''
+section-sign: ''
+seedling: ''
+seedling-off: ''
+select: ''
+select-all: ''
+selector: ''
+send: paper plane message
+send-2: send 2
+send-off: send
+seo: ''
+separator: ''
+separator-horizontal: ''
+separator-vertical: ''
+server: network host
+server-2: network
+server-bolt: server
+server-cog: settings
+server-off: network off
+server-spark: server
+serverless: ''
+servicemark: ''
+settings: cog gear
+settings-2: gear
+settings-ai: settings
+settings-automation: settings
+settings-bolt: settings
+settings-cancel: settings
+settings-check: settings check
+settings-code: settings code
+settings-cog: settings
+settings-dollar: settings dollar
+settings-down: settings
+settings-exclamation: settings
+settings-heart: settings heart
+settings-minus: settings minus
+settings-off: settings
+settings-pause: settings pause
+settings-pin: settings
+settings-plus: settings plus
+settings-question: settings
+settings-search: settings search
+settings-share: settings share
+settings-spark: settings
+settings-star: settings star
+settings-up: settings
+settings-x: settings x
+shadow: ''
+shadow-off: ''
+shape: ''
+shape-2: '2'
+shape-3: '3'
+shape-off: ''
+share: send social
+share-2: share 2
+share-3: share 3
+share-off: share
+shareplay: ''
+shield: ''
+shield-bolt: ''
+shield-cancel: ''
+shield-check: check
+shield-checkered: ''
+shield-chevron: ''
+shield-code: code
+shield-cog: ''
+shield-dollar: dollar
+shield-down: ''
+shield-exclamation: ''
+shield-half: ''
+shield-heart: heart
+shield-lock: lock
+shield-minus: minus
+shield-off: ''
+shield-pause: pause
+shield-pin: ''
+shield-plus: plus
+shield-question: ''
+shield-search: search
+shield-share: share
+shield-star: star
+shield-up: ''
+shield-x: x
+ship: boat vehicle
+ship-off: boat off
+shirt: ''
+shirt-off: ''
+shirt-sport: ''
+shoe: ''
+shoe-off: ''
+shopping-bag: bag ecommerce
+shopping-bag-check: shopping check
+shopping-bag-discount: shopping
+shopping-bag-edit: shopping edit
+shopping-bag-exclamation: shopping
+shopping-bag-heart: shopping heart
+shopping-bag-minus: shopping minus
+shopping-bag-plus: shopping plus
+shopping-bag-search: shopping search
+shopping-bag-x: shopping x
+shopping-cart: cart ecommerce
+shopping-cart-bolt: shopping cart
+shopping-cart-cancel: shopping cart
+shopping-cart-check: shopping cart check
+shopping-cart-code: shopping cart code
+shopping-cart-cog: shopping cart
+shopping-cart-copy: shopping cart copy
+shopping-cart-discount: shopping cart
+shopping-cart-dollar: shopping cart dollar
+shopping-cart-down: shopping cart
+shopping-cart-exclamation: shopping cart
+shopping-cart-heart: shopping cart heart
+shopping-cart-minus: shopping cart minus
+shopping-cart-off: cart off
+shopping-cart-pause: shopping cart pause
+shopping-cart-pin: shopping cart
+shopping-cart-plus: shopping cart plus
+shopping-cart-question: shopping cart
+shopping-cart-search: shopping cart search
+shopping-cart-share: shopping cart share
+shopping-cart-star: shopping cart star
+shopping-cart-up: shopping cart
+shopping-cart-x: shopping cart x
+shovel: dig garden
+shovel-pitchforks: shovel
+shredder: ''
+sign-left: ''
+sign-right: ''
+signal-2g: network
+signal-3g: network
+signal-4g: network
+signal-4g-plus: plus
+signal-5g: network
+signal-6g: network
+signal-e: ''
+signal-g: ''
+signal-h: ''
+signal-h-plus: plus
+signal-lte: ''
+signature: sign pen
+signature-off: sign off
+sitemap: ''
+sitemap-off: ''
+skateboard: ''
+skateboard-off: ''
+skateboarding: ''
+skew-x: x
+skew-y: ''
+ski-jumping: ''
+skull: death danger
+slash: divider symbol
+slashes: ''
+sleigh: ''
+slice: ''
+slideshow: ''
+smart-home: home
+smart-home-off: home
+smoking: ''
+smoking-no: ''
+snowboarding: ''
+snowflake: winter cold
+snowflake-off: snow off
+snowman: ''
+soccer-field: ''
+social: ''
+social-off: ''
+sock: ''
+sofa: ''
+sofa-off: ''
+solar-electricity: ''
+solar-panel: ''
+solar-panel-2: '2'
+sort-0-9: '9'
+sort-9-0: '9'
+sort-a-z: ''
+sort-ascending: sort up
+sort-ascending-2: '2'
+sort-ascending-letters: ''
+sort-ascending-numbers: ''
+sort-ascending-shapes: ''
+sort-ascending-small-big: small
+sort-descending: sort down
+sort-descending-2: '2'
+sort-descending-letters: ''
+sort-descending-numbers: ''
+sort-descending-shapes: ''
+sort-descending-small-big: small
+sort-z-a: ''
+sos: ''
+soup: ''
+soup-off: ''
+source-code: code
+space: gap
+space-off: space
+spaces: ''
+spacing-horizontal: gap
+spacing-vertical: gap
+spade: ''
+sparkles: magic stars
+sparkles-2: sparkles 2
+speakerphone: ''
+speedboat: ''
+sphere: 3d ball
+sphere-off: sphere
+sphere-plus: sphere plus
+spider: ''
+spiral: ''
+spiral-off: ''
+sport-billard: ''
+spray: ''
+spy: ''
+spy-off: ''
+sql: ''
+square: shape
+square-arrow-down: square
+square-arrow-left: square
+square-arrow-right: square
+square-arrow-up: square
+square-asterisk: square asterisk
+square-check: check
+square-chevron-down: square
+square-chevron-left: square
+square-chevron-right: square
+square-chevron-up: square
+square-chevrons-down: square
+square-chevrons-left: square
+square-chevrons-right: square
+square-chevrons-up: square
+square-dashed: square
+square-dot: square dot
+square-f0: square
+square-f1: square
+square-f2: square
+square-f3: square
+square-f4: square
+square-f5: square
+square-f6: square
+square-f7: square
+square-f8: square
+square-f9: square
+square-forbid: square
+square-forbid-2: square 2
+square-half: square
+square-key: square
+square-letter-a: square
+square-letter-b: square
+square-letter-c: square
+square-letter-d: square
+square-letter-e: square
+square-letter-f: square
+square-letter-g: square
+square-letter-h: square
+square-letter-i: square
+square-letter-j: square
+square-letter-k: square
+square-letter-l: square
+square-letter-m: square
+square-letter-n: square
+square-letter-o: square
+square-letter-p: square
+square-letter-q: square
+square-letter-r: square
+square-letter-s: square
+square-letter-t: square
+square-letter-u: square
+square-letter-v: square
+square-letter-w: square
+square-letter-x: square x
+square-letter-y: square
+square-letter-z: square
+square-minus: square minus
+square-minus-2: square minus 2
+square-number-0: square
+square-number-1: square 1
+square-number-2: square 2
+square-number-3: square 3
+square-number-4: square 4
+square-number-5: square 5
+square-number-6: square 6
+square-number-7: square 7
+square-number-8: square 8
+square-number-9: square 9
+square-off: square
+square-percentage: square
+square-plus: square plus
+square-plus-2: square plus 2
+square-root: square
+square-root-2: square 2
+square-rotated: shape
+square-rotated-asterisk: square asterisk
+square-rotated-forbid: square
+square-rotated-forbid-2: square 2
+square-rotated-off: square
+square-rounded: shape
+square-rounded-arrow-down: square
+square-rounded-arrow-left: square
+square-rounded-arrow-right: square
+square-rounded-arrow-up: square
+square-rounded-check: square check
+square-rounded-chevron-down: square
+square-rounded-chevron-left: square
+square-rounded-chevron-right: square
+square-rounded-chevron-up: square
+square-rounded-chevrons-down: square
+square-rounded-chevrons-left: square
+square-rounded-chevrons-right: square
+square-rounded-chevrons-up: square
+square-rounded-letter-a: square
+square-rounded-letter-b: square
+square-rounded-letter-c: square
+square-rounded-letter-d: square
+square-rounded-letter-e: square
+square-rounded-letter-f: square
+square-rounded-letter-g: square
+square-rounded-letter-h: square
+square-rounded-letter-i: square
+square-rounded-letter-j: square
+square-rounded-letter-k: square
+square-rounded-letter-l: square
+square-rounded-letter-m: square
+square-rounded-letter-n: square
+square-rounded-letter-o: square
+square-rounded-letter-p: square
+square-rounded-letter-q: square
+square-rounded-letter-r: square
+square-rounded-letter-s: square
+square-rounded-letter-t: square
+square-rounded-letter-u: square
+square-rounded-letter-v: square
+square-rounded-letter-w: square
+square-rounded-letter-x: square x
+square-rounded-letter-y: square
+square-rounded-letter-z: square
+square-rounded-minus: square minus
+square-rounded-minus-2: square minus 2
+square-rounded-number-0: square
+square-rounded-number-1: square 1
+square-rounded-number-2: square 2
+square-rounded-number-3: square 3
+square-rounded-number-4: square 4
+square-rounded-number-5: square 5
+square-rounded-number-6: square 6
+square-rounded-number-7: square 7
+square-rounded-number-8: square 8
+square-rounded-number-9: square 9
+square-rounded-percentage: square
+square-rounded-plus: square plus
+square-rounded-plus-2: square plus 2
+square-rounded-x: square x
+square-toggle: square
+square-toggle-horizontal: square
+square-x: close
+squares: ''
+squares-diagonal: ''
+squares-selected: ''
+stack: ''
+stack-2: '2'
+stack-3: '3'
+stack-back: ''
+stack-backward: ''
+stack-forward: ''
+stack-front: ''
+stack-middle: ''
+stack-pop: ''
+stack-push: ''
+stairs: ''
+stairs-down: ''
+stairs-up: ''
+star: favorite rating
+star-half: rating half
+star-off: rating off
+stars: night sky
+stars-off: stars
+status-change: ''
+steam: ''
+steering-wheel: ''
+steering-wheel-off: ''
+step-into: ''
+step-out: ''
+stereo-glasses: ''
+stethoscope: doctor
+stethoscope-off: stethoscope
+sticker: ''
+sticker-2: '2'
+stopwatch: timer
+storm: ''
+storm-off: ''
+stretching: ''
+stretching-2: '2'
+strikethrough: format delete
+stroke-curved: ''
+stroke-dynamic: ''
+stroke-straight: ''
+submarine: ''
+subscript: format math
+subtask: ''
+subtitles: ''
+subtitles-ai: ''
+subtitles-edit: edit
+subtitles-off: ''
+sum: ''
+sum-off: ''
+sun: day light weather
+sun-electricity: sun
+sun-high: sun
+sun-low: sun
+sun-moon: sun moon
+sun-off: sun
+sun-wind: sun wind
+sunglasses: ''
+sunrise: morning dawn
+sunset: evening dusk
+sunset-2: sunset 2
+superscript: format math
+svg: ''
+swimming: ''
+swipe: ''
+swipe-down: ''
+swipe-left: ''
+swipe-right: ''
+swipe-up: ''
+switch: ''
+switch-2: '2'
+switch-3: '3'
+switch-horizontal: ''
+switch-vertical: ''
+sword: ''
+sword-off: ''
+swords: ''
+table: data grid
+table-alias: table
+table-column: table
+table-dashed: table
+table-down: table
+table-export: export
+table-heart: table heart
+table-import: import
+table-minus: table minus
+table-off: 'off'
+table-options: table
+table-plus: table plus
+table-row: table
+table-share: table share
+table-shortcut: table
+table-spark: table
+tag: label
+tag-minus: tag minus
+tag-off: label off
+tag-plus: tag plus
+tag-starred: tag
+tags: labels
+tags-off: labels off
+tallymark-1: '1'
+tallymark-2: '2'
+tallymark-3: '3'
+tallymark-4: '4'
+tallymarks: ''
+tank: ''
+target: goal aim
+target-arrow: target
+target-off: target
+tax: ''
+tax-euro: euro
+tax-pound: pound
+teapot: ''
+telescope: astronomy
+telescope-off: telescope
+temperature: weather
+temperature-celsius: celsius metric
+temperature-fahrenheit: fahrenheit imperial
+temperature-minus: cold
+temperature-off: temperature
+temperature-plus: hot
+temperature-snow: temperature
+temperature-sun: temperature sun
+template: ''
+template-off: ''
+tent: ''
+tent-off: ''
+terminal: command line
+terminal-2: console prompt
+test-pipe: ''
+test-pipe-2: '2'
+test-pipe-off: ''
+tex: ''
+text-caption: text
+text-color: text
+text-decrease: text
+text-direction-ltr: text left
+text-direction-rtl: text right
+text-grammar: text
+text-increase: text
+text-orientation: text
+text-plus: text plus
+text-recognition: text
+text-resize: text
+text-scan-2: text scan 2
+text-size: text
+text-spellcheck: text spellcheck
+text-wrap: text
+text-wrap-column: text
+text-wrap-disabled: text
+texture: ''
+theater: ''
+thermometer: temperature
+thumb-down: ''
+thumb-down-off: ''
+thumb-up: ''
+thumb-up-off: ''
+tic-tac: ''
+ticket: ''
+ticket-off: ''
+tie: ''
+tilde: wave symbol
+tilt-shift: ''
+tilt-shift-off: ''
+time-duration-0: ''
+time-duration-10: '10'
+time-duration-15: ''
+time-duration-30: ''
+time-duration-45: ''
+time-duration-5: '5'
+time-duration-60: ''
+time-duration-90: ''
+time-duration-off: ''
+timeline: ''
+timeline-event: ''
+timeline-event-exclamation: ''
+timeline-event-minus: minus
+timeline-event-plus: plus
+timeline-event-text: text
+timeline-event-x: x
+timezone: ''
+tip-jar: ''
+tip-jar-euro: euro
+tip-jar-pound: pound
+tir: ''
+toggle-left: switch off
+toggle-right: switch on
+toilet-paper: ''
+toilet-paper-off: ''
+toml: ''
+tool: hammer
+tools: hammer wrench
+tools-kitchen: tools
+tools-kitchen-2: tools 2
+tools-kitchen-2-off: tools 2
+tools-kitchen-3: tools 3
+tools-kitchen-off: tools
+tools-off: tools
+tooltip: ''
+topology-bus: bus
+topology-complex: ''
+topology-full: ''
+topology-full-hierarchy: ''
+topology-ring: ''
+topology-ring-2: '2'
+topology-ring-3: '3'
+topology-star: star
+topology-star-2: star 2
+topology-star-3: star 3
+topology-star-ring: star
+topology-star-ring-2: star 2
+topology-star-ring-3: star 3
+torii: ''
+tornado: ''
+tournament: ''
+tower: ''
+tower-off: ''
+track: ''
+tractor: farm vehicle
+trademark: ''
+traffic-cone: cone
+traffic-cone-off: cone
+traffic-lights: ''
+traffic-lights-off: ''
+train: railway
+transaction-bitcoin: bitcoin
+transaction-dollar: dollar
+transaction-euro: euro
+transaction-pound: pound
+transaction-rupee: rupee
+transaction-yen: yen
+transaction-yuan: ''
+transfer: ''
+transfer-in: ''
+transfer-out: ''
+transfer-vertical: ''
+transform: ''
+transform-point: point
+transform-point-bottom-left: point
+transform-point-bottom-right: point
+transform-point-top-left: point
+transform-point-top-right: point
+transition-bottom: ''
+transition-left: ''
+transition-right: ''
+transition-top: ''
+trash: delete garbage
+trash-off: delete off
+trash-x: trash x
+treadmill: ''
+tree: nature plant
+trees: ''
+trekking: ''
+trending-down: decline analytics
+trending-down-2: '2'
+trending-down-3: '3'
+trending-up: growth analytics
+trending-up-2: '2'
+trending-up-3: '3'
+trending-up-down: ''
+triangle: shape
+triangle-inverted: triangle
+triangle-minus: triangle minus
+triangle-minus-2: triangle minus 2
+triangle-off: triangle
+triangle-plus: triangle plus
+triangle-plus-2: triangle plus 2
+triangle-square-circle: triangle square circle
+triangles: ''
+trident: ''
+trolley: ''
+trophy: award
+trophy-off: award off
+trowel: ''
+truck: vehicle delivery
+truck-delivery: delivery
+truck-loading: loading
+truck-off: vehicle off
+truck-return: return
+txt: ''
+typeface: ''
+typography: text
+typography-off: typography
+u-turn-left: ''
+u-turn-right: ''
+ufo: alien
+ufo-off: ufo
+uhd: ''
+umbrella: weather rain protection
+umbrella-2: umbrella 2
+umbrella-closed: umbrella
+umbrella-closed-2: umbrella 2
+umbrella-off: weather off
+underline: format text
+universe: ''
+unlink: broken chain
+upload: import arrow
+urgent: ''
+usb: connection
+user: person
+user-bitcoin: user bitcoin
+user-bolt: user
+user-cancel: user
+user-check: user confirm
+user-circle: user circle
+user-code: user code
+user-cog: user
+user-dollar: user dollar
+user-down: user
+user-edit: user edit
+user-exclamation: user
+user-heart: user heart
+user-hexagon: user hexagon
+user-key: user
+user-minus: user remove
+user-off: user off
+user-pause: user pause
+user-pentagon: user pentagon
+user-pin: user
+user-plus: user add
+user-question: user
+user-scan: recognition
+user-screen: user
+user-search: user search
+user-share: user share
+user-shield: user
+user-square: user square
+user-square-rounded: user square
+user-star: user star
+user-up: user
+user-x: user delete
+users: people team group
+users-group: team
+users-minus: users minus
+users-plus: users plus
+uv-index: ''
+ux-circle: circle
+vaccine: ''
+vaccine-bottle: ''
+vaccine-bottle-off: ''
+vaccine-off: ''
+vacuum-cleaner: ''
+variable: code math
+variable-minus: variable minus
+variable-off: variable
+variable-plus: variable plus
+vector: ''
+vector-bezier: ''
+vector-bezier-2: '2'
+vector-bezier-arc: ''
+vector-bezier-circle: circle
+vector-off: ''
+vector-spline: ''
+vector-triangle: triangle
+vector-triangle-off: triangle
+venus: ''
+versions: ''
+versions-off: ''
+video: camera film
+video-minus: camera remove
+video-off: camera disabled
+video-plus: camera add
+view-360: ''
+view-360-arrow: ''
+view-360-number: ''
+view-360-off: ''
+viewfinder: ''
+viewfinder-off: ''
+viewport-narrow: ''
+viewport-short: ''
+viewport-tall: ''
+viewport-wide: ''
+vinyl: ''
+vip: ''
+vip-2: '2'
+vip-off: ''
+virus: disease science
+virus-off: clean
+virus-search: virus search
+vocabulary: ''
+vocabulary-off: ''
+volcano: ''
+volume: audio loud
+volume-2: audio loud
+volume-3: audio loud
+volume-4: volume 4
+volume-off: audio mute
+vs: ''
+walk: ''
+wall: ''
+wall-off: ''
+wallet: money payment
+wallet-off: payment off
+wallpaper: ''
+wallpaper-off: ''
+wand: ''
+wand-off: ''
+wash: ''
+wash-dry: ''
+wash-dry-1: '1'
+wash-dry-2: '2'
+wash-dry-3: '3'
+wash-dry-a: ''
+wash-dry-dip: ''
+wash-dry-f: ''
+wash-dry-flat: ''
+wash-dry-hang: ''
+wash-dry-off: ''
+wash-dry-p: ''
+wash-dry-shade: ''
+wash-dry-w: ''
+wash-dryclean: ''
+wash-dryclean-off: ''
+wash-eco: ''
+wash-gentle: ''
+wash-hand: ''
+wash-machine: ''
+wash-off: ''
+wash-press: ''
+wash-temperature-1: temperature 1
+wash-temperature-2: temperature 2
+wash-temperature-3: temperature 3
+wash-temperature-4: temperature 4
+wash-temperature-5: temperature 5
+wash-temperature-6: temperature 6
+wash-tumble-dry: ''
+wash-tumble-off: ''
+waterpolo: ''
+wave-saw-tool: saw tool
+wave-sine: ''
+wave-square: square
+waves-electricity: waves
+webhook: ''
+webhook-off: ''
+weight: ''
+wheat: ''
+wheat-off: ''
+wheel: ''
+wheelchair: accessible
+wheelchair-off: wheelchair
+whirl: ''
+whisk: ''
+wifi: network wireless
+wifi-0: wifi
+wifi-1: wifi 1
+wifi-2: network
+wifi-off: network disconnected
+wind: weather air
+wind-electricity: wind
+wind-off: wind
+windmill: ''
+windmill-off: ''
+window: ''
+window-maximize: maximize
+window-minimize: minimize
+window-off: ''
+windsock: ''
+wiper: ''
+wiper-wash: ''
+woman: ''
+wood: ''
+world: globe
+world-bolt: world
+world-cancel: world
+world-check: world check
+world-code: world code
+world-cog: world
+world-dollar: world dollar
+world-down: world
+world-download: world download
+world-exclamation: world
+world-heart: world heart
+world-latitude: geography
+world-longitude: geography
+world-map: world map
+world-minus: world minus
+world-off: world
+world-pause: world pause
+world-pin: world
+world-plus: world plus
+world-question: world
+world-search: world search
+world-share: world share
+world-star: world star
+world-up: world
+world-upload: world upload
+world-www: world
+world-x: world x
+wrecking-ball: ''
+writing: ''
+writing-off: ''
+writing-sign: ''
+writing-sign-off: ''
+x: cancel delete
+x-power-y: x power
+xbox-a: ''
+xbox-b: ''
+xbox-x: x
+xbox-y: ''
+xd: ''
+xxx: ''
+yin-yang: ''
+yoga: ''
+zeppelin: ''
+zeppelin-off: ''
+zero-config: zero
+zip: ''
+zodiac-aquarius: ''
+zodiac-aries: ''
+zodiac-cancer: ''
+zodiac-capricorn: ''
+zodiac-gemini: ''
+zodiac-leo: ''
+zodiac-libra: ''
+zodiac-pisces: ''
+zodiac-sagittarius: ''
+zodiac-scorpio: ''
+zodiac-taurus: ''
+zodiac-virgo: ''
+zoom: ''
+zoom-cancel: ''
+zoom-check: check
+zoom-code: code
+zoom-exclamation: ''
+zoom-in: magnify enlarge
+zoom-in-area: ''
+zoom-money: ''
+zoom-out: shrink reduce
+zoom-out-area: ''
+zoom-pan: ''
+zoom-question: ''
+zoom-replace: replace
+zoom-reset: reset
+zoom-scan: scan
+zzz: ''
+zzz-off: ''

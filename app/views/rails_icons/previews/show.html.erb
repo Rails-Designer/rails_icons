@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails Icons</title>
+
+    <%= stylesheet_link_tag "rails_icons/preview" %>
+
+    <%= javascript_include_tag "rails_icons/minisearch.min", type: :module %>
+    <%= javascript_include_tag "rails_icons/preview/preview", type: :module %>
+  </head>
+  <body>
+    <nav>
+      <select onchange="window.location.href=this.value">
+        <% @libraries.each do |library| %>
+          <option value="<%= library_path(library) %>" <%= "selected" if library == @library %>>
+            <%= library %>
+          </option>
+        <% end %>
+      </select>
+
+      <% if @variants.any? %>
+        <select onchange="window.location.href=this.value">
+          <% @variants.each do |variant| %>
+            <option value="<%= library_variant_path(@library, variant) %>" <%= "selected" if variant == @variant %>>
+              <%= variant %>
+            </option>
+          <% end %>
+        </select>
+      <% end %>
+
+      <div class="search-wrapper">
+        <input type="search" placeholder="Filter icons…" autofocus>
+
+        <kbd>/</kbd>
+      </div>
+
+      <span class="result-count"></span>
+    </nav>
+
+    <p class="no-results" hidden>Ah, no icons matching `<span class="query"></span>`…</p>
+
+    <ul class="icons" tabindex="0">
+      <% @icon_names.each do |name| %>
+        <li>
+          <rails-icon-preview
+            name="<%= name %>"
+            library="<%= @library %>"
+            variant="<%= @variant %>"
+            default-library="<%= @default_library %>"
+            default-variant="<%= @default_variant %>"
+            tags="<%= @tags[name] %>"
+            >
+              <%= icon(name, library: @library, variant: @variant) %>
+          </rails-icon-preview>
+        </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
