@@ -12,7 +12,7 @@ icon "check", class: "text-gray-500"
 icon "apple", library: "simple_icons", class: "text-black"
 ```
 
-The icons are sourced directly from their respective GitHub repositories, ensuring Rails Icons remain lightweight.
+The icons are sourced directly from their respective GitHub repositories via the [Icons](https://github.com/Rails-Designer/icons) gem, ensuring Rails Icons remain lightweight.
 
 
 **Sponsored By [Rails Designer](https://railsdesigner.com/)**
