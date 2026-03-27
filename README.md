@@ -81,71 +81,17 @@ icon "check", stroke_width: 2
 
 - [Boxicons](https://railsdesigner.com/open-source/rails-icons/boxicons/) (1600+ icons)
 - [Feather](https://railsdesigner.com/open-source/rails-icons/feather/) (280+ icons)
-- [Flags](https://railsdesigner.com/open-source/rails-icons/flags/) (540+ icons)
-- [Heroicons](https://railsdesigner.com/open-source/rails-icons/heroicons/) (300+ icons)
-- [Hugeicons](https://railsdesigner.com/open-source/rails-icons/hugeicons/) (4600+ icons)
-- [Linear](https://railsdesigner.com/open-source/rails-icons/linear/) (170+ icons)
-- [Lucide](https://railsdesigner.com/open-source/rails-icons/lucide/) (1500+ icons)
-- [Phosphor](https://railsdesigner.com/open-source/rails-icons/phosphor/) (9000+ icons)
-- [Radix](https://railsdesigner.com/open-source/rails-icons/radix/) (300+ icons)
-- [SidekickIcons](https://railsdesigner.com/open-source/rails-icons/sidekickicons/) (49 icons, complementing [Heroicons](https://railsdesigner.com/open-source/rails-icons/heroicons/))
-- [Tabler](https://railsdesigner.com/open-source/rails-icons/tabler/) (5700+ icons)
-- [Weather](https://railsdesigner.com/open-source/rails-icons/weather/) (215+ icons)
-
-
-## Animated icons
-
-Rails Icons also includes a few animated icons. Great for loading states and so on. These are currently included:
-
-- `faded-spinner`
-- `trailing-spinner`
-- `fading-dots`
-- `bouncing-dots`
-
-Use like this: `icon "faded-spinner", library: "animated"`. The same attributes as the other libraries are available.
-
-
-## Custom icon library
-
-Need to use an icon from another library (for example [Simple Icons](https://simpleicons.org/))?
-
-1. run `rails generate rails_icons:initializer --custom=simple_icons`;
-2. add the SVG icons to the created directory (*app/assets/svg/icons/simple_icons*);
-
-Every custom icon can now be used with the same interface as first-party icon libraries:
-```ruby
-icon "apple", library: "simple_icons", class: "text-black"
-```
-
-
-## Sync icons
-
-To sync all libraries, run:
-```bash
-rails generate rails_icons:sync
-```
-
-To sync only a specific library, run:
-```bash
-rails generate rails_icons:sync --library=heroicons
-
-# Or multiple at once:
-rails generate rails_icons:sync --libraries=heroicons lucide
-```
-
-
-## Projects using Rails Icons
-
-- [Rails Designer UI Components](https://railsdesigner.com/components/) — The first professionally-designed UI components library for Ruby on Rails apps
-- [Chirp Form](https://chirpform.com/) — Add forms to any site. Display responses anywhere
-- [Helptail](https://helptail.com/) — Put your routine tasks on autopilot
-
+- [Flags](https://railsdesigner.com/open-source/rails-icons/flags/) (250+ icons)
+- [Heroicons](https://railsdesigner.com/open-source/rails-icons/heroicons/) (280+ icons)
+- [Lucide](https://railsdesigner.com/open-source/rails-icons/lucide/) (1000+ icons)
+- [Phosphor](https://railsdesigner.com/open-source/rails-icons/phosphor/) (1200+ icons)
+- [Remix](https://railsdesigner.com/open-source/rails-icons/remix/) (2200+ icons)
+- [Tabler](https://railsdesigner.com/open-source/rails-icons/tabler/) (4200+ icons)
 
 ## Contributing
 
-This project uses [Standard](https://github.com/testdouble/standard) for formatting Ruby code. Please make sure to run `be standardrb` before submitting pull requests. Run tests via `rails test`.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/Rails-Designer/rails_icons. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Rails-Designer/rails_icons/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
-Rails Icons is released under the [MIT License](https://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
