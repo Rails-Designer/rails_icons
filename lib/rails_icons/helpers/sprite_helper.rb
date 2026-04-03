@@ -1,0 +1,49 @@
+# frozen_string_literal: true
+
+require "rails_icons/sprite_icon"
+require "rails_icons/sprite"
+
+module RailsIcons
+  module Helpers
+    module SpriteHelper
+      # Renders an SVG icon from a sprite, compatible with Rails Icons API
+      #
+      # @param name [String] The icon name
+      # @param library [String] The icon library (defaults to RailsIcons configuration)
+      # @param variant [String] The icon variant (optional)
+      # @param sprite_location [String] Override sprite URL (optional)
+      # @param arguments [Hash] Additional arguments including class, data, stroke_width, etc.
+      #
+      # @example
+      #   <%= sprite_icon "chevron-down" %>
+      #   <%= sprite_icon "search", class: "text-blue-500" %>
+      #   <%= sprite_icon "check", variant: "solid", library: "heroicons" %>
+      #   <%= sprite_icon "heart", library: "lucide", data: { controller: "favorite" } %>
+      #
+      def sprite_icon(name, library: nil, variant: nil, sprite_location: nil, **arguments)
+        RailsIcons::SpriteIcon.new(
+          name: name,
+          library: library || RailsIcons.configuration.default_library,
+          variant: variant,
+          sprite_location: sprite_location,
+          arguments: arguments
+        ).svg
+      end
+
+      # Returns the inline SVG sprite content containing all symbols
+      #
+      # @param icons [Array<String>] Optional array of icon names to include (defaults to all configured icons)
+      # @param library [String] Optional library to use for icons
+      # @param variant [String] Optional variant to use for icons
+      #
+      # @example
+      #   <%= sprite %>
+      #   <%= sprite(["check", "search", "menu"]) %>
+      #   <%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
+      #
+      def sprite(icons = nil, library: nil, variant: nil)
+        RailsIcons::Sprite.new(icons: icons, library: library, variant: variant).svg
+      end
+    end
+  end
+end

@@ -77,6 +77,93 @@ icon "check", stroke_width: 2
 ```
 
 
+## Sprites
+
+Rails Icons supports SVG sprites for improved performance. Instead of inlining each icon's full SVG, sprite icons reference a shared set of `<symbol>` definitions via `<use href="...">`.
+
+### Configuration
+
+```ruby
+# config/initializers/rails_icons.rb
+RailsIcons.configure do |config|
+  config.default_library = "heroicons"
+  config.default_variant = "outline"
+
+  # nil = inline sprite (default), or set a path like "/sprite.svg"
+  config.default_sprite_location = nil
+
+  # Set to true to validate that referenced icons exist on disk
+  config.validate_sprite_icons = false
+
+  # Define which icons to include in the sprite
+  config.sprite = {
+    heroicons: {
+      outline: %w[check chevron-down menu search x],
+      mini: %w[check chevron-down]
+    }
+  }
+end
+```
+
+### Inline sprite
+
+Include the sprite in your layout, then reference icons with `sprite_icon`:
+
+```erb
+<body>
+  <%= sprite %>
+
+  <%= sprite_icon "check" %>
+  <%= sprite_icon "search", class: "text-blue-500" %>
+  <%= sprite_icon "menu", data: { controller: "nav" } %>
+</body>
+```
+
+You can also generate a sprite for a specific set of icons:
+
+```erb
+<%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
+```
+
+### External sprite
+
+Serve the sprite as a standalone file and reference it by path:
+
+```ruby
+config.default_sprite_location = "/sprite.svg"
+```
+
+```erb
+<%= sprite_icon "check" %>
+<%# renders: <svg><use href="/sprite.svg#heroicons_outline_check"></use></svg> %>
+```
+
+Override per icon:
+
+```erb
+<%= sprite_icon "check", sprite_location: "/assets/sprites.svg" %>
+```
+
+### Helpers
+
+`sprite_icon` accepts the same options as `icon`:
+
+```ruby
+sprite_icon "check"
+sprite_icon "check", library: "heroicons", variant: "mini"
+sprite_icon "check", class: "size-6", data: { controller: "swap" }, stroke_width: 2
+sprite_icon "check", sprite_location: "/sprite.svg"
+```
+
+`sprite` generates the inline `<svg>` containing `<symbol>` definitions:
+
+```ruby
+sprite                                                           # all configured icons
+sprite(["check", "search"])                                      # specific icons
+sprite(["check", "search"], library: "heroicons", variant: "outline") # with library/variant
+```
+
+
 ## First-party libraries
 
 - [Boxicons](https://railsdesigner.com/open-source/rails-icons/boxicons/) (1600+ icons)

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "rails_icons/helpers/icon_helper"
+require "rails_icons/helpers/sprite_helper"
 
 module RailsIcons
   class Engine < ::Rails::Engine
@@ -12,9 +13,20 @@ module RailsIcons
       end
     end
 
+    initializer "rails_icons.sprite_configuration", before: :load_config_initializers do
+      Icons::Configuration.attr_accessor :sprite, :default_sprite_location, :validate_sprite_icons
+
+      Icons.configure do |config|
+        config.sprite = {}
+        config.default_sprite_location = nil
+        config.validate_sprite_icons = false
+      end
+    end
+
     initializer "rails_icons.helpers" do
       ActiveSupport.on_load(:action_view) do
         include RailsIcons::Helpers::IconHelper
+        include RailsIcons::Helpers::SpriteHelper
       end
     end
   end
