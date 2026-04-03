@@ -127,7 +127,34 @@ You can also generate a sprite for a specific set of icons:
 
 ### External sprite
 
-Serve the sprite as a standalone file and reference it by path:
+To serve the sprite as a standalone `.svg` file, add a controller and route to your app:
+
+```ruby
+# app/controllers/sprite_controller.rb
+class SpriteController < ApplicationController
+  def show
+    respond_to do |format|
+      format.svg do
+        render xml: RailsIcons::Sprite.new.svg, content_type: "image/svg+xml"
+      end
+    end
+  end
+end
+```
+
+```ruby
+# config/routes.rb
+get "/sprite", to: "sprite#show", defaults: { format: "svg" }
+```
+
+Then register the `svg` MIME type if you haven't already:
+
+```ruby
+# config/initializers/mime_types.rb
+Mime::Type.register "image/svg+xml", :svg
+```
+
+Point your configuration at the route:
 
 ```ruby
 config.default_sprite_location = "/sprite.svg"
