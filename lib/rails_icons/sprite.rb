@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "sprite/reference"
+
 module RailsIcons
   class Sprite
     include ActionView::Helpers::TagHelper
@@ -12,9 +14,7 @@ module RailsIcons
     end
 
     def svg
-      symbols = svg_list.filter_map do |icon_name, library_name, variant_name|
-        symbol_from_svg(icon_name, library_name, variant_name)
-      end
+      symbols = references.filter_map { |reference| symbol_from(reference) }
 
       content = <<~SVG
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -29,50 +29,36 @@ module RailsIcons
 
     private
 
-    def svg_list
-      @icons ? override_svg_list : configured_svg_list
+    def references
+      @icons ? override_references : configured_references
     end
 
-    def override_svg_list
+    def override_references
       library = @library || @config.default_library
       variant = @variant || @config.default_variant
-      @icons.map do |icon_name|
-        [icon_name, library, variant]
-      end
+      @icons.map { |name| Reference.new(name: name, library: library, variant: variant) }
     end
 
-    def configured_svg_list
+    def configured_references
       sprite_config = @config.sprite || {}
-      sprite_config.flat_map do |library_name, variants|
-        variants.flat_map do |variant_name, icon_names|
-          icon_names.map do |icon_name|
-            [icon_name, library_name, variant_name]
-          end
+      sprite_config.flat_map do |library, variants|
+        variants.flat_map do |variant, names|
+          names.map { |name| Reference.new(name: name, library: library, variant: variant) }
         end
       end
     end
 
-    def symbol_from_svg(icon_name, library, variant)
-      file_path = Icons::Icon::FilePath.new(
-        name: icon_name,
-        library: library.to_s,
-        variant: variant.to_s
-      ).call
-      return unless File.exist?(file_path)
+    def symbol_from(reference)
+      return unless reference.exists?
 
-      svg_content = File.read(file_path)
+      svg_element = Nokogiri::XML(File.read(reference.file_path)).at_css("svg")
 
-      doc = Nokogiri::XML(svg_content)
-      svg_element = doc.at_css("svg")
-
-      tag.symbol id: id_for(icon_name, library, variant), viewBox: svg_element["viewBox"] || "0 0 24 24" do
+      tag.symbol id: reference.id, viewBox: svg_element["viewBox"] || "0 0 24 24" do
         svg_element.children.map(&:to_s).join
       end
     rescue Icons::IconNotFound
-      Rails.logger.warn "Icon not found: #{icon_name} from #{library}/#{variant}"
+      Rails.logger.warn "Icon not found: #{reference.name} from #{reference.library}/#{reference.variant}"
       nil
     end
-
-    def id_for(icon_name, library, variant) = [library, variant, icon_name].join("_")
   end
 end

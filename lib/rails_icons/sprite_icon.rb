@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "sprite"
+
 module RailsIcons
   class SpriteIcon
     def initialize(name:, library:, arguments:, variant:, sprite_location:, config: RailsIcons.configuration)
@@ -14,13 +16,17 @@ module RailsIcons
 
     def svg
       if @config.validate_sprite_icons
-        raise Icons::IconNotFound, error_message unless sprite_icon_exists?
+        raise Icons::IconNotFound, error_message unless reference.exists?
       end
 
       build_sprite_svg
     end
 
     private
+
+    def reference
+      @reference ||= Sprite::Reference.new(name: @name, library: @library, variant: @variant)
+    end
 
     def set_variant
       value = @config.libraries.dig(@library, :default_variant) ||
@@ -40,7 +46,7 @@ module RailsIcons
     end
 
     def build_sprite_svg
-      sprite_href = @sprite_location.nil? ? "##{sprite_symbol_id}" : "#{@sprite_location}##{sprite_symbol_id}"
+      sprite_href = @sprite_location.nil? ? "##{reference.id}" : "#{@sprite_location}##{reference.id}"
 
       svg_content = <<~SVG
         <svg><use href="#{sprite_href}"></use></svg>
@@ -53,21 +59,6 @@ module RailsIcons
         .to_html
         .html_safe
       # rubocop:enable Rails/OutputSafety
-    end
-
-    def sprite_icon_exists?
-      file_path = Icons::Icon::FilePath.new(
-        name: @name,
-        library: @library,
-        variant: @variant
-      ).call
-      File.exist?(file_path)
-    rescue Icons::IconNotFound
-      false
-    end
-
-    def sprite_symbol_id
-      "#{@library}_#{@variant}_#{@name}"
     end
 
     def attach_attributes(to:)
