@@ -3,7 +3,9 @@
 module RailsIcons
   class SpritesController < ActionController::Base
     def show
-      render plain: RailsIcons::Sprite.new.svg, content_type: "image/svg+xml"
+      respond_to do |format|
+        format.svg { render plain: RailsIcons::Sprite.new.svg, content_type: "image/svg+xml" }
+      end
     end
   end
 end

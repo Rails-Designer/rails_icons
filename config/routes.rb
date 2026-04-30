@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 RailsIcons::Engine.routes.draw do
-  get "sprite", to: "sprites#show", as: :sprite, defaults: {format: :svg}
-
   get ":library", to: "previews#show", as: :library
   get ":library/:variant", to: "previews#show", as: :library_variant
 

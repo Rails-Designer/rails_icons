@@ -89,8 +89,9 @@ RailsIcons.configure do |config|
   config.default_library = "heroicons"
   config.default_variant = "outline"
 
-  # nil = inline sprite (default), or set a path like "/sprite.svg"
-  config.default_sprite_location = nil
+  # Where `sprite_icon` references symbols. Defaults to the gem-served
+  # endpoint below. Set to nil to use inline mode (`<%= sprite %>` in layout).
+  config.default_sprite_location = "/rails_icons/sprite.svg"
 
   # Set to true to validate that referenced icons exist on disk
   config.validate_sprite_icons = false
@@ -105,9 +106,34 @@ RailsIcons.configure do |config|
 end
 ```
 
+### External sprite (default)
+
+Rails Icons serves the sprite at `/rails_icons/sprite.svg` out of the box — no controller, route, or MIME type setup needed. The endpoint sits at the host app level, so it stays reachable even when the preview engine is mounted behind authentication.
+
+```erb
+<%= sprite_icon "check" %>
+<%# renders: <svg><use href="/rails_icons/sprite.svg#heroicons_outline_check"></use></svg> %>
+```
+
+Point at a precompiled file or a CDN by changing the location:
+
+```ruby
+config.default_sprite_location = "https://cdn.example.com/icons.svg"
+```
+
+Override per icon:
+
+```erb
+<%= sprite_icon "check", sprite_location: "/assets/sprites.svg" %>
+```
+
 ### Inline sprite
 
-Include the sprite in your layout, then reference icons with `sprite_icon`:
+Set the location to `nil` and embed the sprite directly in your layout:
+
+```ruby
+config.default_sprite_location = nil
+```
 
 ```erb
 <body>
@@ -123,27 +149,6 @@ You can also generate a sprite for a specific set of icons:
 
 ```erb
 <%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
-```
-
-### External sprite
-
-Rails Icons mounts a sprite endpoint at `<engine mount>/sprite.svg` (default: `/rails_icons/sprite.svg`) — no controller, route, or MIME type setup required. Point your configuration at it:
-
-```ruby
-config.default_sprite_location = "/rails_icons/sprite.svg"
-```
-
-```erb
-<%= sprite_icon "check" %>
-<%# renders: <svg><use href="/rails_icons/sprite.svg#heroicons_outline_check"></use></svg> %>
-```
-
-If you mounted the engine elsewhere, `rails_icons.sprite_path` resolves to the correct URL.
-
-Override per icon:
-
-```erb
-<%= sprite_icon "check", sprite_location: "/assets/sprites.svg" %>
 ```
 
 ### Helpers

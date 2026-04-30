@@ -18,13 +18,22 @@ module RailsIcons
 
       Icons.configure do |config|
         config.sprite = {}
-        config.default_sprite_location = nil
+        config.default_sprite_location = "/rails_icons/sprite.svg"
         config.validate_sprite_icons = false
       end
     end
 
     initializer "rails_icons.mime_types", before: :load_config_initializers do
       Mime::Type.register "image/svg+xml", :svg unless Mime::Type.lookup_by_extension(:svg)
+    end
+
+    initializer "rails_icons.sprite_route", after: :load_config_initializers do |app|
+      app.routes.prepend do
+        get "/rails_icons/sprite.svg",
+          to: "rails_icons/sprites#show",
+          as: :rails_icons_sprite,
+          defaults: {format: :svg}
+      end
     end
 
     initializer "rails_icons.helpers" do
