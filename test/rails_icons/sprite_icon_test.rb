@@ -57,6 +57,23 @@ class SpriteIconTest < ActiveSupport::TestCase
     assert_match(%r{<use href="/assets/sprites.svg#heroicons_outline_academic-cap"></use>}, result)
   end
 
+  test "defaults to the gem-served /rails_icons/sprite.svg endpoint" do
+    RailsIcons.configure do |config|
+      config.default_sprite_location = "/rails_icons/sprite.svg"
+    end
+
+    icon = RailsIcons::SpriteIcon.new(
+      name: "academic-cap",
+      library: "heroicons",
+      variant: "outline",
+      sprite_location: nil,
+      arguments: {}
+    )
+    result = icon.svg
+
+    assert_match(%r{<use href="/rails_icons/sprite.svg#heroicons_outline_academic-cap"></use>}, result)
+  end
+
   test "applies css class" do
     icon = RailsIcons::SpriteIcon.new(
       name: "academic-cap",
