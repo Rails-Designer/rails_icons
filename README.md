@@ -127,43 +127,18 @@ You can also generate a sprite for a specific set of icons:
 
 ### External sprite
 
-To serve the sprite as a standalone `.svg` file, add a controller and route to your app:
+Rails Icons mounts a sprite endpoint at `<engine mount>/sprite.svg` (default: `/rails_icons/sprite.svg`) — no controller, route, or MIME type setup required. Point your configuration at it:
 
 ```ruby
-# app/controllers/sprite_controller.rb
-class SpriteController < ApplicationController
-  def show
-    respond_to do |format|
-      format.svg do
-        render xml: RailsIcons::Sprite.new.svg, content_type: "image/svg+xml"
-      end
-    end
-  end
-end
-```
-
-```ruby
-# config/routes.rb
-get "/sprite", to: "sprite#show", defaults: { format: "svg" }
-```
-
-Then register the `svg` MIME type if you haven't already:
-
-```ruby
-# config/initializers/mime_types.rb
-Mime::Type.register "image/svg+xml", :svg
-```
-
-Point your configuration at the route:
-
-```ruby
-config.default_sprite_location = "/sprite.svg"
+config.default_sprite_location = "/rails_icons/sprite.svg"
 ```
 
 ```erb
 <%= sprite_icon "check" %>
-<%# renders: <svg><use href="/sprite.svg#heroicons_outline_check"></use></svg> %>
+<%# renders: <svg><use href="/rails_icons/sprite.svg#heroicons_outline_check"></use></svg> %>
 ```
+
+If you mounted the engine elsewhere, `rails_icons.sprite_path` resolves to the correct URL.
 
 Override per icon:
 

@@ -23,6 +23,10 @@ module RailsIcons
       end
     end
 
+    initializer "rails_icons.mime_types", before: :load_config_initializers do
+      Mime::Type.register "image/svg+xml", :svg unless Mime::Type.lookup_by_extension(:svg)
+    end
+
     initializer "rails_icons.helpers" do
       ActiveSupport.on_load(:action_view) do
         include RailsIcons::Helpers::IconHelper
