@@ -23,13 +23,19 @@ class RailsIcons::SpritesControllerTest < ActionDispatch::IntegrationTest
     assert_match(/<symbol id="heroicons_outline_academic-cap"/, response.body)
   end
 
+  test "sprite inner content is not html escaped" do
+    get "/rails_icons/sprite.svg"
+
+    refute_match(/&lt;/, response.body)
+  end
+
   test "registers the svg mime type" do
     assert Mime::Type.lookup_by_extension(:svg)
   end
 
   test "sprite route is registered on the host app, not the engine" do
-    host_route = Rails.application.routes.routes.find { |r| r.name == "rails_icons_sprite" }
-    engine_route = RailsIcons::Engine.routes.routes.find { |r| r.name == "rails_icons_sprite" }
+    host_route = Rails.application.routes.routes.find { |route| route.name == "rails_icons_sprite" }
+    engine_route = RailsIcons::Engine.routes.routes.find { |route| route.name == "rails_icons_sprite" }
 
     assert host_route,
       "expected :rails_icons_sprite to be defined on the host application's routes"

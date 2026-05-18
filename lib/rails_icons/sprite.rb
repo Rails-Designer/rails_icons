@@ -36,11 +36,13 @@ module RailsIcons
     def override_references
       library = @library || @config.default_library
       variant = @variant || @config.default_variant
+
       @icons.map { |name| Reference.new(name: name, library: library, variant: variant) }
     end
 
     def configured_references
       sprite_config = @config.sprite || {}
+
       sprite_config.flat_map do |library, variants|
         variants.flat_map do |variant, names|
           names.map { |name| Reference.new(name: name, library: library, variant: variant) }
@@ -54,10 +56,11 @@ module RailsIcons
       svg_element = Nokogiri::XML(File.read(reference.file_path)).at_css("svg")
 
       tag.symbol id: reference.id, viewBox: svg_element["viewBox"] || "0 0 24 24" do
-        svg_element.children.map(&:to_s).join
+        svg_element.children.map(&:to_s).join.html_safe
       end
     rescue Icons::IconNotFound
       Rails.logger.warn "Icon not found: #{reference.name} from #{reference.library}/#{reference.variant}"
+
       nil
     end
   end

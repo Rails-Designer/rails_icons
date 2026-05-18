@@ -79,6 +79,7 @@ module RailsIcons
 
     def library_attributes
       keys = [@library, @variant&.to_sym].compact
+
       @config.libraries.dig(*keys) || {}
     end
   end
