@@ -26,7 +26,7 @@ module RailsIcons
           variant: variant,
           sprite_location: sprite_location,
           arguments: arguments
-        ).svg
+        ).svg.html_safe
       end
 
       # Returns the inline SVG sprite content containing all symbols
@@ -41,7 +41,7 @@ module RailsIcons
       #   <%= icons_sprite(["check", "search"], library: "heroicons", variant: "outline") %>
       #
       def icons_sprite(icons = nil, library: nil, variant: nil)
-        Icons::Sprite.new(icons: icons, library: library, variant: variant).svg
+        Icons::Sprite.new(icons: icons, library: library, variant: variant).svg.html_safe
       end
     end
   end
