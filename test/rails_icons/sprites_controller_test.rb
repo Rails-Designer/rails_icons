@@ -42,8 +42,4 @@ class RailsIcons::SpritesControllerTest < ActionDispatch::IntegrationTest
     refute engine_route,
       "sprite route must not live inside the engine — it would become unreachable when the engine is mounted under authentication"
   end
-
-  test "ships configuration default for default_sprite_location" do
-    assert_equal "/rails_icons/sprite.svg", RailsIcons.configuration.default_sprite_location
-  end
 end

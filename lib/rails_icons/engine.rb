@@ -14,8 +14,6 @@ module RailsIcons
     end
 
     initializer "rails_icons.sprite_configuration", before: :load_config_initializers do
-      Icons::Configuration.attr_accessor :sprite, :default_sprite_location, :validate_sprite_icons
-
       Icons.configure do |config|
         config.sprite = {}
         config.default_sprite_location = "/rails_icons/sprite.svg"

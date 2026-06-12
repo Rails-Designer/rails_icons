@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "rails_icons/sprite_icon"
-require "rails_icons/sprite"
 
 module RailsIcons
   module Helpers
@@ -42,7 +41,7 @@ module RailsIcons
       #   <%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
       #
       def sprite(icons = nil, library: nil, variant: nil)
-        RailsIcons::Sprite.new(icons: icons, library: library, variant: variant).svg
+        Icons::Sprite.new(icons: icons, library: library, variant: variant).svg
       end
     end
   end

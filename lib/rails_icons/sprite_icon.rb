@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "sprite"
-
 module RailsIcons
   class SpriteIcon
     def initialize(name:, library:, arguments:, variant:, sprite_location:, config: RailsIcons.configuration)
@@ -25,7 +23,7 @@ module RailsIcons
     private
 
     def reference
-      @reference ||= Sprite::Reference.new(name: @name, library: @library, variant: @variant)
+      @reference ||= Icons::Sprite::Reference.new(name: @name, library: @library, variant: @variant)
     end
 
     def set_variant
