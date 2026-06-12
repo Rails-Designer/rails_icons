@@ -79,7 +79,7 @@ icon "check", stroke_width: 2
 
 ## Sprites
 
-Rails Icons supports SVG sprites for improved performance. Instead of inlining each icon's full SVG, sprite icons reference a shared set of `<symbol>` definitions via `<use href="...">`.
+Rails Icons supports SVG sprites for improved performance. Instead of inlining each icon's full SVG, sprite icons reference a shared set of `<symbol>` definitions via `<use href="…">`.
 
 ### Configuration
 
@@ -106,31 +106,29 @@ RailsIcons.configure do |config|
 end
 ```
 
+
 ### External sprite (default)
 
-Rails Icons serves the sprite at `/rails_icons/sprite.svg` out of the box — no controller, route, or MIME type setup needed. The endpoint sits at the host app level, so it stays reachable even when the preview engine is mounted behind authentication.
-
+Rails Icons serves the sprite at `/rails_icons/sprite.svg` out of the box — no controller, route or MIME type setup needed. The endpoint sits at the host app level, so it stays reachable even when the preview engine is mounted behind authentication.
 ```erb
 <%= sprite_icon "check" %>
 <%# renders: <svg><use href="/rails_icons/sprite.svg#heroicons_outline_check"></use></svg> %>
 ```
 
 Point at a precompiled file or a CDN by changing the location:
-
 ```ruby
-config.default_sprite_location = "https://cdn.example.com/icons.svg"
+config.default_sprite_location = "https://cdn.example.com/sprite_icons.svg"
 ```
 
 Override per icon:
-
 ```erb
 <%= sprite_icon "check", sprite_location: "/assets/sprites.svg" %>
 ```
 
+
 ### Inline sprite
 
 Set the location to `nil` and embed the sprite directly in your layout:
-
 ```ruby
 config.default_sprite_location = nil
 ```
@@ -146,15 +144,14 @@ config.default_sprite_location = nil
 ```
 
 You can also generate a sprite for a specific set of icons:
-
 ```erb
 <%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
 ```
 
+
 ### Helpers
 
 `sprite_icon` accepts the same options as `icon`:
-
 ```ruby
 sprite_icon "check"
 sprite_icon "check", library: "heroicons", variant: "mini"
@@ -162,12 +159,11 @@ sprite_icon "check", class: "size-6", data: { controller: "swap" }, stroke_width
 sprite_icon "check", sprite_location: "/sprite.svg"
 ```
 
-`sprite` generates the inline `<svg>` containing `<symbol>` definitions:
-
+`icons_sprite` generates the inline `<svg>` containing `<symbol>` definitions:
 ```ruby
-sprite                                                           # all configured icons
-sprite(["check", "search"])                                      # specific icons
-sprite(["check", "search"], library: "heroicons", variant: "outline") # with library/variant
+icons_sprite # all configured icons
+icons_sprite ["check", "search"]  # specific icons
+icons_sprite ["check", "search"], library: "heroicons", variant: "outline"  # with library/variant
 ```
 
 

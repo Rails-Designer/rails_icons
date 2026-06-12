@@ -40,7 +40,7 @@ class SpriteHelperTest < ActiveSupport::TestCase
   end
 
   test "sprite generates inline svg with symbols" do
-    result = sprite(["academic-cap"], library: "heroicons", variant: "outline")
+    result = icons_sprite(["academic-cap"], library: "heroicons", variant: "outline")
 
     assert_match(/<svg xmlns/, result)
     assert_match(/<symbol id="heroicons_outline_academic-cap"/, result)
@@ -55,8 +55,6 @@ class SpriteHelperTest < ActiveSupport::TestCase
       }
     end
 
-    result = sprite
-
-    assert_match(/<symbol id="heroicons_outline_academic-cap"/, result)
+    assert_match(/<symbol id="heroicons_outline_academic-cap"/, icons_sprite)
   end
 end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "rails_icons/sprite_icon"
+require "icons/sprite_icon"
 
 module RailsIcons
   module Helpers
@@ -20,7 +20,7 @@ module RailsIcons
       #   <%= sprite_icon "heart", library: "lucide", data: { controller: "favorite" } %>
       #
       def sprite_icon(name, library: nil, variant: nil, sprite_location: nil, **arguments)
-        RailsIcons::SpriteIcon.new(
+        Icons::SpriteIcon.new(
           name: name,
           library: library || RailsIcons.configuration.default_library,
           variant: variant,
@@ -36,11 +36,11 @@ module RailsIcons
       # @param variant [String] Optional variant to use for icons
       #
       # @example
-      #   <%= sprite %>
-      #   <%= sprite(["check", "search", "menu"]) %>
-      #   <%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
+      #   <%= icons_sprite %>
+      #   <%= icons_sprite(["check", "search", "menu"]) %>
+      #   <%= icons_sprite(["check", "search"], library: "heroicons", variant: "outline") %>
       #
-      def sprite(icons = nil, library: nil, variant: nil)
+      def icons_sprite(icons = nil, library: nil, variant: nil)
         Icons::Sprite.new(icons: icons, library: library, variant: variant).svg
       end
     end
