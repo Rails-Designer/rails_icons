@@ -135,7 +135,7 @@ config.default_sprite_location = nil
 
 ```erb
 <body>
-  <%= sprite %>
+  <%= icons_sprite %>
 
   <%= sprite_icon "check" %>
   <%= sprite_icon "search", class: "text-blue-500" %>
@@ -145,7 +145,7 @@ config.default_sprite_location = nil
 
 You can also generate a sprite for a specific set of icons:
 ```erb
-<%= sprite(["check", "search"], library: "heroicons", variant: "outline") %>
+<%= icons_sprite(["check", "search"], library: "heroicons", variant: "outline") %>
 ```
 
 
