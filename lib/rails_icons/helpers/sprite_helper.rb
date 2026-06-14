@@ -13,6 +13,8 @@ module RailsIcons
       # @param sprite_location [String] Override sprite URL (optional)
       # @param arguments [Hash] Additional arguments including class, data, stroke_width, etc.
       #
+      # @return [ActiveSupport::SafeBuffer] An HTML-safe SVG string referencing a sprite symbol
+      #
       # @example
       #   <%= sprite_icon "chevron-down" %>
       #   <%= sprite_icon "search", class: "text-blue-500" %>
@@ -34,6 +36,8 @@ module RailsIcons
       # @param icons [Array<String>] Optional array of icon names to include (defaults to all configured icons)
       # @param library [String] Optional library to use for icons
       # @param variant [String] Optional variant to use for icons
+      #
+      # @return [ActiveSupport::SafeBuffer] An HTML-safe SVG string containing `<symbol>` elements
       #
       # @example
       #   <%= icons_sprite %>
