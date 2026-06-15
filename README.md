@@ -229,6 +229,7 @@ rails generate rails_icons:sync --libraries=heroicons lucide
 - [Rails Designer UI Components](https://railsdesigner.com/components/) — The first professionally-designed UI components library for Ruby on Rails apps
 - [Chirp Form](https://chirpform.com/) — Add forms to any site. Display responses anywhere
 - [Helptail](https://helptail.com/) — Put your routine tasks on autopilot
+- [Seal Static](https://sealstatic.com/) — Host sites for every need
 
 
 ## Contributing
