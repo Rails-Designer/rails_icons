@@ -90,7 +90,7 @@ RailsIcons.configure do |config|
   config.default_variant = "outline"
 
   # Where `sprite_icon` references symbols. Defaults to the gem-served
-  # endpoint below. Set to nil to use inline mode (`<%= sprite %>` in layout).
+  # endpoint below. Set to nil to use inline mode (`<%= icons_sprite %>` in layout).
   config.default_sprite_location = "/rails_icons/sprite.svg"
 
   # Set to true to validate that referenced icons exist on disk
