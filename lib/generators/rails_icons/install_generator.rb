@@ -12,6 +12,7 @@ module RailsIcons
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
     class_option :destination, type: :string, default: RailsIcons.configuration.icons_path, desc: "Specify destination folder for icons"
     class_option :skip_sync, type: :boolean, default: false
+    class_option :variants, type: :array, desc: "Only sync specific variants (e.g. solid outline)"
 
     def initializer_generator
       generate("rails_icons:initializer", *attributes)
@@ -34,7 +35,9 @@ module RailsIcons
     private
 
     def attributes
-      ["--libraries=#{libraries.map(&:downcase).join(" ")}", "--destination=#{options[:destination]}"].join(" ")
+      ["--libraries=#{libraries.map(&:downcase).join(" ")}", "--destination=#{options[:destination]}"].tap do |parts|
+        parts << "--variants=#{options[:variants].join(" ")}" if options[:variants].present?
+      end.join(" ")
     end
 
     def libraries

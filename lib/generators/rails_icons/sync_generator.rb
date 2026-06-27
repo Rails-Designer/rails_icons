@@ -10,12 +10,17 @@ module RailsIcons
 
     class_option :library, type: :string, desc: "Choose a library (#{RailsIcons.libraries.keys.join("/")})"
     class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
+    class_option :variants, type: :array, desc: "Only sync specific variants (e.g. solid outline)"
 
     def sync_icons
-      libraries.each { |library| Icons::Sync.new(library).now }
+      libraries.each { |library| Icons::Sync.new(library, variants: variants).now }
     end
 
     private
+
+    def variants
+      options[:variants]&.map(&:to_sym)
+    end
 
     def libraries
       [options[:library], *options[:libraries]]
