@@ -9,6 +9,7 @@ module RailsIcons
       #
       # @param name [String] The icon name
       # @param library [String] The icon library (defaults to RailsIcons configuration)
+      # @param from [String] Syntactic sugar for a cleanly readable view layer API (preferred over `library`)
       # @param variant [String] The icon variant (optional)
       # @param sprite_location [String] Override sprite URL (optional)
       # @param arguments [Hash] Additional arguments including class, data, stroke_width, etc.
@@ -21,10 +22,10 @@ module RailsIcons
       #   <%= sprite_icon "check", variant: "solid", library: "heroicons" %>
       #   <%= sprite_icon "heart", library: "lucide", data: { controller: "favorite" } %>
       #
-      def sprite_icon(name, library: nil, variant: nil, sprite_location: nil, **arguments)
+      def sprite_icon(name, library: nil, from: library, variant: nil, sprite_location: nil, **arguments)
         Icons::SpriteIcon.new(
           name: name,
-          library: library || RailsIcons.configuration.default_library,
+          library: from || library || RailsIcons.configuration.default_library,
           variant: variant,
           sprite_location: sprite_location,
           arguments: arguments
