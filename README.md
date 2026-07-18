@@ -230,6 +230,7 @@ rails generate rails_icons:sync --libraries=heroicons lucide
 - [Chirp Form](https://chirpform.com/) — Add forms to any site. Display responses anywhere
 - [Helptail](https://helptail.com/) — Put your routine tasks on autopilot
 - [Seal Static](https://sealstatic.com/) — Host sites for every need
+- [Spinal CMS](https://spinalcms.com/) — Minimal and beautiful CMS for static site generators
 
 
 ## Contributing
