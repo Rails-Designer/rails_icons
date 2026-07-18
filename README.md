@@ -145,7 +145,7 @@ config.default_sprite_location = nil
 
 You can also generate a sprite for a specific set of icons:
 ```erb
-<%= icons_sprite(["check", "search"], library: "heroicons", variant: "outline") %>
+<%= icons_sprite ["check", "search"], library: "heroicons", variant: "outline" %>
 ```
 
 
