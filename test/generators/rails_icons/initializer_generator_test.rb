@@ -75,15 +75,23 @@ class InitializerGeneratorTest < Rails::Generators::TestCase
   end
 
   test "generator creates the initializer with custom library" do
-    run_generator %w[--custom=simple_icons]
+    run_generator %w[--libraries=simple_icons]
 
     assert_file "config/initializers/rails_icons.rb" do |file|
-      assert_match "simple_icons", file
-      assert_match "config.libraries.merge!", file
+      assert_match "config.custom_library :simple_icons", file
     end
   end
 
-  test "generator raise Icons::LibraryNotFound when no library is specified" do
+  test "generator creates the initializer with first party and custom library" do
+    run_generator %w[--libraries=lucide simple_icons]
+
+    assert_file "config/initializers/rails_icons.rb" do |file|
+      assert_match "# Override Lucide defaults", file
+      assert_match "config.custom_library :simple_icons", file
+    end
+  end
+
+  test "generator raises when no library is specified" do
     assert_raises(Icons::LibraryNotFound) do
       run_generator
     end

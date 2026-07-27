@@ -8,10 +8,9 @@ module RailsIcons
 
     desc "Create the Rails Icons initializer."
 
-    class_option :library, type: :string, desc: "Choose a library (#{RailsIcons.libraries.keys.join("/")})"
-    class_option :libraries, type: :array, default: [], desc: "Choose libraries (#{RailsIcons.libraries.keys.join("/")})"
+    class_option :library, type: :string, desc: "Choose a library"
+    class_option :libraries, type: :array, default: [], desc: "Choose libraries"
     class_option :destination, type: :string, default: RailsIcons.configuration&.icons_path, desc: "Specify icons folder"
-    class_option :custom, type: :string, desc: "Name of the custom library"
 
     def copy_initializer
       return if File.exist?(INITIALIZER)
@@ -44,49 +43,39 @@ module RailsIcons
     end
 
     def insert_libraries_configuration
+      return if first_party_libraries.empty?
+
       insert_into_file INITIALIZER, "\n#{library_configuration}", before: "end"
     end
 
-    def setup_custom_configuration
-      return if options[:custom].blank?
+    def setup_custom_libraries
+      return if custom_libraries.empty?
 
-      insert_custom_configuration
-      create_custom_directory
+      insert_into_file INITIALIZER, "\n#{custom_library_configuration}", before: "end"
+
+      custom_libraries.each do |name|
+        FileUtils.mkdir_p(File.join(options[:destination], name))
+      end
     end
 
     private
 
     INITIALIZER = "config/initializers/rails_icons.rb"
 
-    def insert_custom_configuration
-      unless file_contains?(INITIALIZER, "config.libraries.merge!")
-        custom_default_configuration = <<~RB.indent(2)
-
-          config.libraries.merge!(
-          )
-        RB
-
-        insert_into_file INITIALIZER, custom_default_configuration, before: "end"
-      end
-
-      insert_into_file INITIALIZER, "\n#{custom_configuration}", after: "config.libraries.merge!("
-    end
-
-    def create_custom_directory = FileUtils.mkdir_p(File.join(options[:destination], options[:custom]))
-
     def library_configuration
-      libraries.map { |library| RailsIcons.libraries[library.to_sym].initializer_config }.join("\n")
+      first_party_libraries.map { |library| RailsIcons.libraries[library.to_sym].initializer_config }.join("\n")
     end
 
-    def custom_configuration
-      <<~RB.indent(4)
-        #{options[:custom]}: {
-          # path: "app/assets/svg/icons/#{options[:custom]}/",
-          default: {
-            css: "size-6"
-          }
-        }
-      RB
+    def custom_library_configuration
+      custom_libraries.map { |name| "config.custom_library :#{name}" }.join("\n")
+    end
+
+    def first_party_libraries
+      libraries.select { |library| RailsIcons.libraries.key?(library.to_sym) }
+    end
+
+    def custom_libraries
+      libraries.reject { |library| RailsIcons.libraries.key?(library.to_sym) }
     end
 
     def default_configuration_exists?
