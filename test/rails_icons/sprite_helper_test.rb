@@ -27,6 +27,13 @@ class SpriteHelperTest < ActiveSupport::TestCase
     assert_match(%r{#heroicons_mini_academic-cap}, result)
   end
 
+  test "sprite_icon supports from as a library alias" do
+    result = sprite_icon("academic-cap", library: "lucide", from: "heroicons")
+
+    assert_match(%r{#heroicons_outline_academic-cap}, result)
+    refute_match(/\sfrom=/, result)
+  end
+
   test "sprite_icon with class" do
     result = sprite_icon("academic-cap", class: "size-6")
 
