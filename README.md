@@ -44,6 +44,9 @@ rails generate rails_icons:install --library=heroicons
 
 # Or multiple at once
 rails generate rails_icons:install --libraries=heroicons lucide
+
+# Or only specific variants
+rails generate rails_icons:install --library=heroicons --variants solid outline
 ```
 
 The generator also mounts an icon preview at `/rails_icons` where you can browse and search all your available icons. This route is open by default, so restrict it in production if needed.
@@ -221,6 +224,11 @@ rails generate rails_icons:sync --library=heroicons
 
 # Or multiple at once:
 rails generate rails_icons:sync --libraries=heroicons lucide
+```
+
+To sync only specific variants for a library:
+```bash
+rails generate rails_icons:sync --library=heroicons --variants solid outline
 ```
 
 
