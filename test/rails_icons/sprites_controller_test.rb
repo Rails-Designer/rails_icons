@@ -4,6 +4,8 @@ require "test_helper"
 
 class RailsIcons::SpritesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    @sprite_cache_expires_in = RailsIcons.sprite_cache_expires_in
+
     RailsIcons.configure do |config|
       config.default_library = "heroicons"
       config.default_variant = "outline"
@@ -15,12 +17,30 @@ class RailsIcons::SpritesControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
+  teardown do
+    RailsIcons.sprite_cache_expires_in = @sprite_cache_expires_in
+  end
+
   test "serves the sprite as image/svg+xml" do
     get "/rails_icons/sprite.svg"
 
     assert_response :success
     assert_equal "image/svg+xml", response.media_type
     assert_match(/<symbol id="heroicons_outline_academic-cap"/, response.body)
+  end
+
+  test "caches sprite responses publicly for one hour" do
+    get "/rails_icons/sprite.svg"
+
+    assert_equal "max-age=3600, public", response.headers["Cache-Control"]
+  end
+
+  test "uses the configured sprite cache expiration" do
+    RailsIcons.sprite_cache_expires_in = 30.minutes
+
+    get "/rails_icons/sprite.svg"
+
+    assert_equal "max-age=1800, public", response.headers["Cache-Control"]
   end
 
   test "sprite inner content is not html escaped" do
