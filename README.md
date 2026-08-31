@@ -222,27 +222,21 @@ rails generate rails_icons:sync --library=heroicons --variants solid outline
 
 ## Custom icon libraries
 
-The generator works the same for any library name, whether it is a first party library or your own.
+Rails Icons pulls SVGs straight from the path `<icons_path>/<library_name>/<name>.svg`. No generator is required for custom icons. Configuration is optional and only used to define defaults.
 
-To install a custom library, run:
-```bash
-rails generate rails_icons:install --library=simple_icons
-```
+To add a custom library, create its directory and drop in your SVGs:
 
-This creates the directory and adds `config.custom_library :simple_icons` in the initializer.
-
-Then drop SVG icons into the created directory:
 ```
 app/assets/svg/icons/simple_icons/apple.svg
 ```
+
+(Alternatively, scaffold it with `rails generate rails_icons:install --library=simple_icons`, which creates the directory and adds `config.custom_library :simple_icons` in the initializer.)
 
 Use them like any other library:
 
 ```ruby
 icon "apple", library: :simple_icons
 ```
-
-No configuration needed. SVGs are pulled from the path `<icons_path>/<library_name>/<name>.svg`.
 
 To add a git source for syncing, edit the initializer:
 ```ruby
