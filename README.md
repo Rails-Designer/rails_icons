@@ -84,6 +84,7 @@ icon "check", stroke_width: 2
 
 Rails Icons supports SVG sprites for improved performance. Instead of inlining each icon's full SVG, sprite icons reference a shared set of `<symbol>` definitions via `<use href="…">`.
 
+
 ### Configuration
 
 ```ruby
@@ -198,19 +199,6 @@ Rails Icons also includes a few animated icons. Great for loading states and so 
 Use like this: `icon "faded-spinner", library: "animated"`. The same attributes as the other libraries are available.
 
 
-## Custom icon library
-
-Need to use an icon from another library (for example [Simple Icons](https://simpleicons.org/))?
-
-1. run `rails generate rails_icons:initializer --custom=simple_icons`;
-2. add the SVG icons to the created directory (*app/assets/svg/icons/simple_icons*);
-
-Every custom icon can now be used with the same interface as first-party icon libraries:
-```ruby
-icon "apple", library: "simple_icons", class: "text-black"
-```
-
-
 ## Sync icons
 
 To sync all libraries, run:
@@ -232,11 +220,44 @@ rails generate rails_icons:sync --library=heroicons --variants solid outline
 ```
 
 
+## Custom icon libraries
+
+Rails Icons pulls SVGs straight from the path `<icons_path>/<library_name>/<name>.svg`. No generator is required for custom icons. Configuration is optional and only used to define defaults.
+
+To add a custom library, create its directory and drop in your SVGs:
+
+```
+app/assets/svg/icons/simple_icons/apple.svg
+```
+
+(Alternatively, scaffold it with `rails generate rails_icons:install --library=simple_icons`, which creates the directory and adds `config.custom_library :simple_icons` in the initializer.)
+
+Use them like any other library:
+
+```ruby
+icon "apple", library: :simple_icons
+```
+
+To add a git source for syncing, edit the initializer:
+```ruby
+RailsIcons.configure do |config|
+  config.custom_library :my_icons, source: {
+    url: "https://github.com/user/icons.git",
+    variants: { default: "." }
+  }
+end
+```
+
+Then sync:
+```bash
+rails generate rails_icons:sync --library=my_icons
+```
+
+
 ## Projects using Rails Icons
 
 - [Rails Designer UI Components](https://railsdesigner.com/components/) — The first professionally-designed UI components library for Ruby on Rails apps
 - [Chirp Form](https://chirpform.com/) — Add forms to any site. Display responses anywhere
-- [Helptail](https://helptail.com/) — Put your routine tasks on autopilot
 - [Seal Static](https://sealstatic.com/) — Host sites for every need
 - [Spinal CMS](https://spinalcms.com/) — Minimal and beautiful CMS for static site generators
 

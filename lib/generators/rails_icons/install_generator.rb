@@ -19,9 +19,9 @@ module RailsIcons
     end
 
     def sync_generator
-      return if options[:skip_sync] || libraries.blank?
+      return if options[:skip_sync] || sync_libraries.blank?
 
-      generate("rails_icons:sync", *attributes)
+      generate("rails_icons:sync", "--libraries=#{sync_libraries.map(&:downcase).join(" ")}")
     end
 
     def add_route
@@ -42,6 +42,10 @@ module RailsIcons
 
     def libraries
       [*options.libraries, options.library].compact_blank
+    end
+
+    def sync_libraries
+      libraries.select { |library| RailsIcons.libraries.key?(library.to_sym) }
     end
 
     def validatable? = true
