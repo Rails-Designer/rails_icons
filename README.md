@@ -2,7 +2,7 @@
 
 Add any icon library to a Rails app. Rails Icons has first-party support for a [handful of libraries](#first-party-libraries). It is library agnostic so it can be used with any icon library using the same interface. Rails Icons is a Rails gem for the [Icons Ruby gem](https://github.com/Rails-Designer/icons).
 
-![Rails Icons - A collection of icons from popular libraries like Feather, Lucide, and Heroicons arranged in a grid pattern around the title text](https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/cover.jpg)
+![Rails Icons - A collection of icons from popular libraries like Feather, Lucide and Heroicons arranged in a grid pattern around the title text](https://raw.githubusercontent.com/Rails-Designer/rails_icons/HEAD/.github/cover.jpg)
 
 ```erb
 # Using the default icon library
@@ -251,6 +251,47 @@ end
 Then sync:
 ```bash
 rails generate rails_icons:sync --library=my_icons
+```
+
+
+## Herb linter
+
+[Herb](https://herb-tools.dev) can validate `icon` calls in your views with a custom linter rule. Generate the rule and its manifest, then commit both files:
+
+```bash
+rails generate rails_icons:herb
+```
+
+The generator writes:
+
+- `.herb/icons.json`: the icon library and variant paths, plus the configured defaults
+- `.herb/rules/rails-icons.mjs`: the custom rule Herb loads automatically
+
+Run the linter with `npx`:
+
+```bash
+npx @herb-tools/linter app/views
+```
+
+Or add the `herb` gem and run:
+
+```bash
+bundle exec herb lint app/views
+```
+
+The rule reports unknown icon names and variants. It suggests alternatives for names that do not match. It resolves `library:`, its `from:` alias and `variant:`. It falls back to the configured defaults and skips dynamic values.
+
+The same rule runs in the [Herb language server](https://herb-tools.dev/projects/language-server), so editors show the warnings inline.
+
+Re-run the generator after you change libraries, variants, or defaults. Adding individual SVG files needs no regeneration. Set the framework and, optionally, the rule severity in `.herb.yml`:
+
+```yaml
+framework: actionview
+
+linter:
+  rules:
+    rails-icons:
+      severity: error
 ```
 
 
