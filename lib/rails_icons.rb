@@ -5,6 +5,7 @@ require "icons"
 
 require_relative "rails_icons/version"
 require_relative "rails_icons/engine"
+require_relative "rails_icons/herb/catalog"
 
 module RailsIcons
   class << self
